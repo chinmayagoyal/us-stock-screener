@@ -49,13 +49,21 @@
   .ss details summary { cursor: pointer; font-weight: var(--cds-font-weight-medium); }
   .ss details dt { font-weight: var(--cds-font-weight-medium); margin-top: var(--cds-gap-sm); }
   .ss details dd { margin: 2px 0 0; color: var(--color-fg-muted); }
+  .ss-conv { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; border: 1px solid var(--color-border-line); }
+  .ss-conv.High { border-color: var(--color-ok); color: var(--color-ok); }
+  .ss-conv.Medium { border-color: var(--color-warn); color: var(--color-warn); }
+  .ss-conv.Low { border-color: var(--color-bad); color: var(--color-bad); }
+  .ss td.ss-txt { white-space: normal; min-width: 240px; max-width: 360px; text-align: left; line-height: 1.4; }
+  .ss td.ss-txt b { font-weight: var(--cds-font-weight-medium); }
+  .ss-funnels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--cds-gap-md); }
+  .ss h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-sm); }
   .ss-fail { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md); }
 </style>
 
 <div class="ss">
   <header id="top">
     <h1 class="ss-title">US stock screener: undervaluation tracker</h1>
-    <p class="ss-lede" data-read lang="en">Of <b data-draw="universe" data-source="summary" data-field="universe" data-row="0">—</b> US-listed securities, <b data-draw="cands" data-source="summary" data-field="candidates" data-row="0">—</b> passed the investability filter. <b data-draw="ltn" data-source="summary" data-field="long_term_flags" data-row="0">—</b> screen as long-term value and <b data-draw="stn" data-source="summary" data-field="short_term_flags" data-row="0">—</b> as short-term setups.</p>
+    <p class="ss-lede" data-read lang="en">Of <b data-draw="universe" data-source="summary" data-field="universe" data-row="0">—</b> US-listed securities, <b data-draw="cands" data-source="summary" data-field="candidates" data-row="0">—</b> passed the investability filter. <b data-draw="ltn" data-source="summary" data-field="long_term_flags" data-row="0">—</b> screen as long-term value and <b data-draw="stn" data-source="summary" data-field="short_term_flags" data-row="0">—</b> as short-term setups, and <b data-draw="cmpn" data-source="summary" data-field="compounder_flags" data-row="0">—</b> qualify as compounders.</p>
     <div class="ss-asof">Prices as of <span data-draw="pdate" data-source="summary" data-field="price_date" data-row="0">—</span> close · refreshed every US trading day · not investment advice</div>
   </header>
 
@@ -65,14 +73,17 @@
     <div class="ss-tile"><div class="ss-tile-label">Short-term setups</div><div class="ss-tile-num" data-draw="t-st" data-source="summary" data-field="short_term_flags" data-row="0">—</div><div class="ss-tile-note">momentum + revisions, 1–6 mo</div></div>
     <div class="ss-tile"><div class="ss-tile-label">On both lists</div><div class="ss-tile-num" data-draw="t-both" data-source="summary" data-field="both_flags" data-row="0">—</div><div class="ss-tile-note">highest-conviction names</div></div>
     <div class="ss-tile"><div class="ss-tile-label">Value-trap risk</div><div class="ss-tile-num" data-draw="t-trap" data-source="summary" data-field="value_trap_flags" data-row="0">—</div><div class="ss-tile-note">cheap but low quality</div></div>
+    <div class="ss-tile"><div class="ss-tile-label">Compounders</div><div class="ss-tile-num" data-draw="t-comp" data-source="summary" data-field="compounder_flags" data-row="0">—</div><div class="ss-tile-note">fast growth + high returns</div></div>
+    <div class="ss-tile"><div class="ss-tile-label">Qualitative reviews</div><div class="ss-tile-num" data-draw="t-rev" data-source="summary" data-field="reviews_on_file" data-row="0">—</div><div class="ss-tile-note">names researched so far</div></div>
   </div>
 
   <section id="lists">
     <h2>Stock lists</h2>
-    <p class="ss-sub">Scores are 0–100 percentiles among candidates (70% vs. sector peers, 30% vs. all). Click a column to sort.</p>
+    <p class="ss-sub">Scores are 0–100 percentiles among candidates. Value is ranked mostly against sector peers, momentum and estimate revisions mostly against the whole market. Each list holds at most 4 names per industry. Click a column to sort.</p>
     <div class="ss-tabs" role="tablist">
       <button class="ss-tab" role="tab" data-tab="tab-lt" aria-selected="true">Long-term value</button>
       <button class="ss-tab" role="tab" data-tab="tab-st" aria-selected="false">Short-term setups</button>
+      <button class="ss-tab" role="tab" data-tab="tab-comp" aria-selected="false">Compounders</button>
       <button class="ss-tab" role="tab" data-tab="tab-all" aria-selected="false">All candidates</button>
       <button class="ss-tab" role="tab" data-tab="tab-chg" aria-selected="false">Changes since last run</button>
     </div>
@@ -91,7 +102,7 @@
             <th data-field="pe">P/E</th><th data-field="forward_pe">Fwd P/E</th><th data-field="ev_ebit_norm">EV/EBIT (cycle-adj.)</th>
             <th data-field="fcf_yield">FCF yield (after SBC)</th><th data-field="shareholder_yield">Net shareholder yield</th><th data-field="roic">ROIC</th>
             <th data-field="fscore">F-score</th><th data-field="implied_fcf_growth">Implied FCF growth</th><th data-field="rev_growth">Revenue growth</th>
-            <th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="signal">Signal</th>
+            <th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="conviction_label">Conviction</th><th class="ss-l" data-field="signal">Signal</th>
           </tr></thead>
           <tbody data-draw="tbl-lt"></tbody>
         </table>
@@ -107,9 +118,27 @@
             <th data-field="ret_12_1">12-1m return</th><th data-field="ret_6_1">6-1m return</th><th data-field="px_vs_200d">vs 200-day</th>
             <th data-field="eps_rev_cy_90d">EPS est. Δ 90d (this FY)</th><th data-field="eps_rev_ny_90d">EPS est. Δ 90d (next FY)</th>
             <th data-field="eps_surprise_last">Last EPS surprise</th><th data-field="eps_surprise_avg">Avg EPS surprise</th><th data-field="short_pct_float">Short % float</th>
-            <th class="ss-l" data-field="next_earnings">Next earnings</th><th class="ss-l" data-field="signal">Signal</th>
+            <th class="ss-l" data-field="next_earnings">Next earnings</th><th class="ss-l" data-field="conviction_label">Conviction</th><th class="ss-l" data-field="signal">Signal</th>
           </tr></thead>
           <tbody data-draw="tbl-st"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-comp" hidden>
+      <p class="ss-sub">Fast, sustained growth with high returns on capital, from a wider universe ($500M+ market cap). Ranked by compounder score: 35% growth, 30% returns, 20% valuation, 15% owner alignment and smaller size.</p>
+      <div class="ss-tablewrap">
+        <table data-source="compounders" data-row-key="ticker" data-view="comp">
+          <thead><tr>
+            <th class="ss-l" data-field="ticker">Ticker</th><th class="ss-l" data-field="company">Company</th><th class="ss-l" data-field="sector">Sector</th>
+            <th data-field="comp_score">Compounder score</th><th data-field="comp_growth_score">Growth</th><th data-field="comp_returns_score">Returns</th>
+            <th data-field="comp_valuation_score">Valuation</th><th data-field="market_cap">Market cap</th><th data-field="rev_cagr_3y">Revenue CAGR 3y</th>
+            <th data-field="rev_growth">Revenue growth TTM</th><th data-field="gm_trend">Gross-margin change 2y</th><th data-field="roic">ROIC</th>
+            <th data-field="roic_trend">ROIC change 2y</th><th data-field="reinvestment_rate">Reinvestment rate</th><th data-field="rd_intensity">R&amp;D / sales</th>
+            <th data-field="ev_ebit_per_growth">EV/EBIT per growth pt</th><th data-field="insider_own">Insider ownership</th><th data-field="ret_12_1">12-1m return</th>
+            <th class="ss-l" data-field="conviction_label">Conviction</th>
+          </tr></thead>
+          <tbody data-draw="tbl-comp"></tbody>
         </table>
       </div>
     </section>
@@ -121,7 +150,7 @@
             <th class="ss-l" data-field="ticker">Ticker</th><th class="ss-l" data-field="company">Company</th><th class="ss-l" data-field="sector">Sector</th>
             <th data-field="lt_score">LT score</th><th data-field="st_score">ST score</th><th data-field="value_score">Value</th><th data-field="quality_score">Quality</th>
             <th data-field="momentum_score">Momentum</th><th data-field="market_cap">Market cap</th><th data-field="pe">P/E</th><th data-field="ev_ebitda">EV/EBITDA</th>
-            <th data-field="fcf_yield">FCF yield (after SBC)</th><th data-field="roic">ROIC</th><th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="signal">Signal</th>
+            <th data-field="fcf_yield">FCF yield (after SBC)</th><th data-field="roic">ROIC</th><th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="conviction_label">Conviction</th><th class="ss-l" data-field="signal">Signal</th>
           </tr></thead>
           <tbody data-draw="tbl-all"></tbody>
         </table>
@@ -157,10 +186,32 @@
     </div>
   </section>
 
+  <section id="reviews">
+    <h2>Qualitative reviews</h2>
+    <p class="ss-sub">Claude researches each long-term and compounder name and scores it 1–5 (5 is always better): moat, disruption risk, industry structure, secular demand, management, tail risks and catalyst. Conviction is the weighted average (moat 25%, disruption 20%, demand, management and tail risk 15% each, industry 10%); High ≥ 3.75, Medium ≥ 3.0. New names are reviewed each weekday, about 10 a day.</p>
+    <p class="ss-empty ss-rev-empty" hidden>No reviews yet. The first ones appear after the next weekday review run.</p>
+    <div class="ss-tablewrap">
+      <table data-source="reviews" data-row-key="ticker">
+        <thead><tr>
+          <th class="ss-l" data-field="ticker">Ticker</th><th class="ss-l" data-field="company">Company</th><th class="ss-l" data-field="on_lists">On lists</th>
+          <th class="ss-l" data-field="conviction_label">Conviction</th><th data-field="q_moat">Moat</th><th data-field="q_disruption">Disruption (5 = low risk)</th>
+          <th data-field="q_industry">Industry</th><th data-field="q_demand">Demand</th><th data-field="q_management">Management</th>
+          <th data-field="q_tail_risk">Tail risk (5 = low)</th><th data-field="q_catalyst">Catalyst</th>
+          <th class="ss-l" data-field="bull_case">Bull case</th><th class="ss-l" data-field="bear_case">Bear case</th><th class="ss-l" data-field="key_risk">Key risk</th>
+          <th class="ss-l" data-field="review_date">Reviewed</th>
+        </tr></thead>
+        <tbody data-draw="tbl-reviews"></tbody>
+      </table>
+    </div>
+  </section>
+
   <section id="funnel">
-    <h2>How the filter narrows the market</h2>
-    <p class="ss-sub">Stocks remaining after each step of the initial filter.</p>
-    <div class="ss-card"><div class="ss-funnel" data-draw="funnel" data-source="funnel"></div></div>
+    <h2>How the filters narrow the market</h2>
+    <p class="ss-sub">Stocks remaining after each step of the two screens.</p>
+    <div class="ss-funnels">
+      <div class="ss-card"><h3>Value and short-term screen</h3><div class="ss-funnel" data-draw="funnel" data-source="funnel"></div></div>
+      <div class="ss-card"><h3>Compounders screen</h3><div class="ss-funnel" data-draw="funnel-comp" data-source="comp_funnel"></div></div>
+    </div>
   </section>
 
   <section id="track">
@@ -183,21 +234,29 @@
     <summary>Method: filter, metrics and flags</summary>
     <dl>
       <dt>Initial filter</dt>
-      <dd>Common stock only (no ETFs, funds, preferreds, warrants, units, SPACs) · market cap ≥ $2B · excludes Finance and Real Estate (banks, insurers and REITs need book-value or FFO models) · price ≥ $5 and 60-day median dollar volume ≥ $10M · at least 1 year of trading · SEC US-GAAP financials in USD no older than 200 days · trailing-12-month operating income and operating cash flow both positive · net debt/EBITDA ≤ 4× (or net cash) and EBIT/interest ≥ 3×.</dd>
+      <dd>Common stock only (no ETFs, funds, preferreds, warrants, units, SPACs) · market cap ≥ $2B · price ≥ $5 and 60-day median dollar volume ≥ $10M · at least 1 year of trading · excludes banks, lenders, brokers, asset managers, insurers and REITs by SEC industry (SIC) code, because they need book-value or FFO models; exchanges and ratings/data firms stay in · SEC US-GAAP financials in USD no older than 200 days · trailing-12-month operating income and operating cash flow both positive · net debt/EBITDA ≤ 4× (or net cash) and EBIT/interest ≥ 3×.</dd>
       <dt>Value score</dt>
-      <dd>EBIT/enterprise value, free-cash-flow yield, earnings yield (1/PE), forward earnings yield, shareholder yield (dividends + buybacks), sales/EV.</dd>
+      <dd>Cycle-adjusted EBIT/enterprise value (average of trailing 12 months and the last 3 fiscal years, so peak-cycle profits don't look cheap), free-cash-flow yield after stock-based compensation, forward earnings yield, and net shareholder yield (dividends plus the fall in diluted share count).</dd>
       <dt>Quality score</dt>
-      <dd>Return on invested capital, gross profit/assets, Piotroski F-score (0–9), accruals (lower is better), net debt/EBITDA (lower is better), revenue growth.</dd>
+      <dd>Return on invested capital, gross profit/assets, Piotroski F-score (0–9), accruals (lower is better), net debt/EBITDA (lower is better), 5-year operating-margin volatility (lower is better), revenue growth.</dd>
       <dt>Momentum, revisions, sentiment</dt>
-      <dd>12-1 and 6-1 month returns and price vs 200-day average; 90-day change in consensus EPS for this and next fiscal year, average EPS surprise and 30-day revision breadth; short interest (lower is better) and net insider buying.</dd>
-      <dt>Long-term score</dt>
-      <dd>60% value + 40% quality. Flag: LT score ≥ 90, value ≥ 70 and F-score ≥ 5.</dd>
-      <dt>Short-term score</dt>
-      <dd>35% momentum + 30% revisions + 20% value + 15% sentiment. Flag: ST score ≥ 90, value ≥ 40, positive 12-1 momentum and revisions ≥ 50.</dd>
+      <dd>12-1 and 6-1 month returns and price vs 200-day average; 90-day change in consensus EPS for this and next fiscal year, latest and 4-quarter average EPS surprise, and 30-day revision breadth; short interest (lower is better) and net insider buying.</dd>
+      <dt>Long-term score (1–3 years)</dt>
+      <dd>60% value + 40% quality. Flag: LT score ≥ 90, value ≥ 70, F-score ≥ 5, and the price implies at most 5% a year of perpetual free-cash-flow growth. At most 4 names per industry.</dd>
+      <dt>Short-term score (1–6 months)</dt>
+      <dd>35% momentum + 30% revisions + 20% value + 15% sentiment. Flag: ST score ≥ 90, value ≥ 40, positive 12-1 momentum and revisions ≥ 50. At most 4 names per industry.</dd>
+      <dt>Both lists</dt>
+      <dd>Cheap, good-quality businesses whose price trend and estimates have already turned up, so they don't rely only on a long wait for the market to re-rate them.</dd>
       <dt>Value-trap risk</dt>
-      <dd>Value ≥ 80 but quality < 30.</dd>
+      <dd>Value ≥ 80 and either quality &lt; 30, or momentum &lt; 20 together with revisions &lt; 30: cheap, while the business or the estimates are deteriorating.</dd>
+      <dt>Compounders screen</dt>
+      <dd>A separate, wider universe: market cap ≥ $500M and ≥ $3M daily trading. Gates: 3-year revenue CAGR ≥ 15%, trailing revenue growth ≥ 10%, ROIC ≥ 12%, positive operating income and cash flow, net debt/EBITDA ≤ 3×. Score: 35% growth (revenue CAGR, trailing growth, gross-margin trend), 30% returns (ROIC, ROIC trend, reinvestment rate), 20% valuation (EV/EBIT per point of growth, free-cash-flow yield), 15% alignment (insider ownership, smaller size). The top 25 are flagged, at most 4 per industry.</dd>
+      <dt>New quality signals</dt>
+      <dd>The long-term quality score also rewards an improving ROIC (change over 2 fiscal years); the sentiment score also rewards higher insider ownership.</dd>
       <dt>Implied FCF growth</dt>
-      <dd>The perpetual free-cash-flow growth the current price implies at a 9% cost of equity (a reverse DCF). Low or negative means the market expects little.</dd>
+      <dd>The perpetual free-cash-flow growth (after stock compensation) the current price implies at a 9% cost of equity, a reverse DCF. Low or negative means the market expects little.</dd>
+      <dt>Track record</dt>
+      <dd>Each day's lists are entered at the next session's close and compared with the equal-weighted candidate set and SPY. Only lists this tracker actually published are used, so there is no hindsight.</dd>
       <dt>Data</dt>
       <dd>Listings from Nasdaq; fundamentals rebuilt from SEC EDGAR XBRL filings; prices, estimates and short interest from Yahoo Finance (unofficial). XBRL tagging varies, so check any name against its filings before acting. Code and full workbook: github.com/chinmayagoyal/us-stock-screener.</dd>
     </dl>
@@ -207,7 +266,7 @@
 <script>
 window.SS = {
   q: '', sector: '',
-  sort: { lt: ['lt_score', -1], st: ['st_score', -1], all: ['lt_score', -1], chg: ['list', 1] },
+  sort: { lt: ['lt_score', -1], st: ['st_score', -1], all: ['lt_score', -1], comp: ['comp_score', -1], chg: ['list', 1] },
   fmt: {
     int: (v) => v == null ? '—' : d3.format(',')(v),
     num1: (v) => v == null ? '—' : d3.format('.1f')(v),
@@ -233,7 +292,7 @@ const sumDraw = (name, field, f) => dash.draw(name, (el) => {
 });
 [['universe', 'universe'], ['cands', 'candidates'], ['ltn', 'long_term_flags'], ['stn', 'short_term_flags'],
  ['t-cands', 'candidates'], ['t-lt', 'long_term_flags'], ['t-st', 'short_term_flags'], ['t-both', 'both_flags'],
- ['t-trap', 'value_trap_flags']].forEach(([n, f]) => sumDraw(n, f, S.fmt.int));
+ ['t-trap', 'value_trap_flags'], ['cmpn', 'compounder_flags'], ['t-comp', 'compounder_flags'], ['t-rev', 'reviews_on_file']].forEach(([n, f]) => sumDraw(n, f, S.fmt.int));
 sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v + 'T00:00:00Z')) : '—');
 </script>
 
@@ -244,7 +303,7 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
   const tabs = document.querySelectorAll('.ss-tab');
   const show = (id) => {
     tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
-    ['tab-lt', 'tab-st', 'tab-all', 'tab-chg'].forEach((s) => { const el = document.getElementById(s); if (el) el.hidden = s !== id; });
+    ['tab-lt', 'tab-st', 'tab-comp', 'tab-all', 'tab-chg'].forEach((s) => { const el = document.getElementById(s); if (el) el.hidden = s !== id; });
     S.active = id;
     dash.setLink(id);
     dash.draw('count');
@@ -252,10 +311,10 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
   S.active = 'tab-lt';
   const h = (location.hash || '').slice(1);
-  if (['tab-lt', 'tab-st', 'tab-all', 'tab-chg'].includes(h)) show(h);
+  if (['tab-lt', 'tab-st', 'tab-comp', 'tab-all', 'tab-chg'].includes(h)) show(h);
   document.querySelectorAll('.ss-search').forEach((inp) => inp.addEventListener('input', () => {
     S.q = inp.value.trim().toLowerCase();
-    ['tbl-lt', 'tbl-st', 'tbl-all', 'count'].forEach((n) => dash.draw(n));
+    ['tbl-lt', 'tbl-st', 'tbl-all', 'tbl-comp', 'count'].forEach((n) => dash.draw(n));
   }));
   document.querySelectorAll('table[data-view]').forEach((tbl) => {
     const view = tbl.dataset.view;
@@ -284,16 +343,21 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
   const COLS = {
     lt: [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['lt_score', F.sc], ['value_score', F.sc],
       ['quality_score', F.sc], ['pe', F.x], ['forward_pe', F.x], ['ev_ebit_norm', F.x], ['fcf_yield', F.pct], ['shareholder_yield', F.pct],
-      ['roic', F.pct], ['fscore', F.sc], ['implied_fcf_growth', F.pct], ['rev_growth', F.spct, 'sign'], ['ret_12_1', F.spct, 'sign'], ['signal', null, 'ss-l']],
+      ['roic', F.pct], ['fscore', F.sc], ['implied_fcf_growth', F.pct], ['rev_growth', F.spct, 'sign'], ['ret_12_1', F.spct, 'sign'], ['conviction_label', null, 'ss-l'], ['signal', null, 'ss-l']],
     st: [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['st_score', F.sc], ['momentum_score', F.sc],
       ['revisions_score', F.sc], ['value_score', F.sc], ['ret_12_1', F.spct, 'sign'], ['ret_6_1', F.spct, 'sign'], ['px_vs_200d', F.spct, 'sign'],
       ['eps_rev_cy_90d', F.spct, 'sign'], ['eps_rev_ny_90d', F.spct, 'sign'], ['eps_surprise_last', F.spct, 'sign'], ['eps_surprise_avg', F.spct, 'sign'], ['short_pct_float', F.pct],
-      ['next_earnings', F.txt, 'ss-l'], ['signal', null, 'ss-l']],
+      ['next_earnings', F.txt, 'ss-l'], ['conviction_label', null, 'ss-l'], ['signal', null, 'ss-l']],
     all: [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['lt_score', F.sc], ['st_score', F.sc],
       ['value_score', F.sc], ['quality_score', F.sc], ['momentum_score', F.sc], ['market_cap', F.cap], ['pe', F.x], ['ev_ebitda', F.x],
-      ['fcf_yield', F.pct], ['roic', F.pct], ['ret_12_1', F.spct, 'sign'], ['signal', null, 'ss-l']],
+      ['fcf_yield', F.pct], ['roic', F.pct], ['ret_12_1', F.spct, 'sign'], ['conviction_label', null, 'ss-l'], ['signal', null, 'ss-l']],
   };
-  const FILTER = { lt: (r) => r.flag_lt === true, st: (r) => r.flag_st === true, all: () => true };
+  COLS.comp = [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['comp_score', F.sc], ['comp_growth_score', F.sc],
+    ['comp_returns_score', F.sc], ['comp_valuation_score', F.sc], ['market_cap', F.cap], ['rev_cagr_3y', F.pct], ['rev_growth', F.spct, 'sign'],
+    ['gm_trend', F.spct, 'sign'], ['roic', F.pct], ['roic_trend', F.spct, 'sign'], ['reinvestment_rate', F.pct], ['rd_intensity', F.pct],
+    ['ev_ebit_per_growth', F.x], ['insider_own', F.pct], ['ret_12_1', F.spct, 'sign'], ['conviction_label', null, 'ss-l']];
+  const FILTER = { lt: (r) => r.flag_lt === true, st: (r) => r.flag_st === true, all: () => true, comp: (r) => r.flag_comp === true };
+  const SRC = (view) => (view === 'comp' ? 'compounders' : 'candidates');
   const cmp = (k, dir) => (a, b) => {
     const x = a[k], y = b[k];
     if (x == null && y == null) return 0;
@@ -302,16 +366,16 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
     return (typeof x === 'number' ? x - y : String(x).localeCompare(String(y))) * dir;
   };
   S.rowsFor = (view) => {
-    const d = dash.data('candidates');
+    const d = dash.data(SRC(view));
     if (d.status !== 'ok') return null;
     const q = S.q, sec = S.sector;
     return d.data.filter(FILTER[view]).filter((r) => !sec || r.sector === sec)
       .filter((r) => !q || (r.ticker || '').toLowerCase().includes(q) || (r.company || '').toLowerCase().includes(q))
       .sort(cmp(...S.sort[view]));
   };
-  const fill = (tbody, rows, cols, ncols) => {
+  const fill = (tbody, rows, cols, ncols, src = 'candidates') => {
     if (rows === null) {
-      const st = dash.data('candidates').status;
+      const st = dash.data(src).status;
       const tr = document.createElement('tr'), td = document.createElement('td');
       td.colSpan = ncols; td.className = 'ss-fail';
       td.textContent = st === 'error' ? 'Failed to load.' : 'Loading…';
@@ -323,7 +387,10 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
       cols.forEach(([k, f, cls]) => {
         const td = document.createElement('td');
         if (cls) td.className = cls.replace('sign', '');
-        if (k === 'signal') {
+        if (k === 'conviction_label') {
+          if (r.conviction_label) { const s = document.createElement('span'); s.className = 'ss-conv ' + r.conviction_label; s.textContent = `${r.conviction_label} ${F.num1(r.conviction)}`; td.append(s); }
+          else td.textContent = 'Not reviewed';
+        } else if (k === 'signal') {
           if (r.signal) { const s = document.createElement('span'); s.className = 'ss-pill ' + S.signalClass(r.signal); s.textContent = r.signal; td.append(s); }
         } else {
           td.textContent = f(r[k]);
@@ -340,13 +407,13 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
     }
     tbody.replaceChildren(frag);
   };
-  ['lt', 'st', 'all'].forEach((v) => dash.draw('tbl-' + v, (tb) => fill(tb, S.rowsFor(v), COLS[v], COLS[v].length)));
+  ['lt', 'st', 'all', 'comp'].forEach((v) => dash.draw('tbl-' + v, (tb) => fill(tb, S.rowsFor(v), COLS[v], COLS[v].length, SRC(v))));
 
   dash.draw('count', (el) => {
-    const view = { 'tab-lt': 'lt', 'tab-st': 'st', 'tab-all': 'all' }[S.active];
+    const view = { 'tab-lt': 'lt', 'tab-st': 'st', 'tab-all': 'all', 'tab-comp': 'comp' }[S.active];
     if (!view) { el.textContent = ''; return; }
     const rows = S.rowsFor(view);
-    const d = dash.data('candidates');
+    const d = dash.data(SRC(view));
     el.textContent = rows === null ? '—' : `${rows.length} of ${d.data.filter(FILTER[view]).length} shown`;
   });
 
@@ -355,7 +422,7 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
     const secs = d.status === 'ok' ? Array.from(new Set(d.data.map((r) => r.sector).filter(Boolean))).sort() : [];
     sel.replaceChildren(new Option('All sectors', ''), ...secs.map((s) => new Option(s, s)));
     sel.value = S.sector;
-    sel.onchange = () => { S.sector = sel.value; ['tbl-lt', 'tbl-st', 'tbl-all', 'count'].forEach((n) => dash.draw(n)); };
+    sel.onchange = () => { S.sector = sel.value; ['tbl-lt', 'tbl-st', 'tbl-all', 'tbl-comp', 'count'].forEach((n) => dash.draw(n)); };
   });
 
   // changes
@@ -401,6 +468,27 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
     tb.replaceChildren(frag);
   });
 
+  // qualitative reviews
+  dash.draw('tbl-reviews', (tb) => {
+    const d = dash.data('reviews');
+    if (d.status !== 'ok') { tb.replaceChildren(); return; }
+    const frag = document.createDocumentFragment();
+    d.data.forEach((r) => {
+      const tr = document.createElement('tr');
+      const cells = [['ticker', 'ss-l ss-tk'], ['company', 'ss-l ss-co'], ['on_lists', 'ss-l'], ['conviction_label', 'ss-l'], ['q_moat'], ['q_disruption'],
+        ['q_industry'], ['q_demand'], ['q_management'], ['q_tail_risk'], ['q_catalyst'], ['bull_case', 'ss-txt'], ['bear_case', 'ss-txt'], ['key_risk', 'ss-txt'], ['review_date', 'ss-l']];
+      cells.forEach(([k, cls]) => {
+        const td = document.createElement('td'); if (cls) td.className = cls;
+        if (k === 'conviction_label') {
+          if (r.conviction_label) { const s = document.createElement('span'); s.className = 'ss-conv ' + r.conviction_label; s.textContent = `${r.conviction_label} ${F.num1(r.conviction)}`; td.append(s); }
+        } else td.textContent = F.txt(r[k]);
+        tr.append(td);
+      });
+      frag.append(tr);
+    });
+    tb.replaceChildren(frag);
+  });
+
   // show/hide empty-state messages and their tables
   dash.onData(() => {
     const t = dash.data('track'), c = dash.data('changes');
@@ -409,6 +497,9 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
     document.querySelectorAll('#track .ss-tablewrap').forEach((el) => { el.hidden = tEmpty; });
     document.querySelectorAll('.ss-chg-empty').forEach((el) => { el.hidden = !cEmpty; });
     document.querySelectorAll('#tab-chg .ss-tablewrap').forEach((el) => { el.hidden = cEmpty; });
+    const rv = dash.data('reviews'), rEmpty = rv.status === 'ok' && !rv.data.length;
+    document.querySelectorAll('.ss-rev-empty').forEach((el) => { el.hidden = !rEmpty; });
+    document.querySelectorAll('#reviews .ss-tablewrap').forEach((el) => { el.hidden = rEmpty; });
   });
 
   // legend swatches
@@ -455,8 +546,8 @@ dash.draw('scatter', (el) => {
 });
 
 // funnel
-dash.draw('funnel', (el) => {
-  const d = dash.data('funnel');
+const drawFunnel = (src) => (el) => {
+  const d = dash.data(src);
   if (d.status !== 'ok') { el.replaceChildren(); if (d.status === 'error') { const p = document.createElement('p'); p.className = 'ss-fail'; p.textContent = 'Failed to load.'; el.append(p); } return; }
   const rows = d.data, W = Math.max(280, el.clientWidth), rowH = 40, H = rows.length * rowH + 4;
   const max = d3.max(rows, (r) => r.remaining) || 1;
@@ -471,5 +562,7 @@ dash.draw('funnel', (el) => {
     .style('fill', (r, i) => i === rows.length - 1 ? dash.colors[0] : 'var(--cds-chart-muted)');
   g.append('text').attr('x', (r) => Math.max(2, x(r.remaining)) + 6).attr('y', 30).style('fill', 'var(--color-fg)')
     .style('font-variant-numeric', 'tabular-nums').text((r) => d3.format(',')(r.remaining));
-});
+};
+dash.draw('funnel', drawFunnel('funnel'));
+dash.draw('funnel-comp', drawFunnel('comp_funnel'));
 </script>
