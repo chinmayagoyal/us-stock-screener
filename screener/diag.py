@@ -34,6 +34,11 @@ def main():
                     rows.append((last["end"], tag, unit, last["val"]))
         for r in sorted(rows, key=lambda r: (r[0], r[1]))[-60:]:
             print(f"  {r[0]} {r[1]:<75} {r[2]:<5} {r[3]:>18,.0f}")
+        for tag in ["NetIncomeLoss", "ProfitLoss", "NetCashProvidedByUsedInOperatingActivities",
+                    "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"]:
+            fs = [x for x in g.get(tag, {}).get("units", {}).get("USD", []) if "start" in x and x["end"] >= "2024-09-01"]
+            for x in sorted(fs, key=lambda x: (x["end"], x["start"])):
+                print(f"  D {tag[:40]:<40} {x['start']} {x['end']} {x.get('form')} {x.get('filed')} {x['val']:,.0f}")
         f = sec.fundamentals(j)
         print(json.dumps({k: f.get(k) for k in ["sec_status", "period_end", "revenue", "ebit", "net_income", "cfo",
                                                  "capex", "da", "cash", "debt", "lt_debt", "equity", "interest"]},
