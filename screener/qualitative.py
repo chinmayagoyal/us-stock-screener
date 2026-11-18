@@ -39,6 +39,8 @@ def load(path=PATH):
         w = {k: v for k, v in C.QUAL_WEIGHTS.items() if isinstance(sc.get(k), (int, float))}
         row["conviction"] = (sum(sc[k] * v for k, v in w.items()) / sum(w.values())) if len(w) >= 4 else None
         rows.append(row)
+    if not rows:
+        return pd.DataFrame(columns=["ticker"])
     df = pd.DataFrame(rows).dropna(subset=["ticker"])
     df = df.sort_values("review_date").drop_duplicates("ticker", keep="last")
     df["conviction_label"] = pd.cut(df["conviction"], [0, 3.0, 3.75, 5.01], right=False,
