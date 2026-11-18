@@ -7,6 +7,8 @@ Every US trading day after the close, a GitHub Action:
 3. Rebuilds trailing-12-month fundamentals for survivors from **SEC EDGAR XBRL**.
 4. Pulls prices, analyst estimates, revisions, surprises and short interest from **Yahoo Finance**.
 5. Scores every candidate for **long-term undervaluation** (1–3 years) and **short-term setups** (1–6 months).
+   A separate **compounders** screen runs on a wider universe ($500M+). It looks for fast, consistent growth with high returns on capital.
+   Each stock's latest **qualitative review** (`data/qualitative/reviews.json`) is merged in as a conviction score.
 6. Commits the results to `data/latest/` and a daily snapshot to `data/history/`. The snapshots feed a live track record.
 
 ## Tracker page
@@ -22,8 +24,14 @@ A Claude dashboard (https://claude.ai/artifact/HFxjifrsRpJuFUC4TzJ6zh) shows the
 | `funnel.csv` | How many stocks each filter step removed |
 | `changes.csv` | Names added to or dropped from each list since the previous run |
 | `track_record.csv` | Forward returns of past flagged lists vs. all candidates and SPY (fills in over time) |
+| `compounders.csv` / `compounders_funnel.csv` | The compounder pool, its scores and its filter funnel |
+| `review_queue.csv` | Listed stocks that still need a qualitative review, highest priority first |
 | `excluded.csv` | Every stock that failed the filter and the step it failed at |
 | `meta.json` | Run time, price date, counts, data coverage |
+
+## Qualitative reviews
+
+A scheduled Claude task runs each weekday at 13:17 IST. It researches up to 10 names from `review_queue.csv` and appends reviews to `data/qualitative/reviews.json`, following `docs/REVIEW_GUIDE.md`. You can also add or override reviews yourself: append a newer review for the ticker, and the newest one per ticker wins.
 
 ## Method
 
