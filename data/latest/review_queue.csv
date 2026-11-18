@@ -1,86 +1,88 @@
 ticker,company,list,reason,priority_score
-APA,APA Corporation,Both,never reviewed,199.38042131350682
+APA,APA Corporation,Both,never reviewed,199.50433705080545
 GCT,GigaCloud Technology Inc,Both,never reviewed,198.636926889715
-DINO,HF Sinclair Corporation,Both,never reviewed,198.51301115241637
+DINO,HF Sinclair Corporation,Both,never reviewed,198.3890954151177
 EXEL,Exelixis Inc.,Both,never reviewed,198.01734820322181
 VLO,Valero Energy Corporation,Both,never reviewed,197.39776951672863
-DBX,Dropbox Inc.,Both,never reviewed,196.53035935563815
-CHRD,Chord Energy Corporation,Both,never reviewed,196.2825278810409
-DLTR,Dollar Tree Inc.,Both,never reviewed,195.78686493184637
+CHRD,Chord Energy Corporation,Both,never reviewed,196.53035935563815
+DBX,Dropbox Inc.,Both,never reviewed,196.40644361833955
+DLTR,Dollar Tree Inc.,Both,never reviewed,195.6629491945477
 M,Macy's Inc,Both,never reviewed,194.6716232961586
-MAS,Masco Corporation,Both,never reviewed,194.05204460966542
+MAS,Masco Corporation,Both,never reviewed,194.17596034696408
 DELL,Dell Technologies Inc.,Both,never reviewed,193.5563816604709
-EAT,Brinker International Inc.,Both,never reviewed,192.56505576208178
 AEO,American Eagle Outfitters Inc.,Both,never reviewed,191.20198265179678
-SBLK,Star Bulk Carriers Corp.,Both,never reviewed,191.07806691449815
-SIG,Signet Jewelers Limited,Both,never reviewed,190.9541511771995
-MCK,McKesson Corporation,Both,never reviewed,190.5824039653036
-MGTX,MeiraGTx Holdings plc,Compounder,never reviewed,100.0
+SIG,Signet Jewelers Limited,Both,never reviewed,191.07806691449815
+SBLK,Star Bulk Carriers Corp.,Both,never reviewed,190.9541511771995
+MCK,McKesson Corporation,Both,never reviewed,190.272614622057
+INOD,Innodata Inc.,Compounder,never reviewed,100.0
 LOPE,Grand Canyon Education Inc.,Long-term value,never reviewed,99.87608426270135
 NEM,Newmont Corporation,Long-term value,never reviewed,99.75216852540272
 DECK,Deckers Outdoor Corporation,Long-term value,never reviewed,99.62825278810409
-HRB,H&R Block Inc.,Long-term value,never reviewed,99.50433705080545
-ANAB,AnaptysBio Inc.,Compounder,never reviewed,99.21875
+HRB,H&R Block Inc.,Long-term value,never reviewed,99.38042131350682
 CARG,CarGurus Inc.,Long-term value,never reviewed,99.13258983890955
 PARR,Par Pacific Holdings Inc.,Long-term value,never reviewed,98.88475836431226
 CF,CF Industries Holdings Inc.,Long-term value,never reviewed,98.76084262701363
-INOD,Innodata Inc.,Compounder,never reviewed,98.4375
-FICO,Fair Isaac Corporation,Long-term value,never reviewed,98.38909541511772
+FICO,Fair Isaac Corporation,Long-term value,never reviewed,98.51301115241635
 KFY,Korn Ferry,Long-term value,never reviewed,98.26517967781908
 SFM,Sprouts Farmers Market Inc.,Long-term value,never reviewed,98.14126394052045
 IT,Gartner Inc.,Long-term value,never reviewed,97.89343246592317
 GAP,Gap Inc. (The),Long-term value,never reviewed,97.76951672862454
-SEZL,Sezzle Inc.,Compounder,never reviewed,97.65625
 GDDY,GoDaddy Inc.,Long-term value,never reviewed,97.64560099132589
 DXC,DXC Technology Company,Long-term value,never reviewed,97.52168525402726
 INTU,Intuit Inc.,Long-term value,never reviewed,97.27385377942998
-TXT,Textron Inc.,Long-term value,never reviewed,97.14993804213134
+PEGA,Pegasystems Inc.,Long-term value,never reviewed,97.14993804213134
 CSTM,Constellium SE,Long-term value,never reviewed,97.02602230483272
-PEGA,Pegasystems Inc.,Long-term value,never reviewed,96.90210656753408
-NRIX,Nurix Therapeutics Inc.,Compounder,never reviewed,96.875
+TXT,Textron Inc.,Long-term value,never reviewed,96.90210656753408
 EOG,EOG Resources Inc.,Long-term value,never reviewed,96.77819083023545
 GTX,Garrett Motion Inc.,Long-term value,never reviewed,96.6542750929368
-BGC,BGC Group Inc.,Long-term value,never reviewed,96.40644361833954
-TDC,Teradata Corporation,Long-term value,never reviewed,96.03469640644362
-EDU,New Oriental Education & Technology Group Inc. Sponsored ADR representing 10 Ordinary Share (Cayman Islands),Long-term value,never reviewed,95.91078066914498
-ENS,EnerSys,Long-term value,never reviewed,95.6629491945477
+AGX,Argan Inc.,Compounder,never reviewed,96.61016949152543
+BGC,BGC Group Inc.,Long-term value,never reviewed,96.28252788104089
+EDU,New Oriental Education & Technology Group Inc. Sponsored ADR representing 10 Ordinary Share (Cayman Islands),Long-term value,never reviewed,96.03469640644362
+TDC,Teradata Corporation,Long-term value,never reviewed,95.91078066914498
+ENS,EnerSys,Long-term value,never reviewed,95.78686493184635
 CNX,CNX Resources Corporation,Long-term value,never reviewed,95.53903345724906
-TTD,The Trade Desk Inc.,Long-term value,never reviewed,95.41511771995044
-SNDK,Sandisk Corporation,Compounder,never reviewed,95.3125
-BKNG,Booking Holdings Inc.,Long-term value,never reviewed,95.16728624535315
-CVSA,Covista Inc.,Long-term value,never reviewed,95.04337050805452
+TTD,The Trade Desk Inc.,Long-term value,never reviewed,95.35315985130111
+BKNG,Booking Holdings Inc.,Long-term value,never reviewed,95.35315985130111
+CVSA,Covista Inc.,Long-term value,never reviewed,95.16728624535315
 LRN,Stride Inc.,Long-term value,never reviewed,94.91945477075589
+QNST,QuinStreet Inc.,Compounder,never reviewed,94.91525423728814
 LOGI,Logitech International S.A.,Long-term value,never reviewed,94.54770755885997
 GNTX,Gentex Corporation,Long-term value,never reviewed,94.42379182156134
-YETI,YETI Holdings Inc.,Long-term value,never reviewed,94.2998760842627
-MTCH,Match Group Inc.,Long-term value,never reviewed,94.17596034696406
-BLLN,BillionToOne Inc.,Compounder,never reviewed,94.140625
-EVER,EverQuote Inc.,Compounder,never reviewed,94.140625
+MTCH,Match Group Inc.,Long-term value,never reviewed,94.2998760842627
+YETI,YETI Holdings Inc.,Long-term value,never reviewed,94.05204460966543
+SNDK,Sandisk Corporation,Long-term value,never reviewed,93.92812887236678
 AYI,Acuity Inc.,Long-term value,never reviewed,93.80421313506815
 BKE,Buckle Inc. (The),Long-term value,never reviewed,93.68029739776952
 BRC,Brady Corporation,Long-term value,never reviewed,93.43246592317224
 CRUS,Cirrus Logic Inc.,Long-term value,never reviewed,93.3085501858736
+PAYS,Paysign Inc.,Compounder,never reviewed,93.22033898305084
 SNEX,StoneX Group Inc.,Long-term value,never reviewed,93.18463444857497
-RDDT,Reddit Inc.,Compounder,never reviewed,92.96875
-JLL,Jones Lang LaSalle Incorporated,Long-term value,never reviewed,92.93680297397769
-HNGE,Hinge Health Inc.,Compounder,never reviewed,92.1875
+JLL,Jones Lang LaSalle Incorporated,Long-term value,never reviewed,92.81288723667906
+BBY,Best Buy Co. Inc.,Long-term value,never reviewed,92.44114002478315
 DVA,DaVita Inc.,Long-term value,never reviewed,92.06939281288724
-KTB,Kontoor Brands Inc.,Long-term value,never reviewed,91.9454770755886
-COKE,Coca-Cola Consolidated Inc.,Long-term value,never reviewed,91.57372986369269
-DCTH,Delcath Systems Inc.,Compounder,never reviewed,91.40625
+KTB,Kontoor Brands Inc.,Long-term value,never reviewed,91.69764560099132
+IESC,IES Holdings Inc.,Compounder,never reviewed,91.52542372881356
+COKE,Coca-Cola Consolidated Inc.,Long-term value,never reviewed,91.44981412639405
 MMS,Maximus Inc.,Long-term value,never reviewed,91.32589838909541
 MTH,Meritage Homes Corporation,Long-term value,never reviewed,90.83023543990086
-ALAB,Astera Labs Inc.,Compounder,never reviewed,90.625
-BBWI,Bath & Body Works Inc.,Long-term value,never reviewed,90.21065675340768
+BBWI,Bath & Body Works Inc.,Long-term value,never reviewed,90.272614622057
 LULU,lululemon athletica inc.,Long-term value,never reviewed,90.08674101610904
-INR,Infinity Natural Resources Inc.,Compounder,never reviewed,89.84375
-CRDO,Credo Technology Group Holding Ltd,Compounder,never reviewed,89.0625
-ONC,BeOne Medicines Ltd.,Compounder,never reviewed,88.28125
-FLOC,Flowco Holdings Inc.,Compounder,never reviewed,86.71875
-RELY,Remitly Global Inc.,Compounder,never reviewed,85.15625
-YOU,Clear Secure Inc.,Compounder,never reviewed,83.59375
-APP,Applovin Corporation,Compounder,never reviewed,82.8125
-KNSA,Kiniksa Pharmaceuticals International plc,Compounder,never reviewed,81.25
-PAYS,Paysign Inc.,Compounder,never reviewed,80.46875
-TMDX,TransMedics Group Inc.,Compounder,never reviewed,79.6875
-HL,Hecla Mining Company,Compounder,never reviewed,78.125
+GRND,Grindr Inc.,Compounder,never reviewed,89.83050847457628
+BLBD,Blue Bird Corporation,Compounder,never reviewed,88.13559322033898
+ANET,Arista Networks Inc.,Compounder,never reviewed,86.4406779661017
+TOST,Toast Inc.,Compounder,never reviewed,84.7457627118644
+CLS,Celestica Inc.,Compounder,never reviewed,83.05084745762711
+PTRN,Pattern Group Inc. Series A,Compounder,never reviewed,80.50847457627118
+NBIX,Neurocrine Biosciences Inc.,Compounder,never reviewed,80.50847457627118
+PAY,Paymentus Holdings Inc.,Compounder,never reviewed,77.96610169491525
+HRMY,Harmony Biosciences Holdings Inc.,Compounder,never reviewed,76.27118644067797
+SN,SharkNinja Inc.,Compounder,never reviewed,74.57627118644068
+CLMB,Climb Global Solutions Inc.,Compounder,never reviewed,72.88135593220339
+VRT,Vertiv Holdings LLC,Compounder,never reviewed,71.1864406779661
+PODD,Insulet Corporation,Compounder,never reviewed,69.49152542372882
+HEI,Heico Corporation,Compounder,never reviewed,67.79661016949152
+MTSI,MACOM Technology Solutions Holdings Inc.,Compounder,never reviewed,66.10169491525424
+BE,Bloom Energy Corporation,Compounder,never reviewed,64.40677966101694
+MEDP,Medpace Holdings Inc.,Compounder,never reviewed,62.71186440677966
+PR,Permian Resources Corporation,Compounder,never reviewed,61.016949152542374
+LMAT,LeMaitre Vascular Inc.,Compounder,never reviewed,59.32203389830508

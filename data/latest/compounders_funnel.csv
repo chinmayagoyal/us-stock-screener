@@ -1,8 +1,9 @@
 step,stage,rule,remaining,removed
 0,"Common stock, market cap >= $0.5B",Wider net: multi-baggers usually start small or mid-sized,2968,0
-1,"Price >= $5, liquid, 1y+ history",60-day median $ volume >= $3M; one share class per company,2529,439
-2,"Excludes banks, insurers, asset managers and REITs",By SEC SIC code,1989,540
-3,Recent US-GAAP financials in USD,Latest period within 200 days,1648,341
-4,Sustained fast growth,3-year revenue CAGR >= 15% and TTM revenue growth >= 10%,296,1352
-5,High returns on capital,"ROIC >= 12%, operating income and operating cash flow > 0",132,164
-6,Not over-levered,Net debt / EBITDA <= 3x (or net cash),128,4
+1,"Price >= $5, liquid, 1y+ history",60-day median $ volume >= $3M; one share class per company,2530,438
+2,"Excludes banks, insurers, asset managers and REITs",By SEC SIC code,1991,539
+3,Recent US-GAAP financials in USD,Latest period within 200 days,1649,342
+4,Sustained fast growth,3-year revenue CAGR >= 15% and TTM revenue growth >= 10%,296,1353
+5,"Consistent, not a one-off",Revenue up in every one of the last 3 fiscal years; operating profit in each of the last 2; operating-margin volatility <= 12 pts (excludes commodity booms and licence windfalls),103,193
+6,High returns on capital,"ROIC >= 12%, operating income and operating cash flow > 0",62,41
+7,Not over-levered,Net debt / EBITDA <= 3x (or net cash),59,3
