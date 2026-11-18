@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "review_date": "2026-11-18",
+    "reviewer": "Claude",
+    "scores": {"moat": 4, "disruption": 2, "industry": 3, "demand": 3, "management": 3, "tail_risk": 4, "catalyst": 3},
+    "reasons": {
+      "moat": "Creative/document workflows and file formats are deeply embedded; $27.5B ARR and 1B+ monthly users across the platform.",
+      "disruption": "Generative-AI tools and AI-native rivals (Figma, Canva) attack the core creative franchise; a soft Q4 guide revived those fears.",
+      "industry": "Leader in creative software but facing more capable challengers; pricing power is being tested.",
+      "demand": "Low-teens revenue growth and ~11% ARR growth; AI-first ARR (>$650M) growing >150% but still small.",
+      "management": "Heavy buybacks; CEO transition (Shantanu Narayen to Anil Chakravarthy, Dec 1 2026) adds execution uncertainty.",
+      "tail_risk": "Net cash, recurring subscription revenue, record operating cash flow.",
+      "catalyst": "New CEO strategy, Firefly/agentic monetisation; fiscal 2027 guide in December."
+    },
+    "bull_case": "A cash-rich, still-growing franchise priced at ~12x earnings as if AI will erode it; if AI features lift ARPU instead, the multiple re-rates.",
+    "bear_case": "AI lowers the skill barrier Adobe's moat rests on; growth decays toward single digits and the low multiple is deserved.",
+    "key_risk": "Seat and pricing erosion as AI-native design tools take share of new creators.",
+    "catalyst_note": "December fiscal-2027 guidance under the new CEO; AI-first ARR trajectory.",
+    "sources": [
+      "https://www.marketbeat.com/instant-alerts/transcript-adobe-q3-earnings-call-highlights-2026-09-10/",
+      "https://www.zacks.com/stock/news/2988957/should-you-play-adobes-q3-earnings-with-etfs",
+      "https://www.constellationr.com/insights/news/adobe-reports-solid-q3-tops-1-billion-monthly-active-users"
+    ]
+  },
+  {
+    "ticker": "MPC",
+    "company": "Marathon Petroleum Corporation",
+    "review_date": "2026-11-18",
+    "reviewer": "Claude",
+    "scores": {"moat": 3, "disruption": 3, "industry": 3, "demand": 2, "management": 4, "tail_risk": 2, "catalyst": 3},
+    "reasons": {
+      "moat": "Scale and US Gulf Coast refining advantage plus integrated MPLX midstream; still a commodity margin business.",
+      "disruption": "EV and efficiency gains erode gasoline demand slowly; diesel and jet are stickier.",
+      "industry": "Global refining capacity offline is supporting margins, but new capacity and restarts can reverse that.",
+      "demand": "Long-run fuel demand flat to declining; current earnings reflect a cyclical margin spike (Q3 adj. EPS $26.93 vs $3.01 a year ago).",
+      "management": "Returning cash aggressively ($3.3B in Q3) and sold two inland refineries for $4.2B near peak margins.",
+      "tail_risk": "Margin mean-reversion risk is large; climate-litigation exposure.",
+      "catalyst": "Management expects elevated margins at least to mid-2027; MPLX growth and asset-sale proceeds."
+    },
+    "bull_case": "Peak-cycle cash is being converted into buybacks at speed; if margins stay elevated into 2027, per-share value compounds.",
+    "bear_case": "Earnings are near a cyclical peak; when cracks normalise, EPS could fall by more than half and the stock re-rates down.",
+    "key_risk": "Refining margins normalising faster than expected.",
+    "catalyst_note": "Q4 crack spreads and 2027 margin commentary; close of the refinery sale at end-2026.",
+    "sources": [
+      "https://www.zacks.com/stock/news/3023289/",
+      "https://www.webull.com/news/15859670194297856",
+      "https://finsee.ai/earnings/mpc/2026/q3/en/"
+    ]
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology Inc.",
+    "review_date": "2026-11-18",
+    "reviewer": "Claude",
+    "scores": {"moat": 3, "disruption": 4, "industry": 4, "demand": 5, "management": 3, "tail_risk": 2, "catalyst": 4},
+    "reasons": {
+      "moat": "One of three DRAM producers with HBM technology leadership, but memory has historically been a commodity.",
+      "disruption": "Memory is a binding constraint for AI systems; low risk of the product becoming obsolete.",
+      "industry": "Three-player oligopoly; most 2027 HBM supply contracted at higher prices and >75% of fiscal-2027 shipments committed.",
+      "demand": "AI infrastructure demand; management expects supply to tighten further through 2028.",
+      "management": "Executing well in the upcycle; heavy capacity investment is the usual source of the next downturn.",
+      "tail_risk": "Gross margins near 87% are far above history; capacity additions after fiscal 2027 could flip pricing.",
+      "catalyst": "Fiscal Q1 2027 guide ($61.5B revenue) well above consensus; HBM4 ramp."
+    },
+    "bull_case": "Long-term contracts and AI demand make this cycle longer and higher than past ones, so peak-looking earnings persist.",
+    "bear_case": "Memory remains cyclical; industry capex responds to 87% margins and pricing collapses in 2028-29.",
+    "key_risk": "Supply response (Samsung, SK Hynix, Micron's own expansion) ending the shortage.",
+    "catalyst_note": "December quarter results; 2028 contract negotiations.",
+    "sources": [
+      "https://www.trendforce.com/news/?p=64703",
+      "https://futurumgroup.com/insights/micron-q4-fy-2026-ai-memory-demand-sustains-pricing-power/",
+      "https://www.alpha-sense.com/earnings/mu/"
+    ]
+  },
+  {
+    "ticker": "EXPE",
+    "company": "Expedia Group Inc.",
+    "review_date": "2026-11-18",
+    "reviewer": "Claude",
+    "scores": {"moat": 3, "disruption": 2, "industry": 3, "demand": 4, "management": 4, "tail_risk": 3, "catalyst": 3},
+    "reasons": {
+      "moat": "Global hotel and rental supply plus a B2B technology platform; consumer brands are weaker than Booking's.",
+      "disruption": "AI agents and Google's AI search could disintermediate online travel agencies; the company lists AI platforms as a competitive risk.",
+      "industry": "Effectively a duopoly with Booking, with Google and Airbnb as powerful adjacent players.",
+      "demand": "Travel demand resilient; B2B bookings +19% and revenue +23% in Q3 2026; consumer bookings +7%.",
+      "management": "Margin expansion (adj. EBITDA +135bp) and a ~4% lower share count from buybacks.",
+      "tail_risk": "Travel is cyclical; heavy marketing spend needed to hold consumer share.",
+      "catalyst": "2026 guidance raised; AI distribution partnerships (Google AI Mode) could open a new channel."
+    },
+    "bull_case": "B2B is becoming the travel industry's supply backbone, which AI agents need, so Expedia benefits rather than loses.",
+    "bear_case": "AI assistants book direct with hotels or via Google, and the consumer business shrinks while marketing costs rise.",
+    "key_risk": "Disintermediation of consumer bookings by AI platforms.",
+    "catalyst_note": "Q4 results and 2027 outlook (February); AI-channel booking data.",
+    "sources": [
+      "https://www.zacks.com/stock/news/3024558/expedia-group-q3-earnings-revenues-beat-estimates-rise-y-y",
+      "https://finviz.com/news/415794/expedia-group-reports-third-quarter-2026-results",
+      "https://fourweekmba.com/ai-expedia-added-182m-of-consumer-revenue-with-flat-marketing/"
+    ]
+  }
+]
