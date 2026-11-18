@@ -56,7 +56,9 @@ T = {
     "cur_liab": ["LiabilitiesCurrent"],
     "cash": ["CashAndCashEquivalentsAtCarryingValue",
              "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents", "Cash"],
-    "sti": ["ShortTermInvestments", "MarketableSecuritiesCurrent", "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
+    "sti": ["ShortTermInvestments", "MarketableSecuritiesCurrent", "OtherShortTermInvestments", "DebtSecuritiesCurrent",
+            "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
+    "debt_combined": ["DebtLongtermAndShorttermCombinedAmount"],
     "ltd_noncurrent": ["LongTermDebtNoncurrent", "LongTermDebtAndCapitalLeaseObligations",
                        "LongTermDebtAndFinanceLeaseObligationsNoncurrent", "SeniorNotesNoncurrent"],
     "ltd_total": ["LongTermDebt", "DebtInstrumentCarryingAmount", "DebtAndCapitalLeaseObligations"],
@@ -149,14 +151,20 @@ def ttm_at(series, E):
                  if abs((ee - (E - timedelta(days=365))).days) <= 10 and abs(_len(ss, ee) - L) <= 10]
         if ann and prior:
             return ann[0] + v - prior[0]
-    total, cur = 0.0, E                          # 3) four discrete quarters
+    total, cur, ok = 0.0, E, True                # 3) four discrete quarters
     for _ in range(4):
         q = [(s, v) for s, e, v in series if 80 <= _len(s, e) <= 100 and abs((e - cur).days) <= 5]
         if not q:
-            return None
+            ok = False
+            break
         total += q[0][1]
         cur = q[0][0] - timedelta(days=1)
-    return total
+    if ok:
+        return total
+    for s, e, v in ending:                       # 4) last resort: annualise a 9-month YTD
+        if 260 <= _len(s, e) <= 290:
+            return v * 365.0 / _len(s, e)
+    return None
 
 
 def latest_annual(series):
@@ -164,10 +172,13 @@ def latest_annual(series):
     return max(ann)[1] if ann else None
 
 
-def inst_at(series, E, tol=100):
+def inst_at(series, E, tol=100, fallback=None):
+    """Balance-sheet value at E; if absent within tol days, the latest within `fallback` days."""
     if not series:
         return None
     ok = [d for d in series if E - timedelta(days=tol) <= d <= E + timedelta(days=5)]
+    if not ok and fallback:
+        ok = [d for d in series if E - timedelta(days=fallback) <= d <= E + timedelta(days=5)]
     return series[max(ok)] if ok else None
 
 
@@ -209,7 +220,8 @@ def fundamentals(j):
     S = {k: F.dur(k) for k in ["revenue", "cogs", "gross_profit", "ebit", "pretax", "interest", "da",
                                "capex", "dividends", "buybacks", "sbc"]}
     I = {k: F.inst(k) for k in ["assets", "cur_assets", "cur_liab", "cash", "sti", "ltd_noncurrent",
-                                "ltd_total", "debt_current", "ltd_current", "st_borrow", "equity", "nci"]}
+                                "ltd_total", "debt_current", "ltd_current", "st_borrow", "equity", "nci",
+                                "debt_combined"]}
 
     def flow(k, at):
         if at is None:
@@ -231,12 +243,18 @@ def fundamentals(j):
         return x
 
     def debt(at):
-        nonc = inst_at(I["ltd_noncurrent"], at)
+        # some filers tag long-term debt only in the 10-K, so allow a year-old value as fallback
+        fb = 400
+        nonc = inst_at(I["ltd_noncurrent"], at, fallback=fb)
+        combined = inst_at(I["debt_combined"], at)
+        if combined is not None:
+            return combined, (nonc if nonc is not None else combined)
         if nonc is not None:
             cur = _first(inst_at(I["debt_current"], at),
-                         _sum(inst_at(I["ltd_current"], at), inst_at(I["st_borrow"], at)))
+                         _sum(inst_at(I["ltd_current"], at), inst_at(I["st_borrow"], at)),
+                         inst_at(I["debt_current"], at, fallback=fb))
             return nonc + (cur or 0), nonc
-        tot = inst_at(I["ltd_total"], at)
+        tot = inst_at(I["ltd_total"], at, fallback=fb)
         if tot is not None:
             return tot + (inst_at(I["st_borrow"], at) or 0), tot
         st = inst_at(I["st_borrow"], at)

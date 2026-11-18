@@ -28,7 +28,13 @@ def main():
     run_at = datetime.now(timezone.utc)
     funnel = []
 
+    dropped = []
+
     def step(label, rule, before, after):
+        gone = before[~before.index.isin(after.index)]
+        for _, r in gone.iterrows():
+            dropped.append(dict(ticker=r.get("ticker"), company=r.get("name"), dropped_at=label,
+                                detail=r.get("sec_status") if label.startswith("Recent") else None))
         funnel.append(dict(step=len(funnel), stage=label, rule=rule, remaining=len(after),
                            removed=len(before) - len(after)))
         print(f"[{len(funnel)-1}] {label}: {len(after)} remaining ({len(before)-len(after)} removed)")
@@ -111,6 +117,7 @@ def main():
     out = cands[cols].copy()
     out.to_csv(f"{OUT}/candidates.csv", index=False, float_format="%.6g")
     fun = pd.DataFrame(funnel)
+    pd.DataFrame(dropped).to_csv(f"{OUT}/excluded.csv", index=False)
     fun.to_csv(f"{OUT}/funnel.csv", index=False)
 
     snap = cands[["ticker", "company", "price", "lt_score", "st_score", "value_score",
