@@ -1,0 +1,23 @@
+{
+  "run_utc": "2026-11-18T15:52:13+00:00",
+  "price_date": "2026-11-18",
+  "universe": 7290,
+  "candidates": 34,
+  "long_term_flags": 4,
+  "short_term_flags": 1,
+  "both_flags": 0,
+  "value_trap_flags": 1,
+  "yahoo_estimate_coverage": 1.0,
+  "sec_status_counts": {
+    "ok": 49,
+    "no USD US-GAAP financials": 6
+  },
+  "sources": {
+    "universe": [
+      "nasdaq.com screener API"
+    ],
+    "fundamentals": "SEC EDGAR XBRL companyfacts (data.sec.gov)",
+    "prices_estimates": "Yahoo Finance via yfinance (unofficial)"
+  },
+  "smoke_test": true
+}
