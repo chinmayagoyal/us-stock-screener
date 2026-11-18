@@ -140,6 +140,11 @@ def main():
     g = G.step("Sustained fast growth", "3-year revenue CAGR >= %.0f%% and TTM revenue growth >= %.0f%%"
                % (cg["min_rev_cagr_3y"] * 100, cg["min_rev_growth"] * 100),
                g, (g["rev_cagr_3y"] >= cg["min_rev_cagr_3y"]) & (g["rev_growth"] >= cg["min_rev_growth"]))
+    g = G.step("Consistent, not a one-off", "Revenue up in every one of the last 3 fiscal years; operating profit in "
+               "each of the last 2; operating-margin volatility <= %.0f pts (excludes commodity booms and licence "
+               "windfalls)" % (cg["max_margin_volatility"] * 100),
+               g, (g["rev_up_years"] == g["rev_years"]) & (g["rev_years"] >= 2) & g["ebit_pos_2y"].fillna(False).astype(bool)
+               & (g["margin_volatility"] <= cg["max_margin_volatility"]))
     g = G.step("High returns on capital", "ROIC >= %.0f%%, operating income and operating cash flow > 0"
                % (cg["min_roic"] * 100), g, (g["roic"] >= cg["min_roic"]) & (g["ebit"] > 0) & (g["cfo"] > 0))
     pool = G.step("Not over-levered", "Net debt / EBITDA <= %.0fx (or net cash)" % cg["max_net_debt_ebitda"],

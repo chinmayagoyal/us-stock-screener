@@ -92,7 +92,8 @@ METHOD = [
      % (C.TRAP_FLAG["min_value"], C.TRAP_FLAG["max_quality"], C.TRAP_FLAG["max_momentum"],
         C.TRAP_FLAG["max_revisions"])),
     ("Compounders screen", "Separate, wider universe (market cap >= $%.1fB, $%.0fM daily volume). Gates: 3-year revenue "
-                           "CAGR >= %.0f%%, TTM growth >= %.0f%%, ROIC >= %.0f%%, positive operating income and cash flow, "
+                           "CAGR >= %.0f%%, TTM growth >= %.0f%%, revenue up every year and operating profit in each of the last 2 "
+                           "years with steady margins, ROIC >= %.0f%%, positive operating income and cash flow, "
                            "net debt/EBITDA <= %.0fx. Score: %.0f%% growth (CAGR, TTM growth, gross-margin trend), %.0f%% "
                            "returns (ROIC, ROIC trend, reinvestment rate), %.0f%% valuation (EV/EBIT per point of growth, "
                            "FCF yield), %.0f%% alignment (insider ownership, smaller size). Top %d flagged, max %d per industry."

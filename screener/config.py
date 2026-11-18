@@ -73,10 +73,11 @@ YAHOO_PAUSE_SEC = 0.35              # politeness pause between quote-summary cal
 # ---------------------------------------------------------------- compounders / high-potential screen
 COMP_MIN_MARKET_CAP = 500_000_000   # wider net: multi-baggers usually start small or mid-sized
 COMP_MIN_DOLLAR_VOLUME = 3_000_000
-COMP_GATES = dict(min_rev_cagr_3y=0.15, min_rev_growth=0.10, min_roic=0.12, max_net_debt_ebitda=3.0)
+COMP_GATES = dict(min_rev_cagr_3y=0.15, min_rev_growth=0.10, min_roic=0.12, max_net_debt_ebitda=3.0,
+                  max_margin_volatility=0.12)   # excludes commodity booms and one-off licence windfalls
 COMP_METRICS = {
     "growth": {"rev_cagr_3y": 1, "rev_growth": 1, "gm_trend": 1},
-    "returns": {"roic": 1, "roic_trend": 1, "reinvestment_rate": 1},
+    "returns": {"roic": 1, "roic_trend": 1, "reinvestment_rate": 1, "margin_volatility": -1},
     "valuation": {"ev_ebit_per_growth": -1, "fcf_yield": 1},
     "alignment": {"insider_own": 1, "market_cap": -1},      # owner-operators; smaller-cap tilt
 }

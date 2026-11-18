@@ -324,6 +324,11 @@ def fundamentals(j):
             if 0.8 * yrs <= span <= 1.2 * yrs:
                 out["rev_cagr_3y"] = (rv_fy[rv_ends[0]] / rv_fy[rv_ends[k]]) ** (1 / span) - 1
                 break
+    # consistency: revenue up every year, operating profit in each of the last 2 fiscal years
+    seq = [rv_fy[e] for e in rv_ends[:4]]
+    out["rev_up_years"] = sum(1 for a, b in zip(seq, seq[1:]) if a > b) if len(seq) >= 3 else None
+    out["rev_years"] = len(seq) - 1 if seq else 0
+    out["ebit_pos_2y"] = (len(ends) >= 2 and all(eb_fy[e] > 0 for e in ends[:2]))
     gp_fy = annual_map(S["gross_profit"])
     if not gp_fy:
         cg = annual_map(S["cogs"])
