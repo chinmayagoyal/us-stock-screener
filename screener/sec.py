@@ -292,6 +292,24 @@ def fundamentals(j):
         return c[0][1] if c else None
     out["wdil_shares"], out["wdil_shares_prior"] = wdil(E), wdil(E1)
 
+    # fiscal-year history: normalised EBIT (cycle-adjusted) and operating-margin stability
+    def annual_map(series):
+        return {e: v for st, e, v in series if 350 <= _len(st, e) <= 380}
+    eb_fy, rv_fy = annual_map(S["ebit"]), annual_map(S["revenue"])
+    ends = sorted(eb_fy, reverse=True)[:5]
+    out["ebit_fy_count"] = len(ends)
+    last3 = [eb_fy[e] for e in ends[:3]]
+    if len(last3) >= 2 and out["ebit"] is not None:
+        out["ebit_norm"] = (sum(last3) + out["ebit"]) / (len(last3) + 1)
+    else:
+        out["ebit_norm"] = out["ebit"]
+    margins = [eb_fy[e] / rv_fy[e] for e in ends if e in rv_fy and rv_fy[e]]
+    if len(margins) >= 3:
+        m = sum(margins) / len(margins)
+        out["margin_volatility"] = (sum((x - m) ** 2 for x in margins) / (len(margins) - 1)) ** 0.5
+    else:
+        out["margin_volatility"] = None
+
     # prior year (for growth and F-score)
     out["revenue_prior"] = flow("revenue", E1)
     out["gross_profit_prior"] = gp(E1)
@@ -332,6 +350,48 @@ def ticker_to_cik():
     r = requests.get(TICKER_MAP, headers={"User-Agent": _ua()}, timeout=60)
     r.raise_for_status()
     return {v["ticker"].upper(): int(v["cik_str"]) for v in r.json().values()}
+
+
+SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik:010d}.json"
+
+
+def is_financial_sic(sic):
+    """Banks, lenders, broker-dealers, asset managers, insurers, REITs/real-estate owners, holding & trust vehicles.
+    Exchanges (6200), credit bureaus/ratings/data firms (7xxx) and real-estate services (6531) stay in."""
+    try:
+        s = int(sic)
+    except (TypeError, ValueError):
+        return False
+    return (6000 <= s <= 6199 or s in (6211, 6221, 6282) or 6300 <= s <= 6411
+            or (6500 <= s <= 6553 and s != 6531) or 6700 <= s <= 6799)
+
+
+def fetch_sic(ciks):
+    """{cik: (sic, sicDescription)}"""
+    rate = _Rate(config.SEC_RATE_PER_SEC)
+    res = {}
+
+    def work(cik):
+        for attempt in range(4):
+            rate.wait()
+            try:
+                r = _session().get(SUBMISSIONS_URL.format(cik=cik), timeout=60)
+                if r.status_code in (429, 500, 502, 503, 504):
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                r.raise_for_status()
+                j = r.json()
+                return cik, (j.get("sic"), j.get("sicDescription"))
+            except Exception:  # noqa: BLE001
+                time.sleep(2 * (attempt + 1))
+        return cik, (None, None)
+
+    ciks = list(dict.fromkeys(ciks))
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for f in as_completed([ex.submit(work, c) for c in ciks]):
+            cik, v = f.result()
+            res[cik] = v
+    return res
 
 
 def fetch_all(ciks):

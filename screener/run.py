@@ -49,14 +49,15 @@ def main():
              u, u[universe.security_type_mask(u)])
     s = step("Market cap >= $%.0fB" % (C.MIN_MARKET_CAP / 1e9), "Nasdaq-reported market capitalisation",
              s, s[s["mcap_nasdaq"] >= C.MIN_MARKET_CAP])
-    s = step("Excludes financials and real estate", "Banks, insurers, asset managers and REITs need book-value / FFO models",
-             s, s[~s["sector"].isin(C.EXCLUDED_SECTORS)])
     if args.limit:
         s = s.sample(min(args.limit, len(s)), random_state=1)
         print(f"  smoke test: sampled {len(s)}")
 
     print("Downloading price history...")
     hist = prices.download_history(list(s["ticker"]) + ["SPY"])
+    coverage = len(hist) / max(1, len(s) + 1)
+    if coverage < C.MIN_PRICE_COVERAGE:
+        raise SystemExit(f"Price download coverage {coverage:.0%} is too low; not publishing this run.")
     pm = pd.DataFrame.from_dict({t: prices.price_metrics(h) for t, h in hist.items() if t != "SPY"}, orient="index")
     s = s.join(pm, on="ticker")
     s = step("Price >= $%.0f, liquid, 1y+ history" % C.MIN_PRICE,
@@ -73,6 +74,14 @@ def main():
     s2 = s2.sort_values("dollar_vol_60d", ascending=False).drop_duplicates("cik")
     s = step("SEC filer, one share class per company", "Ticker maps to an SEC CIK; keeps the most liquid class",
              s, s2)
+
+    print(f"Fetching SEC industry codes for {len(s)} companies...")
+    sic = sec.fetch_sic(s["cik"].tolist())
+    s["sic"] = s["cik"].map(lambda c: sic.get(c, (None, None))[0])
+    s["sic_description"] = s["cik"].map(lambda c: sic.get(c, (None, None))[1])
+    s = step("Excludes banks, insurers, asset managers and REITs",
+             "By SEC SIC code: these need book-value or FFO models. Exchanges, ratings/data firms stay in",
+             s, s[~s["sic"].map(sec.is_financial_sic)])
 
     print(f"Fetching SEC fundamentals for {len(s)} companies...")
     fund = sec.fetch_all(s["cik"].tolist())
@@ -93,6 +102,8 @@ def main():
     s = step("Solvent", "Net debt / EBITDA <= %.0fx (or net cash) and EBIT / interest >= %.0fx"
              % (C.MAX_NET_DEBT_TO_EBITDA, C.MIN_INTEREST_COVERAGE), s, s[solvent])
     cands = s.copy()
+    if len(cands) < C.MIN_CANDIDATES and not args.limit:
+        raise SystemExit(f"Only {len(cands)} candidates passed; likely a data problem, not publishing this run.")
 
     if not args.skip_yahoo_estimates:
         print(f"Fetching analyst estimates for {len(cands)} candidates...")

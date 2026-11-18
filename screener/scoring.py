@@ -22,12 +22,18 @@ def add_fundamental_metrics(df):
     ev = d["ev"].where(d["ev"] > 0)
     d["ebitda"] = num("ebit") + num("da").fillna(0)
     d["fcf"] = num("cfo") - num("capex").abs().fillna(0)
+    d["fcf_after_sbc"] = d["fcf"] - num("sbc").fillna(0)
     d["net_debt"] = num("debt").fillna(0) - num("cash").fillna(0)
 
     d["ebit_ev"] = _div(d["ebit"], ev)
-    d["fcf_yield"] = _div(d["fcf"], mc)
+    d["ebit_ev_norm"] = _div(num("ebit_norm"), ev)
+    d["ev_ebit_norm"] = _div(ev, num("ebit_norm").where(num("ebit_norm") > 0))
+    d["fcf_yield"] = _div(d["fcf_after_sbc"], mc)
     d["earnings_yield"] = _div(d["net_income"], mc)
-    d["shareholder_yield"] = _div(num("dividends").fillna(0) + num("buybacks").fillna(0), mc)
+    # net shareholder yield: dividends plus the year-on-year fall in diluted share count (issuance counts against)
+    net_buyback = 1 - _div(num("wdil_shares"), num("wdil_shares_prior"))
+    gross_buyback = _div(num("buybacks").fillna(0), mc)
+    d["shareholder_yield"] = _div(num("dividends").fillna(0), mc) + net_buyback.fillna(gross_buyback)
     d["sales_ev"] = _div(d["revenue"], ev)
     d["pe"] = _div(mc, d["net_income"].where(d["net_income"] > 0))
     d["ev_ebitda"] = _div(ev, d["ebitda"].where(d["ebitda"] > 0))
@@ -45,7 +51,7 @@ def add_fundamental_metrics(df):
     d["rev_growth"] = _div(d["revenue"], d["revenue_prior"].where(d["revenue_prior"] > 0)) - 1
     d["gross_margin"] = _div(d["gross_profit"], d["revenue"])
     d["oper_margin"] = _div(d["ebit"], d["revenue"])
-    fcf_pos = d["fcf"].where(d["fcf"] > 0)
+    fcf_pos = d["fcf_after_sbc"].where(d["fcf_after_sbc"] > 0)
     r = C.COST_OF_EQUITY
     d["implied_fcf_growth"] = (r * mc - fcf_pos) / (mc + fcf_pos)
     d["fscore"], d["fscore_tests"] = _fscore(d)
@@ -84,18 +90,17 @@ def add_market_metrics(d):
 
 
 # ------------------------------------------------------------------ ranking
-def _rank(d, col, direction, group):
+def _rank(d, col, direction, group, w):
     s = pd.to_numeric(d[col], errors="coerce") * direction
     overall = s.rank(pct=True)
     by_sector = s.groupby(d[group]).rank(pct=True)
     size = s.groupby(d[group]).transform("count")
-    w = C.SECTOR_WEIGHT
     out = np.where(size >= C.MIN_SECTOR_SIZE, w * by_sector + (1 - w) * overall, overall)
     return pd.Series(out, index=d.index).where(s.notna()) * 100
 
 
-def _composite(d, metrics, group, min_n):
-    ranks = pd.DataFrame({m: _rank(d, m, sgn, group) for m, sgn in metrics.items() if m in d})
+def _composite(d, metrics, group, min_n, w):
+    ranks = pd.DataFrame({m: _rank(d, m, sgn, group, w) for m, sgn in metrics.items() if m in d})
     avg = ranks.mean(axis=1).where(ranks.notna().sum(axis=1) >= min_n)
     return avg.rank(pct=True) * 100
 
@@ -106,26 +111,42 @@ def _blend(parts, weights):
     return (num / den.where(den >= 0.5)).rank(pct=True) * 100
 
 
+def _cap_per_industry(d, flag, score_col):
+    """Keep at most MAX_PER_INDUSTRY flagged names per industry (highest score first)."""
+    ind = d["y_industry"].fillna(d["industry"]) if "y_industry" in d else d["industry"]
+    order = d[flag].assign(_ind=ind[flag]).sort_values(score_col, ascending=False)
+    keep = order.groupby("_ind").cumcount() < C.MAX_PER_INDUSTRY
+    out = pd.Series(False, index=d.index)
+    out[order.index[keep.values]] = True
+    return out
+
+
 def score(d):
     d = d.copy()
     d["rank_group"] = d["y_sector"].fillna(d["sector"]) if "y_sector" in d else d["sector"]
     g = "rank_group"
-    d["value_score"] = _composite(d, C.VALUE_METRICS, g, 3)
-    d["quality_score"] = _composite(d, C.QUALITY_METRICS, g, 3)
-    d["momentum_score"] = _composite(d, C.MOMENTUM_METRICS, g, 2)
-    d["revisions_score"] = _composite(d, C.REVISION_METRICS, g, 1)
-    d["sentiment_score"] = _composite(d, C.SENTIMENT_METRICS, g, 1)
+    W = C.SECTOR_WEIGHTS
+    d["value_score"] = _composite(d, C.VALUE_METRICS, g, 3, W["value"])
+    d["quality_score"] = _composite(d, C.QUALITY_METRICS, g, 3, W["quality"])
+    d["momentum_score"] = _composite(d, C.MOMENTUM_METRICS, g, 2, W["momentum"])
+    d["revisions_score"] = _composite(d, C.REVISION_METRICS, g, 1, W["revisions"])
+    d["sentiment_score"] = _composite(d, C.SENTIMENT_METRICS, g, 1, W["sentiment"])
     parts = {"value": d["value_score"], "quality": d["quality_score"], "momentum": d["momentum_score"],
              "revisions": d["revisions_score"], "sentiment": d["sentiment_score"]}
     d["lt_score"] = _blend(parts, C.LT_WEIGHTS)
     d["st_score"] = _blend(parts, C.ST_WEIGHTS)
 
-    lt = (d["lt_score"] >= C.LT_FLAG["min_lt_score"]) & (d["value_score"] >= C.LT_FLAG["min_value"]) \
-        & (d["fscore"] >= C.LT_FLAG["min_fscore"])
-    st = (d["st_score"] >= C.ST_FLAG["min_st_score"]) & (d["value_score"] >= C.ST_FLAG["min_value"]) \
-        & (d["ret_12_1"] > 0) & ((d["revisions_score"] >= C.ST_FLAG["min_revisions"]) | d["revisions_score"].isna())
-    trap = (d["value_score"] >= C.TRAP_FLAG["min_value"]) & (d["quality_score"] < C.TRAP_FLAG["max_quality"])
-    d["flag_lt"], d["flag_st"], d["flag_trap"] = lt, st, trap
+    L, S_, T = C.LT_FLAG, C.ST_FLAG, C.TRAP_FLAG
+    lt = (d["lt_score"] >= L["min_lt_score"]) & (d["value_score"] >= L["min_value"]) \
+        & (d["fscore"] >= L["min_fscore"]) & (d["implied_fcf_growth"] <= L["max_implied_growth"])
+    st = (d["st_score"] >= S_["min_st_score"]) & (d["value_score"] >= S_["min_value"]) \
+        & (d["ret_12_1"] > 0) & ((d["revisions_score"] >= S_["min_revisions"]) | d["revisions_score"].isna())
+    lt = _cap_per_industry(d, lt, "lt_score")
+    st = _cap_per_industry(d, st, "st_score")
+    trap = (d["value_score"] >= T["min_value"]) & (
+        (d["quality_score"] < T["max_quality"])
+        | ((d["momentum_score"] < T["max_momentum"]) & (d["revisions_score"] < T["max_revisions"])))
+    d["flag_lt"], d["flag_st"], d["flag_trap"] = lt, st, trap & ~lt & ~st
     d["signal"] = np.select([lt & st, lt, st, trap],
                             ["Both", "Long-term value", "Short-term setup", "Value-trap risk"], "")
     return d

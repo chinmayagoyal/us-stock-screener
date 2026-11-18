@@ -66,6 +66,7 @@ def parse(res):
                 o["rev_breadth_30d"] = (up - dn) / n
 
     hist = (res.get("earningsHistory", {}) or {}).get("history", [])
+    hist = sorted(hist, key=lambda h: _raw(h.get("quarter")) or 0)  # oldest -> newest
     surprises = []
     for h in hist:
         a, e = _raw(h.get("epsActual")), _raw(h.get("epsEstimate"))

@@ -37,9 +37,10 @@ def build(history_dir, hist):
             continue
         snap = pd.read_csv(f)
         for hz, n in HORIZONS.items():
-            if start_idx + n >= len(cal):
+            # enter at the NEXT session's close: the list is published after the snapshot day's close
+            if start_idx + 1 + n >= len(cal):
                 continue
-            d0, d1 = cal[start_idx], cal[start_idx + n]
+            d0, d1 = cal[start_idx + 1], cal[start_idx + 1 + n]
             rets = {}
             for t in snap["ticker"]:
                 s = closes.get(t)
