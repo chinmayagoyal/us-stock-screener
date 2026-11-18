@@ -1,0 +1,47 @@
+name: Daily stock screen
+
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"   # 22:30 UTC Mon-Fri, after the US close (04:00 IST next morning)
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Sample size for a quick smoke test (0 = full run)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-screen
+  cancel-in-progress: false
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run screen
+        env:
+          SEC_USER_AGENT: "us-stock-screener github.com/${{ github.repository }} ${{ github.repository_owner }}@users.noreply.github.com"
+        run: python -m screener.run --limit "${{ github.event.inputs.limit || '0' }}"
+
+      - name: Commit results
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Daily screen $(date -u +%F)" || { echo "No changes"; exit 0; }
+          git pull --rebase
+          git push

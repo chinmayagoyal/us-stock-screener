@@ -1,0 +1,33 @@
+# US stock screener: daily undervaluation tracker
+
+Every US trading day after the close, a GitHub Action:
+
+1. Loads every US-listed security (NYSE, Nasdaq, NYSE American: about 7,300).
+2. Applies the **initial filter** (investable, profitable, solvent).
+3. Rebuilds trailing-12-month fundamentals for survivors from **SEC EDGAR XBRL**.
+4. Pulls prices, analyst estimates, revisions, surprises and short interest from **Yahoo Finance**.
+5. Scores every candidate for **long-term undervaluation** (1–3 years) and **short-term setups** (1–6 months).
+6. Commits the results to `data/latest/` and a daily snapshot to `data/history/`. The snapshots feed a live track record.
+
+## Outputs (`data/latest/`)
+
+| File | What it holds |
+|---|---|
+| `candidates.csv` | Every stock that passed the filter, with ~60 metrics, composite scores and flags |
+| `screener.xlsx` | The same as a workbook: Read me, Long-term value, Short-term setups, All candidates, Changes, Filter funnel, Track record |
+| `funnel.csv` | How many stocks each filter step removed |
+| `changes.csv` | Names added to or dropped from each list since the previous run |
+| `track_record.csv` | Forward returns of past flagged lists vs. all candidates and SPY (fills in over time) |
+| `meta.json` | Run time, price date, counts, data coverage |
+
+## Method
+
+See the **Read me** sheet in `screener.xlsx`. Every threshold and weight is in `screener/config.py`.
+
+## Running by hand
+
+Actions → *Daily stock screen* → *Run workflow*. Set `limit` to e.g. `60` for a quick smoke test. A smoke test writes `data/latest/` but never enters the track record.
+
+## Caveats
+
+Not investment advice. XBRL tagging varies between companies, so a few fundamentals will be wrong. Yahoo Finance data is unofficial and can be incomplete. Check any name against its filings before acting.
