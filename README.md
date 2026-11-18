@@ -9,6 +9,10 @@ Every US trading day after the close, a GitHub Action:
 5. Scores every candidate for **long-term undervaluation** (1–3 years) and **short-term setups** (1–6 months).
 6. Commits the results to `data/latest/` and a daily snapshot to `data/history/`. The snapshots feed a live track record.
 
+## Tracker page
+
+A Claude dashboard (https://claude.ai/artifact/HFxjifrsRpJuFUC4TzJ6zh) shows the lists, the filter funnel, a value-vs-quality map and the track record. A scheduled Claude task reloads it every Tuesday to Saturday at 06:55 IST from `data/dashboard/*.json`. The page source is in `dashboard/index.html` for reference.
+
 ## Outputs (`data/latest/`)
 
 | File | What it holds |
@@ -18,6 +22,7 @@ Every US trading day after the close, a GitHub Action:
 | `funnel.csv` | How many stocks each filter step removed |
 | `changes.csv` | Names added to or dropped from each list since the previous run |
 | `track_record.csv` | Forward returns of past flagged lists vs. all candidates and SPY (fills in over time) |
+| `excluded.csv` | Every stock that failed the filter and the step it failed at |
 | `meta.json` | Run time, price date, counts, data coverage |
 
 ## Method
