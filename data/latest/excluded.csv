@@ -5456,7 +5456,6 @@ core,NTB,Bank of N.T. Butterfield & Son Limited (The) Voting Ordinary Shares,"Pr
 core,PHI,PLDT Inc. Sponsored ADR,"Price >= $5, liquid, 1y+ history",
 core,PLGO,Pelagos Insurance Capital Limited Common Shares,"Price >= $5, liquid, 1y+ history",
 core,PS,Pershing Square Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
-core,PSO,Pearson Plc Common Stock,"Price >= $5, liquid, 1y+ history",
 core,SBS,Companhia de saneamento Basico Do Estado De Sao Paulo - Sabesp American Depositary Shares (Each repstg 250 Common Shares),"Price >= $5, liquid, 1y+ history",
 core,STLA,Stellantis N.V. Common Shares,"Price >= $5, liquid, 1y+ history",
 core,STVN,Stevanato Group S.p.A. Ordinary Shares,"Price >= $5, liquid, 1y+ history",
@@ -5995,7 +5994,6 @@ core,FNV,Franco-Nevada Corporation,Recent US-GAAP financials in USD,no USD US-GA
 core,FRO,Frontline Plc Ordinary Shares,Recent US-GAAP financials in USD,ok
 core,FSM,Fortuna Mining Corp. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 core,FTS,Fortis Inc. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
-core,GEF,Greif Inc. Class A Common Stock,Recent US-GAAP financials in USD,ok
 core,GFI,Gold Fields Limited American Depositary Shares,Recent US-GAAP financials in USD,ok
 core,GFL,GFL Environmental Inc. Subordinate voting shares no par value,Recent US-GAAP financials in USD,no USD US-GAAP financials
 core,GIB,CGI Inc. Common Stock,Recent US-GAAP financials in USD,no USD US-GAAP financials
@@ -6036,6 +6034,7 @@ core,PDI,PIMCO Dynamic Income Fund Common Stock,Recent US-GAAP financials in USD
 core,PHG,Koninklijke Philips N.V. NY Registry Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 core,PKX,POSCO HOLDINGS INC. American Depositary Shares (Each representing 1/4th of a share of Common Stock),Recent US-GAAP financials in USD,no USD US-GAAP financials
 core,PPL,PPL Corporation Common Stock,Recent US-GAAP financials in USD,ok
+core,PSO,Pearson Plc Common Stock,Recent US-GAAP financials in USD,no USD US-GAAP financials
 core,QGEN,Qiagen N.V. Common Shares,Recent US-GAAP financials in USD,ok
 core,RACE,Ferrari N.V. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 core,RCI,Rogers Communication Inc. Common Stock,Recent US-GAAP financials in USD,no USD US-GAAP financials
@@ -6506,6 +6505,7 @@ compounders,ARDX,Ardelyx Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,AROW,Arrow Financial Corporation Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,ARRY,Array Technologies Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,ARXS,Arxis Inc. Class A Common Stock,"Price >= $5, liquid, 1y+ history",
+compounders,ASTL,Algoma Steel Group Inc. Common Shares,"Price >= $5, liquid, 1y+ history",
 compounders,ATTO,Attovia Therapeutics Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,AUR,Aurora Innovation Inc. Class A Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,AVLN,Avalyn Pharma Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
@@ -6855,7 +6855,6 @@ compounders,OGG,Osisko Gold Group Inc. Common Shares,"Price >= $5, liquid, 1y+ h
 compounders,OI,O-I Glass Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,ORC,Orchid Island Capital Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,PDX,PIMCO Dynamic Income Strategy Fund Common Shares of Beneficial Interest,"Price >= $5, liquid, 1y+ history",
-compounders,PHI,PLDT Inc. Sponsored ADR,"Price >= $5, liquid, 1y+ history",
 compounders,PS,Pershing Square Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
 compounders,PSUS,Pershing Square USA Ltd. Common Shares,"Price >= $5, liquid, 1y+ history",
 compounders,PXED,Phoenix Education Partners Inc. Common Stock,"Price >= $5, liquid, 1y+ history",
@@ -7466,7 +7465,6 @@ compounders,ALM,Almonty Industries Inc. Common Shares,Recent US-GAAP financials 
 compounders,ARGX,argenx SE American Depositary Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,ASML,ASML Holding N.V. New York Registry Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,ASND,Ascendis Pharma A/S Ordinary Share,Recent US-GAAP financials in USD,no USD US-GAAP financials
-compounders,ASTL,Algoma Steel Group Inc. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,ATAT,Atour Lifestyle Holdings Limited American Depositary Shares,Recent US-GAAP financials in USD,ok
 compounders,AUGO,Aura Minerals Inc. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,AYA,Aya Gold & Silver Inc. Common Shares,Recent US-GAAP financials in USD,no XBRL facts
@@ -7653,7 +7651,6 @@ compounders,FSCO,FS Credit Opportunities Corp. Common Stock,Recent US-GAAP finan
 compounders,FSM,Fortuna Mining Corp. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,FTS,Fortis Inc. Common Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,GAB,Gabelli Equity Trust Inc. (The) Common Stock,Recent US-GAAP financials in USD,no XBRL facts
-compounders,GEF,Greif Inc. Class A Common Stock,Recent US-GAAP financials in USD,ok
 compounders,GENI,Genius Sports Limited Ordinary Shares,Recent US-GAAP financials in USD,ok
 compounders,GFI,Gold Fields Limited American Depositary Shares,Recent US-GAAP financials in USD,ok
 compounders,GFL,GFL Environmental Inc. Subordinate voting shares no par value,Recent US-GAAP financials in USD,no USD US-GAAP financials
@@ -7717,6 +7714,7 @@ compounders,PDI,PIMCO Dynamic Income Fund Common Stock,Recent US-GAAP financials
 compounders,PDO,PIMCO Dynamic Income Opportunities Fund Common Shares of Beneficial Interest,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,PDS,Precision Drilling Corporation Common Stock,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,PHG,Koninklijke Philips N.V. NY Registry Shares,Recent US-GAAP financials in USD,no USD US-GAAP financials
+compounders,PHI,PLDT Inc. Sponsored ADR,Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,PKX,POSCO HOLDINGS INC. American Depositary Shares (Each representing 1/4th of a share of Common Stock),Recent US-GAAP financials in USD,no USD US-GAAP financials
 compounders,PPL,PPL Corporation Common Stock,Recent US-GAAP financials in USD,ok
 compounders,PSO,Pearson Plc Common Stock,Recent US-GAAP financials in USD,no USD US-GAAP financials
@@ -8664,6 +8662,7 @@ compounders,GATX,GATX Corporation Common Stock,Sustained fast growth,
 compounders,GBX,Greenbrier Companies Inc. (The) Common Stock,Sustained fast growth,
 compounders,GD,General Dynamics Corporation Common Stock,Sustained fast growth,
 compounders,GDDY,GoDaddy Inc. Class A Common Stock,Sustained fast growth,
+compounders,GEF,Greif Inc. Class A Common Stock,Sustained fast growth,
 compounders,GEO,Geo Group Inc (The) REIT,Sustained fast growth,
 compounders,GEV,GE Vernova Inc. Common Stock,Sustained fast growth,
 compounders,GFF,Griffon Corporation Common Stock,Sustained fast growth,
