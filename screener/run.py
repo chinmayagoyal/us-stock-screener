@@ -140,6 +140,7 @@ def main():
     with open(f"{OUT}/meta.json", "w") as f:
         json.dump(meta, f, indent=2, default=str)
     report.write_excel(f"{OUT}/screener.xlsx", out, fun, summ, changes, meta)
+    report.write_dashboard_json("data/dashboard", out, fun, summ, changes, meta)
     print(json.dumps(meta, indent=2, default=str))
 
 

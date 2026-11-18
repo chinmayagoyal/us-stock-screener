@@ -141,3 +141,52 @@ def write_excel(path, cands, funnel, track, changes, meta):
         _sheet(w, "Filter funnel", funnel)
         _sheet(w, "Track record", track if len(track) else pd.DataFrame({"note": [
             "Builds automatically: 1-month results appear ~21 trading days after the first run."]}))
+
+
+DASH_COLUMNS = [
+    "ticker", "company", "sector", "industry", "signal", "lt_score", "st_score", "value_score", "quality_score",
+    "momentum_score", "revisions_score", "sentiment_score", "price", "market_cap", "pe", "forward_pe",
+    "ev_ebitda", "p_fcf", "ebit_ev", "fcf_yield", "shareholder_yield", "implied_fcf_growth", "roic",
+    "gross_margin", "oper_margin", "fscore", "net_debt_ebitda", "rev_growth", "ret_1m", "ret_6_1", "ret_12_1",
+    "px_vs_200d", "pct_off_52w_high", "eps_rev_cy_90d", "eps_rev_ny_90d", "eps_surprise_avg", "target_upside",
+    "short_pct_float", "insider_net_pct", "next_earnings", "dividend_yield", "period_end", "flag_lt", "flag_st",
+    "flag_trap",
+]
+
+
+def _records(df, cols=None):
+    import json
+    import math
+    df = df if cols is None else df[[c for c in cols if c in df.columns]]
+    recs = json.loads(df.to_json(orient="records", double_precision=5))
+    for r in recs:
+        for k, v in r.items():
+            if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+                r[k] = None
+    return recs
+
+
+def write_dashboard_json(out_dir, cands, funnel, track, changes, meta):
+    """Typed JSON files for the tracker page (one file per dataset)."""
+    import json
+    os.makedirs(out_dir, exist_ok=True)
+    c = cands.copy()
+    for col in ["flag_lt", "flag_st", "flag_trap"]:
+        c[col] = c[col].astype(bool)
+    c["signal"] = c["signal"].fillna("")
+    files = {
+        "candidates.json": _records(c, DASH_COLUMNS),
+        "funnel.json": _records(funnel),
+        "track_record.json": _records(track) if len(track) else [],
+        "changes.json": _records(changes) if len(changes) else [],
+        "summary.json": [{
+            "run_utc": meta["run_utc"], "price_date": meta["price_date"], "universe": meta["universe"],
+            "candidates": meta["candidates"], "long_term_flags": meta["long_term_flags"],
+            "short_term_flags": meta["short_term_flags"], "both_flags": meta["both_flags"],
+            "value_trap_flags": meta["value_trap_flags"],
+            "yahoo_estimate_coverage": meta["yahoo_estimate_coverage"],
+        }],
+    }
+    for name, recs in files.items():
+        with open(os.path.join(out_dir, name), "w") as f:
+            json.dump(recs, f, separators=(",", ":"))
