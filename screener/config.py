@@ -33,6 +33,7 @@ QUALITY_METRICS = {
     "accruals": -1,        # (net income - CFO) / assets: lower = cash-backed earnings
     "net_debt_ebitda": -1,
     "margin_volatility": -1,  # std. dev. of annual operating margin (lower = steadier business)
+    "roic_trend": 1,       # change in ROIC over the last 2 fiscal years (improving moat/efficiency)
     "rev_growth": 1,       # TTM revenue YoY
 }
 MOMENTUM_METRICS = {
@@ -50,6 +51,7 @@ REVISION_METRICS = {
 SENTIMENT_METRICS = {
     "short_pct_float": -1, # heavily shorted names tend to underperform
     "insider_net_pct": 1,  # net insider buying, last 6 months
+    "insider_own": 1,      # insider ownership (alignment)
 }
 
 LT_WEIGHTS = {"value": 0.60, "quality": 0.40}
@@ -67,3 +69,21 @@ MIN_PRICE_COVERAGE = 0.8
 # ---------------------------------------------------------------- data sources
 SEC_RATE_PER_SEC = 8                # SEC fair-access limit is 10/s
 YAHOO_PAUSE_SEC = 0.35              # politeness pause between quote-summary calls
+
+# ---------------------------------------------------------------- compounders / high-potential screen
+COMP_MIN_MARKET_CAP = 500_000_000   # wider net: multi-baggers usually start small or mid-sized
+COMP_MIN_DOLLAR_VOLUME = 3_000_000
+COMP_GATES = dict(min_rev_cagr_3y=0.15, min_rev_growth=0.10, min_roic=0.12, max_net_debt_ebitda=3.0)
+COMP_METRICS = {
+    "growth": {"rev_cagr_3y": 1, "rev_growth": 1, "gm_trend": 1},
+    "returns": {"roic": 1, "roic_trend": 1, "reinvestment_rate": 1},
+    "valuation": {"ev_ebit_per_growth": -1, "fcf_yield": 1},
+    "alignment": {"insider_own": 1, "market_cap": -1},      # owner-operators; smaller-cap tilt
+}
+COMP_WEIGHTS = {"growth": 0.35, "returns": 0.30, "valuation": 0.20, "alignment": 0.15}
+COMP_FLAG_TOP = 25                  # flag the top N by compounder score (max MAX_PER_INDUSTRY per industry)
+
+# ---------------------------------------------------------------- qualitative reviews (data/qualitative/reviews.json)
+QUAL_WEIGHTS = {"moat": 0.25, "disruption": 0.20, "demand": 0.15, "management": 0.15, "tail_risk": 0.15,
+                "industry": 0.10}   # catalyst is shown separately; it matters for timing, not conviction
+REVIEW_MAX_AGE_DAYS = 120

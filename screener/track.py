@@ -10,7 +10,18 @@ import numpy as np
 import pandas as pd
 
 HORIZONS = {"1M": 21, "3M": 63, "6M": 126, "12M": 252}   # trading days
-GROUPS = {"Long-term value": "flag_lt", "Short-term setup": "flag_st", "Value-trap risk": "flag_trap"}
+GROUPS = {"Long-term value": "flag_lt", "Short-term setup": "flag_st", "Value-trap risk": "flag_trap",
+          "Compounder": "flag_comp", "High-conviction long-term": "hc_lt", "Both lists": "both"}
+
+
+def _flag(df, col):
+    if col == "hc_lt":
+        return _flag(df, "flag_lt") & (df.get("conviction_label", pd.Series("", index=df.index)).astype(str) == "High")
+    if col == "both":
+        return _flag(df, "flag_lt") & _flag(df, "flag_st")
+    if col not in df:
+        return pd.Series(False, index=df.index)
+    return df[col].astype(str).str.lower() == "true"
 
 
 def _close_on_or_after(series, day):
@@ -50,10 +61,11 @@ def build(history_dir, hist):
             if not rets:
                 continue
             r = snap.set_index("ticker").assign(ret=pd.Series(rets)).dropna(subset=["ret"])
-            bench = r["ret"].mean()
+            core = r[_flag(r, "in_core")] if "in_core" in r else r
+            bench = (core if len(core) else r)["ret"].mean()
             spy_ret = spy[d1] / spy[d0] - 1
             for gname, col in GROUPS.items():
-                sub = r[r[col].astype(str).str.lower() == "true"]
+                sub = r[_flag(r, col)]
                 if sub.empty:
                     continue
                 detail.append(dict(snapshot=snap_day.date().isoformat(), horizon=hz, group=gname,

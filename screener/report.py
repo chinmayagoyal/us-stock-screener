@@ -23,21 +23,35 @@ CANDIDATE_COLUMNS = [
     "next_earnings", "dividend_yield",
     "revenue", "ebit", "ebit_norm", "net_income", "fcf", "fcf_after_sbc", "sbc", "net_debt", "dollar_vol_60d",
     "sic", "sic_description", "period_end", "price_date", "flag_lt", "flag_st", "flag_trap", "cik",
+    "rev_cagr_3y", "gm_trend", "roic_trend", "rd_intensity", "reinvestment_rate", "insider_own",
+    "flag_comp", "comp_score", "conviction", "conviction_label", "review_date",
 ]
 
-PCT = {"ebit_ev", "ebit_ev_norm", "margin_volatility", "fcf_yield", "earnings_yield", "fwd_earnings_yield", "shareholder_yield", "implied_fcf_growth",
+COMPOUNDER_COLUMNS = [
+    "ticker", "company", "exchange", "sector", "industry", "country", "comp_score", "comp_growth_score",
+    "comp_returns_score", "comp_valuation_score", "comp_alignment_score", "flag_comp", "in_core",
+    "price", "market_cap", "rev_cagr_3y", "rev_growth", "gross_margin", "gm_trend", "oper_margin", "roic",
+    "roic_trend", "reinvestment_rate", "rd_intensity", "ev_ebit", "ev_ebit_per_growth", "pe", "forward_pe",
+    "fcf_yield", "implied_fcf_growth", "net_debt_ebitda", "insider_own", "ret_12_1", "ret_6_1",
+    "eps_rev_cy_90d", "short_pct_float", "next_earnings", "conviction", "conviction_label", "review_date",
+    "revenue", "ebit", "period_end", "price_date", "cik",
+]
+
+PCT = {"ebit_ev", "ebit_ev_norm", "margin_volatility", "rev_cagr_3y", "gm_trend", "roic_trend", "rd_intensity",
+       "reinvestment_rate", "insider_own", "fcf_yield", "earnings_yield", "fwd_earnings_yield", "shareholder_yield", "implied_fcf_growth",
        "roic", "gp_assets", "gross_margin", "oper_margin", "accruals", "rev_growth", "ret_1m", "ret_3m", "ret_6_1",
        "ret_12_1", "px_vs_200d", "pct_off_52w_high", "vol_3m", "eps_rev_cy_90d", "eps_rev_ny_90d",
        "rev_breadth_30d", "eps_surprise_last", "eps_surprise_avg", "target_upside", "short_pct_float",
        "insider_net_pct", "dividend_yield", "group_return", "candidates_return", "spy_return",
        "excess_vs_candidates", "pct_names_beating_candidates", "avg_group_return", "avg_candidates_return",
        "avg_spy_return", "avg_excess", "snapshot_hit_rate", "name_hit_rate"}
-MULT = {"pe", "forward_pe", "ev_ebitda", "ev_ebit", "ev_ebit_norm", "p_fcf", "sales_ev", "net_debt_ebitda", "interest_cover",
+MULT = {"pe", "forward_pe", "ev_ebitda", "ev_ebit", "ev_ebit_norm", "ev_ebit_per_growth", "conviction", "p_fcf", "sales_ev", "net_debt_ebitda", "interest_cover",
         "recommendation_mean"}
 BIG = {"market_cap", "ev", "revenue", "ebit", "ebit_norm", "net_income", "fcf", "fcf_after_sbc", "sbc", "net_debt",
        "dollar_vol_60d"}
 SCORES = {"lt_score", "st_score", "value_score", "quality_score", "momentum_score", "revisions_score",
-          "sentiment_score"}
+          "sentiment_score", "comp_score", "comp_growth_score", "comp_returns_score", "comp_valuation_score",
+          "comp_alignment_score"}
 
 METHOD = [
     ("What this is", "Daily screen of every US-listed stock. An initial filter keeps investable, profitable, "
@@ -77,6 +91,20 @@ METHOD = [
                              "and the business or the estimates are deteriorating."
      % (C.TRAP_FLAG["min_value"], C.TRAP_FLAG["max_quality"], C.TRAP_FLAG["max_momentum"],
         C.TRAP_FLAG["max_revisions"])),
+    ("Compounders screen", "Separate, wider universe (market cap >= $%.1fB, $%.0fM daily volume). Gates: 3-year revenue "
+                           "CAGR >= %.0f%%, TTM growth >= %.0f%%, ROIC >= %.0f%%, positive operating income and cash flow, "
+                           "net debt/EBITDA <= %.0fx. Score: %.0f%% growth (CAGR, TTM growth, gross-margin trend), %.0f%% "
+                           "returns (ROIC, ROIC trend, reinvestment rate), %.0f%% valuation (EV/EBIT per point of growth, "
+                           "FCF yield), %.0f%% alignment (insider ownership, smaller size). Top %d flagged, max %d per industry."
+     % (C.COMP_MIN_MARKET_CAP / 1e9, C.COMP_MIN_DOLLAR_VOLUME / 1e6, C.COMP_GATES["min_rev_cagr_3y"] * 100,
+        C.COMP_GATES["min_rev_growth"] * 100, C.COMP_GATES["min_roic"] * 100, C.COMP_GATES["max_net_debt_ebitda"],
+        C.COMP_WEIGHTS["growth"] * 100, C.COMP_WEIGHTS["returns"] * 100, C.COMP_WEIGHTS["valuation"] * 100,
+        C.COMP_WEIGHTS["alignment"] * 100, C.COMP_FLAG_TOP, C.MAX_PER_INDUSTRY)),
+    ("Qualitative review", "Claude researches each long-term and compounder name (filings, earnings calls, industry "
+                           "sources) and scores 1-5: moat, disruption risk, industry structure, secular demand, "
+                           "management/capital allocation, tail risks, catalyst. Conviction = weighted average "
+                           "(moat 25%%, disruption 20%%, demand 15%%, management 15%%, tail risk 15%%, industry 10%%); "
+                           "High >= 3.75, Medium >= 3.0. Reviews are refreshed after %d days." % C.REVIEW_MAX_AGE_DAYS),
     ("Implied FCF growth", "Perpetual owner-FCF growth the current price implies at a %.0f%% cost of equity "
                            "(reverse DCF). Low or negative = market expects little." % (C.COST_OF_EQUITY * 100)),
     ("Track record", "Forward returns of each day's flagged lists, entered at the next session's close, vs. the "
@@ -87,17 +115,20 @@ METHOD = [
 ]
 
 
-def changes_vs_previous(hist_dir, today, cands):
+def changes_vs_previous(hist_dir, today, cands, pool=None):
     files = sorted(f for f in glob.glob(os.path.join(hist_dir, "*.csv")) if os.path.basename(f)[:10] < today)
     cols = ["ticker", "company", "list", "change", "lt_score", "st_score", "price"]
     if not files:
         return pd.DataFrame(columns=cols)
     prev = pd.read_csv(files[-1])
     rows = []
-    cur = cands.set_index("ticker")
-    for lst, col in [("Long-term value", "flag_lt"), ("Short-term setup", "flag_st")]:
+    allc = cands if pool is None else pd.concat([cands, pool[~pool["ticker"].isin(cands["ticker"])]])
+    cur = allc.set_index("ticker")
+    for lst, col in [("Long-term value", "flag_lt"), ("Short-term setup", "flag_st"), ("Compounder", "flag_comp")]:
+        if col not in prev:
+            continue
         before = set(prev.loc[prev[col].astype(str).str.lower() == "true", "ticker"])
-        now = set(cands.loc[cands[col], "ticker"])
+        now = set(allc.loc[allc[col].fillna(False).astype(bool), "ticker"])
         for t in sorted(now - before):
             r = cur.loc[t]
             rows.append([t, r["company"], lst, "Added", r["lt_score"], r["st_score"], r["price"]])
@@ -131,7 +162,7 @@ def _sheet(writer, name, df):
     ws.row_dimensions[1].height = 30
 
 
-def write_excel(path, cands, funnel, track, changes, meta):
+def write_excel(path, cands, funnel, track, changes, meta, comp=None, comp_funnel=None, reviews=None):
     with pd.ExcelWriter(path, engine="openpyxl") as w:
         info = [("Run (UTC)", meta["run_utc"]), ("Prices as of", meta["price_date"]),
                 ("Universe", meta["universe"]), ("Candidates", meta["candidates"]),
@@ -144,9 +175,17 @@ def write_excel(path, cands, funnel, track, changes, meta):
             row[0].font = Font(bold=True)
         _sheet(w, "Long-term value", cands[cands["flag_lt"]].sort_values("lt_score", ascending=False))
         _sheet(w, "Short-term setups", cands[cands["flag_st"]].sort_values("st_score", ascending=False))
+        if comp is not None:
+            _sheet(w, "Compounders", comp[comp["flag_comp"]].sort_values("comp_score", ascending=False))
+        if reviews is not None and len(reviews):
+            _sheet(w, "Qualitative reviews", reviews)
         _sheet(w, "All candidates", cands)
+        if comp is not None:
+            _sheet(w, "Compounder pool", comp)
         _sheet(w, "Changes", changes)
         _sheet(w, "Filter funnel", funnel)
+        if comp_funnel is not None:
+            _sheet(w, "Compounder funnel", comp_funnel)
         _sheet(w, "Track record", track if len(track) else pd.DataFrame({"note": [
             "Builds automatically: 1-month results appear ~21 trading days after the first run."]}))
 
@@ -159,7 +198,14 @@ DASH_COLUMNS = [
     "ret_6_1", "ret_12_1",
     "px_vs_200d", "pct_off_52w_high", "eps_rev_cy_90d", "eps_rev_ny_90d", "eps_surprise_last", "eps_surprise_avg", "target_upside",
     "short_pct_float", "insider_net_pct", "next_earnings", "dividend_yield", "period_end", "flag_lt", "flag_st",
-    "flag_trap",
+    "flag_trap", "roic_trend", "insider_own", "rd_intensity", "flag_comp", "comp_score", "conviction",
+    "conviction_label", "review_date",
+]
+DASH_COMP_COLUMNS = [
+    "ticker", "company", "sector", "industry", "comp_score", "comp_growth_score", "comp_returns_score",
+    "comp_valuation_score", "comp_alignment_score", "flag_comp", "in_core", "price", "market_cap", "rev_cagr_3y",
+    "rev_growth", "gross_margin", "gm_trend", "roic", "roic_trend", "reinvestment_rate", "rd_intensity", "ev_ebit",
+    "ev_ebit_per_growth", "fcf_yield", "insider_own", "ret_12_1", "conviction", "conviction_label", "review_date",
 ]
 
 
@@ -175,7 +221,8 @@ def _records(df, cols=None):
     return recs
 
 
-def write_dashboard_json(out_dir, cands, funnel, track, changes, meta):
+def write_dashboard_json(out_dir, cands, funnel, track, changes, meta, comp=None, comp_funnel=None, reviews=None,
+                         cands_full=None, pool_full=None):
     """Typed JSON files for the tracker page (one file per dataset)."""
     import json
     os.makedirs(out_dir, exist_ok=True)
@@ -188,14 +235,46 @@ def write_dashboard_json(out_dir, cands, funnel, track, changes, meta):
         "funnel.json": _records(funnel),
         "track_record.json": _records(track) if len(track) else [],
         "changes.json": _records(changes) if len(changes) else [],
+        "compounders.json": _records(comp, DASH_COMP_COLUMNS) if comp is not None else [],
+        "compounders_funnel.json": _records(comp_funnel) if comp_funnel is not None else [],
+        "reviews.json": _review_rows(reviews, cands_full, pool_full),
         "summary.json": [{
             "run_utc": meta["run_utc"], "price_date": meta["price_date"], "universe": meta["universe"],
             "candidates": meta["candidates"], "long_term_flags": meta["long_term_flags"],
             "short_term_flags": meta["short_term_flags"], "both_flags": meta["both_flags"],
             "value_trap_flags": meta["value_trap_flags"],
             "yahoo_estimate_coverage": meta["yahoo_estimate_coverage"],
+            "compounder_pool": meta.get("compounder_pool"), "compounder_flags": meta.get("compounder_flags"),
+            "reviews_on_file": meta.get("reviews_on_file"), "review_queue": meta.get("review_queue"),
         }],
     }
     for name, recs in files.items():
         with open(os.path.join(out_dir, name), "w") as f:
             json.dump(recs, f, separators=(",", ":"))
+
+
+def _review_rows(reviews, cands, pool):
+    """Latest review per ticker, with the stock's current list membership."""
+    if reviews is None or not len(reviews):
+        return []
+    r = reviews.copy()
+    lists = {}
+    if cands is not None:
+        for _, c in cands.iterrows():
+            tags = []
+            if c.get("flag_lt"):
+                tags.append("Long-term value")
+            if c.get("flag_st"):
+                tags.append("Short-term setup")
+            lists[c["ticker"]] = tags
+    if pool is not None:
+        for _, c in pool[pool["flag_comp"]].iterrows():
+            lists.setdefault(c["ticker"], []).append("Compounder")
+    names = {}
+    for df in (cands, pool):
+        if df is not None:
+            names.update(dict(zip(df["ticker"], df["company"])))
+    r["company"] = r["ticker"].map(names)
+    r["on_lists"] = r["ticker"].map(lambda t: ", ".join(lists.get(t, [])) or "Not currently listed")
+    r = r.sort_values("conviction", ascending=False)
+    return _records(r)

@@ -47,6 +47,7 @@ def parse(res):
     o["forward_eps"] = _raw(ks.get("forwardEps"))
     o["forward_pe"] = _raw(sd.get("forwardPE"))
     o["short_pct_float"] = _raw(ks.get("shortPercentOfFloat"))
+    o["insider_own"] = _raw(ks.get("heldPercentInsiders"))
     o["dividend_yield"] = _raw(sd.get("dividendYield"))
 
     for item in (res.get("earningsTrend", {}) or {}).get("trend", []):

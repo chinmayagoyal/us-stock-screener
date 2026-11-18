@@ -49,6 +49,9 @@ T = {
     "dividends": ["PaymentsOfDividends", "PaymentsOfDividendsCommonStock"],
     "buybacks": ["PaymentsForRepurchaseOfCommonStock"],
     "sbc": ["ShareBasedCompensation", "AllocatedShareBasedCompensationExpense"],
+    "rd": ["ResearchAndDevelopmentExpense", "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+           "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost"],
+    "acquisitions": ["PaymentsToAcquireBusinessesNetOfCashAcquired", "PaymentsToAcquireBusinessesGross"],
     "wdil": ["WeightedAverageNumberOfDilutedSharesOutstanding"],
     # instants
     "assets": ["Assets"],
@@ -218,7 +221,7 @@ def fundamentals(j):
             break
 
     S = {k: F.dur(k) for k in ["revenue", "cogs", "gross_profit", "ebit", "pretax", "interest", "da",
-                               "capex", "dividends", "buybacks", "sbc"]}
+                               "capex", "dividends", "buybacks", "sbc", "rd", "acquisitions"]}
     I = {k: F.inst(k) for k in ["assets", "cur_assets", "cur_liab", "cash", "sti", "ltd_noncurrent",
                                 "ltd_total", "debt_current", "ltd_current", "st_borrow", "equity", "nci",
                                 "debt_combined"]}
@@ -275,6 +278,8 @@ def fundamentals(j):
     out["dividends"] = flow("dividends", E) or 0.0
     out["buybacks"] = flow("buybacks", E) or 0.0
     out["sbc"] = flow("sbc", E)
+    out["rd"] = flow("rd", E)
+    out["acquisitions"] = flow("acquisitions", E)
     out["assets"] = inst_at(I["assets"], E)
     out["cur_assets"] = inst_at(I["cur_assets"], E)
     out["cur_liab"] = inst_at(I["cur_liab"], E)
@@ -309,6 +314,39 @@ def fundamentals(j):
         out["margin_volatility"] = (sum((x - m) ** 2 for x in margins) / (len(margins) - 1)) ** 0.5
     else:
         out["margin_volatility"] = None
+
+    # 3-year revenue CAGR, gross-margin trend and ROIC trend from fiscal-year data
+    rv_ends = sorted(rv_fy, reverse=True)
+    out["rev_cagr_3y"] = None
+    for k, yrs in ((3, 3), (2, 2)):
+        if len(rv_ends) > k and rv_fy[rv_ends[k]] and rv_fy[rv_ends[k]] > 0 and rv_fy[rv_ends[0]] > 0:
+            span = (rv_ends[0] - rv_ends[k]).days / 365.25
+            if 0.8 * yrs <= span <= 1.2 * yrs:
+                out["rev_cagr_3y"] = (rv_fy[rv_ends[0]] / rv_fy[rv_ends[k]]) ** (1 / span) - 1
+                break
+    gp_fy = annual_map(S["gross_profit"])
+    if not gp_fy:
+        cg = annual_map(S["cogs"])
+        gp_fy = {e: rv_fy[e] - cg[e] for e in rv_fy if e in cg}
+    gm = {e: gp_fy[e] / rv_fy[e] for e in gp_fy if e in rv_fy and rv_fy[e]}
+    gm_ends = sorted(gm, reverse=True)
+    out["gm_trend"] = gm[gm_ends[0]] - gm[gm_ends[2]] if len(gm_ends) >= 3 else None
+
+    def roic_at(e):
+        if e not in eb_fy:
+            return None
+        eq = inst_at(I["equity"], e, tol=10)
+        if eq is None:
+            return None
+        cash_e = (inst_at(I["cash"], e, tol=10) or 0.0) + (inst_at(I["sti"], e, tol=10) or 0.0)
+        ic = debt(e)[0] + eq - cash_e
+        if ic <= 0:
+            ic = debt(e)[0] + eq
+        return eb_fy[e] * (1 - config.TAX_RATE) / ic if ic > 0 else None
+    r0 = roic_at(ends[0]) if ends else None
+    r2 = roic_at(ends[2]) if len(ends) >= 3 else None
+    out["roic_fy"] = r0
+    out["roic_trend"] = r0 - r2 if r0 is not None and r2 is not None else None
 
     # prior year (for growth and F-score)
     out["revenue_prior"] = flow("revenue", E1)

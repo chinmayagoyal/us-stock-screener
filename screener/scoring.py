@@ -55,6 +55,12 @@ def add_fundamental_metrics(df):
     r = C.COST_OF_EQUITY
     d["implied_fcf_growth"] = (r * mc - fcf_pos) / (mc + fcf_pos)
     d["fscore"], d["fscore_tests"] = _fscore(d)
+    d["rd_intensity"] = _div(num("rd"), d["revenue"])
+    nopat = d["ebit"] * (1 - C.TAX_RATE)
+    reinvest = num("capex").abs().fillna(0) - num("da").fillna(0) + num("acquisitions").fillna(0) + num("rd").fillna(0)
+    d["reinvestment_rate"] = _div(reinvest, (nopat + num("rd").fillna(0)).where(nopat > 0))
+    cagr = pd.to_numeric(d.get("rev_cagr_3y"), errors="coerce")
+    d["ev_ebit_per_growth"] = _div(d["ev_ebit"], (cagr * 100).where(cagr > 0))
     return d
 
 
@@ -150,3 +156,26 @@ def score(d):
     d["signal"] = np.select([lt & st, lt, st, trap],
                             ["Both", "Long-term value", "Short-term setup", "Value-trap risk"], "")
     return d
+
+
+def score_compounders(p):
+    """Percentile scores within the compounder pool (market-wide: the pool is small)."""
+    p = p.copy()
+    if p.empty:
+        for c in ["comp_score", "comp_growth_score", "comp_returns_score", "comp_valuation_score",
+                  "comp_alignment_score"]:
+            p[c] = pd.Series(dtype=float)
+        p["flag_comp"] = pd.Series(dtype=bool)
+        return p
+    parts = {}
+    for name, metrics in C.COMP_METRICS.items():
+        ranks = pd.DataFrame({m: (pd.to_numeric(p[m], errors="coerce") * sgn).rank(pct=True) * 100
+                              for m, sgn in metrics.items() if m in p})
+        parts[name] = ranks.mean(axis=1).where(ranks.notna().sum(axis=1) >= 1)
+        p[f"comp_{name}_score"] = parts[name].rank(pct=True) * 100
+    p["comp_score"] = _blend({k: p[f"comp_{k}_score"] for k in parts}, C.COMP_WEIGHTS)
+    top = p["comp_score"].rank(ascending=False) <= C.COMP_FLAG_TOP * 2
+    capped = _cap_per_industry(p, top, "comp_score")
+    keep = p.loc[capped, "comp_score"].sort_values(ascending=False).head(C.COMP_FLAG_TOP).index
+    p["flag_comp"] = p.index.isin(keep)
+    return p
