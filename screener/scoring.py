@@ -34,6 +34,8 @@ def add_fundamental_metrics(df):
     d["ev_ebit"] = _div(ev, d["ebit"].where(d["ebit"] > 0))
     d["p_fcf"] = _div(mc, d["fcf"].where(d["fcf"] > 0))
     ic = num("debt").fillna(0) + num("equity") - num("cash").fillna(0)
+    # cash-rich firms can show negative net invested capital; fall back to gross (debt + equity)
+    ic = ic.where(ic > 0, num("debt").fillna(0) + num("equity"))
     d["roic"] = _div(d["ebit"] * (1 - C.TAX_RATE), ic.where(ic > 0))
     d["gp_assets"] = _div(d["gross_profit"], d["assets"])
     d["accruals"] = _div(d["net_income"] - d["cfo"], d["assets"])

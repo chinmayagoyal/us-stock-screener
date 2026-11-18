@@ -32,6 +32,19 @@ def download_history(tickers, period="15mo", chunk=150):
                 pass
         print(f"  prices: {min(i+chunk, len(tickers))}/{len(tickers)} requested, {len(out)} with data")
         time.sleep(1.5)
+    missing = [t for t in tickers if t not in out]
+    if missing:  # second pass, single-threaded (avoids yfinance cache-lock errors)
+        print(f"  retrying {len(missing)} tickers without threads")
+        for t in missing:
+            try:
+                sub = yf.download(t, period=period, interval="1d", auto_adjust=True, threads=False,
+                                  progress=False, timeout=30, multi_level_index=False)
+                sub = sub[["Close", "Volume"]].dropna(subset=["Close"])
+                if len(sub):
+                    out[t] = sub
+            except Exception:  # noqa: BLE001
+                pass
+            time.sleep(0.3)
     return out
 
 
