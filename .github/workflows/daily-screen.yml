@@ -34,7 +34,7 @@ jobs:
 
       - name: Run screen
         env:
-          SEC_USER_AGENT: "us-stock-screener github.com/${{ github.repository }} ${{ github.repository_owner }}@users.noreply.github.com"
+          SEC_USER_AGENT: "US Stock Screener personal research ${{ secrets.SEC_CONTACT_EMAIL }}"
         run: python -m screener.run --limit "${{ github.event.inputs.limit || '0' }}"
 
       - name: Commit results

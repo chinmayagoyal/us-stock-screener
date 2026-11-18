@@ -18,7 +18,11 @@ FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 
 
 def _ua():
-    return os.environ.get("SEC_USER_AGENT") or "us-stock-screener research-bot admin@example.com"
+    ua = os.environ.get("SEC_USER_AGENT", "").strip()
+    if "@" not in ua:
+        raise SystemExit("SEC requires a contact email in the User-Agent: add a repository secret "
+                         "SEC_CONTACT_EMAIL (Settings > Secrets and variables > Actions).")
+    return ua
 
 
 # ------------------------------------------------------------------ tags (first = preferred)
