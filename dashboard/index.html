@@ -60,7 +60,7 @@
   </header>
 
   <div class="ss-tiles" id="tiles">
-    <div class="ss-tile"><div class="ss-tile-label">Candidates</div><div class="ss-tile-num" data-draw="t-cands" data-source="summary" data-field="candidates" data-row="0">—</div><div class="ss-tile-note">passed all 7 filter steps</div></div>
+    <div class="ss-tile"><div class="ss-tile-label">Candidates</div><div class="ss-tile-num" data-draw="t-cands" data-source="summary" data-field="candidates" data-row="0">—</div><div class="ss-tile-note">passed all 8 filter steps</div></div>
     <div class="ss-tile"><div class="ss-tile-label">Long-term value</div><div class="ss-tile-num" data-draw="t-lt" data-source="summary" data-field="long_term_flags" data-row="0">—</div><div class="ss-tile-note">cheap + high quality, 1–3 yrs</div></div>
     <div class="ss-tile"><div class="ss-tile-label">Short-term setups</div><div class="ss-tile-num" data-draw="t-st" data-source="summary" data-field="short_term_flags" data-row="0">—</div><div class="ss-tile-note">momentum + revisions, 1–6 mo</div></div>
     <div class="ss-tile"><div class="ss-tile-label">On both lists</div><div class="ss-tile-num" data-draw="t-both" data-source="summary" data-field="both_flags" data-row="0">—</div><div class="ss-tile-note">highest-conviction names</div></div>
@@ -88,8 +88,8 @@
           <thead><tr>
             <th class="ss-l" data-field="ticker">Ticker</th><th class="ss-l" data-field="company">Company</th><th class="ss-l" data-field="sector">Sector</th>
             <th data-field="lt_score">LT score</th><th data-field="value_score">Value</th><th data-field="quality_score">Quality</th>
-            <th data-field="pe">P/E</th><th data-field="forward_pe">Fwd P/E</th><th data-field="ev_ebitda">EV/EBITDA</th>
-            <th data-field="fcf_yield">FCF yield</th><th data-field="shareholder_yield">Shareholder yield</th><th data-field="roic">ROIC</th>
+            <th data-field="pe">P/E</th><th data-field="forward_pe">Fwd P/E</th><th data-field="ev_ebit_norm">EV/EBIT (cycle-adj.)</th>
+            <th data-field="fcf_yield">FCF yield (after SBC)</th><th data-field="shareholder_yield">Net shareholder yield</th><th data-field="roic">ROIC</th>
             <th data-field="fscore">F-score</th><th data-field="implied_fcf_growth">Implied FCF growth</th><th data-field="rev_growth">Revenue growth</th>
             <th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="signal">Signal</th>
           </tr></thead>
@@ -106,7 +106,7 @@
             <th data-field="st_score">ST score</th><th data-field="momentum_score">Momentum</th><th data-field="revisions_score">Revisions</th><th data-field="value_score">Value</th>
             <th data-field="ret_12_1">12-1m return</th><th data-field="ret_6_1">6-1m return</th><th data-field="px_vs_200d">vs 200-day</th>
             <th data-field="eps_rev_cy_90d">EPS est. Δ 90d (this FY)</th><th data-field="eps_rev_ny_90d">EPS est. Δ 90d (next FY)</th>
-            <th data-field="eps_surprise_avg">Avg EPS surprise</th><th data-field="short_pct_float">Short % float</th>
+            <th data-field="eps_surprise_last">Last EPS surprise</th><th data-field="eps_surprise_avg">Avg EPS surprise</th><th data-field="short_pct_float">Short % float</th>
             <th class="ss-l" data-field="next_earnings">Next earnings</th><th class="ss-l" data-field="signal">Signal</th>
           </tr></thead>
           <tbody data-draw="tbl-st"></tbody>
@@ -121,7 +121,7 @@
             <th class="ss-l" data-field="ticker">Ticker</th><th class="ss-l" data-field="company">Company</th><th class="ss-l" data-field="sector">Sector</th>
             <th data-field="lt_score">LT score</th><th data-field="st_score">ST score</th><th data-field="value_score">Value</th><th data-field="quality_score">Quality</th>
             <th data-field="momentum_score">Momentum</th><th data-field="market_cap">Market cap</th><th data-field="pe">P/E</th><th data-field="ev_ebitda">EV/EBITDA</th>
-            <th data-field="fcf_yield">FCF yield</th><th data-field="roic">ROIC</th><th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="signal">Signal</th>
+            <th data-field="fcf_yield">FCF yield (after SBC)</th><th data-field="roic">ROIC</th><th data-field="ret_12_1">12-1m return</th><th class="ss-l" data-field="signal">Signal</th>
           </tr></thead>
           <tbody data-draw="tbl-all"></tbody>
         </table>
@@ -283,11 +283,11 @@ sumDraw('pdate', 'price_date', (v) => v ? d3.utcFormat('%b %-d, %Y')(new Date(v 
   const S = window.SS, F = S.fmt;
   const COLS = {
     lt: [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['lt_score', F.sc], ['value_score', F.sc],
-      ['quality_score', F.sc], ['pe', F.x], ['forward_pe', F.x], ['ev_ebitda', F.x], ['fcf_yield', F.pct], ['shareholder_yield', F.pct],
+      ['quality_score', F.sc], ['pe', F.x], ['forward_pe', F.x], ['ev_ebit_norm', F.x], ['fcf_yield', F.pct], ['shareholder_yield', F.pct],
       ['roic', F.pct], ['fscore', F.sc], ['implied_fcf_growth', F.pct], ['rev_growth', F.spct, 'sign'], ['ret_12_1', F.spct, 'sign'], ['signal', null, 'ss-l']],
     st: [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['st_score', F.sc], ['momentum_score', F.sc],
       ['revisions_score', F.sc], ['value_score', F.sc], ['ret_12_1', F.spct, 'sign'], ['ret_6_1', F.spct, 'sign'], ['px_vs_200d', F.spct, 'sign'],
-      ['eps_rev_cy_90d', F.spct, 'sign'], ['eps_rev_ny_90d', F.spct, 'sign'], ['eps_surprise_avg', F.spct, 'sign'], ['short_pct_float', F.pct],
+      ['eps_rev_cy_90d', F.spct, 'sign'], ['eps_rev_ny_90d', F.spct, 'sign'], ['eps_surprise_last', F.spct, 'sign'], ['eps_surprise_avg', F.spct, 'sign'], ['short_pct_float', F.pct],
       ['next_earnings', F.txt, 'ss-l'], ['signal', null, 'ss-l']],
     all: [['ticker', F.txt, 'ss-l ss-tk'], ['company', F.txt, 'ss-l ss-co'], ['sector', F.txt, 'ss-l'], ['lt_score', F.sc], ['st_score', F.sc],
       ['value_score', F.sc], ['quality_score', F.sc], ['momentum_score', F.sc], ['market_cap', F.cap], ['pe', F.x], ['ev_ebitda', F.x],
