@@ -1,801 +1,801 @@
 ticker,company,price,lt_score,st_score,value_score,flag_lt,flag_st,flag_trap
-MPC,Marathon Petroleum Corporation,380.02,100,99.75,95.875,True,True,False
-PARR,Par Pacific Holdings Inc.,65.49,99.875,92.625,96.5,True,True,False
-SM,SM Energy Company,29.53,99.75,97.625,97.25,True,True,False
-ADBE,Adobe Inc.,228.74,99.625,31.25,95.25,True,False,False
-SSRM,SSR Mining Inc.,24.02,99.5,51.25,91.25,True,False,False
-CHRD,Chord Energy Corporation,140.615,99.375,97.375,96.375,True,True,False
-DINO,HF Sinclair Corporation,92.86,99.25,100,98.75,True,True,False
-VLO,Valero Energy Corporation,347.28,99.125,99.875,94.125,True,True,False
-TDC,Teradata Corporation,35.78,99,82.875,89.875,True,False,False
-APA,APA Corporation,46.245,98.875,97.5,88.25,True,True,False
-EXPE,Expedia Group Inc.,249.89,98.75,95.625,86.5,True,True,False
-CF,CF Industries Holdings Inc.,116.51,98.625,79.5,92.75,True,False,False
-CSTM,Constellium SE,21.095,98.5,73,98.5,True,False,False
-KFY,Korn Ferry,74.83,98.375,78.875,93.875,True,False,False
-DECK,Deckers Outdoor Corporation,82.26,98.25,49.75,91.75,True,False,False
-SNDK,Sandisk Corporation,767.545,98.125,87.375,97.375,True,False,False
-NEM,Newmont Corporation,103.76,98,89.125,83.5,True,False,False
-AES,The AES Corporation,15.015,97.875,86.875,89.5,True,False,False
-SBLK,Star Bulk Carriers Corp.,26.92,97.75,98.625,95.75,True,True,False
-DK,Delek US Holdings Inc.,62.14,97.625,97.75,93.5,True,True,False
-AEO,American Eagle Outfitters Inc.,21.56,97.5,94.125,90.125,True,True,False
-DLTR,Dollar Tree Inc.,140.3,97.375,93.375,83,True,True,False
-SFM,Sprouts Farmers Market Inc.,48.805,97.25,4.25,98.125,True,False,False
-CARG,CarGurus Inc.,34.445,97.125,68.75,80.75,True,False,False
-IT,Gartner Inc.,181.94,97,80.75,96.625,True,False,False
-ENS,EnerSys,137.23,96.875,35.5,97.125,True,False,False
-TMUS,T-Mobile US Inc.,162.01,96.75,39.625,90.625,True,False,False
-STRL,Sterling Infrastructure Inc.,275.2,96.625,72.25,81.625,True,False,False
-TXT,Textron Inc.,82.41,96.5,54,93.375,True,False,False
-DBX,Dropbox Inc.,34.875,96.375,82,94.625,True,False,False
-PBF,PBF Energy Inc.,63.17,96.25,98.125,92.5,True,True,False
-VST,Vistra Corp.,127.23,96.125,18.125,80.625,True,False,False
-GAP,Gap Inc. (The),19.6,96,45.875,100,True,False,False
-PGNY,Progyny Inc.,36.49,95.875,72.5,80.875,True,False,False
-YETI,YETI Holdings Inc.,38.71,95.75,28.5,81.375,True,False,False
-ANF,Abercrombie & Fitch Company,144.26,95.625,98.25,91.375,True,True,False
-GMED,Globus Medical Inc.,71.57,95.5,21.375,85.75,True,False,False
-LULU,lululemon athletica inc.,109.335,95.375,11.25,95,True,False,False
-EOG,EOG Resources Inc.,152.625,95.25,91.625,77.125,True,True,False
-PEGA,Pegasystems Inc.,30.53,95.125,10.25,82.75,True,False,False
-FICO,Fair Isaac Corporation,677,95,3.375,79.5,True,False,False
-MU,Micron Technology Inc.,698.815,94.875,91.875,78.875,True,True,False
-SIG,Signet Jewelers Limited,107.105,94.75,96.625,96.125,True,True,False
-BKE,Buckle Inc. (The),42.505,94.625,24.75,92.25,True,False,False
-CVI,CVR Energy Inc.,35.36,94.5,94.375,82.5,True,True,False
-EXE,Expand Energy Corporation,84.5519,94.375,21,85.5,True,False,False
-IESC,IES Holdings Inc.,164.58,94.25,61.875,88.875,True,False,False
-TTD,The Trade Desk Inc.,15.11,94.125,36,84.25,True,False,False
-EXEL,Exelixis Inc.,68.78,94,93,77,True,True,False
-GDDY,GoDaddy Inc.,105.025,93.875,56.125,95.125,True,False,False
-AYI,Acuity Inc.,328.68,93.75,54.25,81.125,True,False,False
-INTU,Intuit Inc.,315.27,93.625,19.25,86.375,True,False,False
-BBY,Best Buy Co. Inc.,99.3775,93.5,88.5,79.75,True,False,False
-RELY,Remitly Global Inc.,20.28,93.375,67,84.75,True,False,False
-HRB,H&R Block Inc.,48.22,93.25,67.25,89.375,True,False,False
-SONO,Sonos Inc.,17.61,93.125,88.25,83.375,True,False,False
-BRC,Brady Corporation,76.825,93,73.125,78.625,True,False,False
-BBWI,Bath & Body Works Inc.,18.49,92.875,83.125,99.125,True,False,False
-M,Macy's Inc,24.51,92.75,93.5,97.625,True,True,False
-GTX,Garrett Motion Inc.,20.74,92.625,32.875,92.375,True,False,False
-CENX,Century Aluminum Company,31.58,92.5,7.75,91.875,True,False,False
-MATX,Matson Inc.,206.917,92.375,97.125,86.625,True,True,False
-SUPN,Supernus Inc.,28.73,92.25,27.625,85.625,True,False,False
-OSCR,Oscar Health Inc.,28.7595,92.125,93.625,71.375,True,True,False
-MUSA,Murphy USA Inc.,523.89,92,73.25,72.5,True,False,False
-GCT,GigaCloud Technology Inc,64.375,91.875,99.625,81.25,True,True,False
-GNTX,Gentex Corporation,19,91.75,15.75,94.25,True,False,False
-MTCH,Match Group Inc.,40.16,91.625,78.75,87.5,True,False,False
-DXC,DXC Technology Company,14.335,91.5,50.5,99.25,True,False,False
-LOGI,Logitech International S.A.,100.64,91.375,71.625,77.75,True,False,False
-TNET,TriNet Group Inc.,64.405,91.1875,98.875,94.875,True,True,False
-CRUS,Cirrus Logic Inc.,116.26,91.1875,13.875,87.375,True,False,False
-GPOR,Gulfport Energy Corporation,163.245,91,14.25,76.75,True,False,False
-CROX,Crocs Inc.,161.48,90.875,99.375,87.875,True,True,False
-HUBS,HubSpot Inc.,209.24,90.75,31,65,False,False,False
-TPC,Tutor Perini Corporation,97.845,90.625,89.875,67,False,False,False
-FRSH,Freshworks Inc.,12.8,90.5,91,70.75,True,True,False
-AOS,A.O. Smith Corporation,63.75,90.375,22.875,94.75,True,False,False
-EME,EMCOR Group Inc.,649.697,90.25,75.5,74.75,True,False,False
-CNX,CNX Resources Corporation,36.84,90.125,41.625,83.875,True,False,False
-URBN,Urban Outfitters Inc.,86.36,90,96,72.625,True,True,False
-COKE,Coca-Cola Consolidated Inc.,203.115,89.875,69,75.125,False,False,False
-DLB,Dolby Laboratories,57.18,89.75,49.875,78.125,False,False,False
-DAL,Delta Air Lines Inc.,84.8879,89.625,61.25,82.875,False,False,False
-TPR,Tapestry Inc.,126.524,89.5,74.875,64.5,False,False,False
-INSW,International Seaways Inc.,98.6,89.375,98.375,85.875,False,True,False
-GM,General Motors Company,83.58,89.25,67.75,96.25,False,False,False
-MAS,Masco Corporation,83.65,89.125,95.375,79.625,False,True,False
-EAT,Brinker International Inc.,203.825,89,95.25,67.625,False,True,False
-MLI,Mueller Industries Inc.,53.6,88.875,33.875,87.25,False,False,False
-TRN,Trinity Industries Inc.,28.995,88.75,41.125,98.375,False,False,False
-LYB,LyondellBasell Industries NV,58.93,88.625,55.625,95.375,False,False,False
-NUE,Nucor Corporation,252.605,88.5,99.5,77.375,False,True,False
-MTH,Meritage Homes Corporation,61.7,88.375,12.875,91.5,False,False,False
-DAR,Darling Ingredients Inc.,51.865,88.25,82.625,87.125,False,False,False
-PYPL,PayPal Holdings Inc.,57.82,88.125,92.125,97,False,False,False
-NBIX,Neurocrine Biosciences Inc.,162.59,88,40.625,64.875,False,False,False
-PINS,Pinterest Inc.,17.89,87.875,24.375,67.5,False,False,False
-ASO,Academy Sports and Outdoors Inc.,72.83,87.75,84.625,90.875,False,False,False
-FDX,FedEx Corporation,319.46,87.625,86.125,85.375,False,False,False
-AA,Alcoa Corporation,35.79,87.5,41.75,92.125,False,False,False
-LII,Lennox International Inc.,335.505,87.375,3.5,86.125,False,False,False
-HPQ,HP Inc.,28.71,87.25,92,99.375,False,True,False
-EPAM,EPAM Systems Inc.,154.74,87.125,60.5,91.625,False,False,False
-KTB,Kontoor Brands Inc.,83.54,87,84.875,68.875,False,False,False
-GD,General Dynamics Corporation,347.86,86.875,79.375,66.375,False,False,False
-CVX,Chevron Corporation,207.95,86.75,96.375,64.75,False,True,False
-DELL,Dell Technologies Inc.,315.858,86.625,98.5,81.5,False,True,False
-BKNG,Booking Holdings Inc.,154.015,86.5,23.5,67.875,False,False,False
-LUV,Southwest Airlines Company,46.7695,86.375,41.875,70.375,False,False,False
-BLKB,Blackbaud Inc.,51.275,86.25,69.875,93.25,False,False,False
-CI,The Cigna Group,286.14,86.125,44,97.5,False,False,False
-OVV,Ovintiv Inc. (DE),62.88,86,96.125,78.375,False,True,False
-CHWY,Chewy Inc.,20.52,85.875,21.75,58.75,False,False,False
-HL,Hecla Mining Company,11.67,85.75,25.75,53.75,False,False,False
-CART,Maplebear Inc.,58.62,85.625,65.5,55.125,False,False,False
-APTV,Aptiv PLC,38.15,85.5,27.375,93.625,False,False,False
-CDE,Coeur Mining Inc.,12.29,85.375,2.625,66.625,False,False,False
-AUPH,Aurinia Pharmaceuticals Inc,15.175,85.25,66.875,85.25,False,False,False
-UAL,United Airlines Holdings Inc.,107.25,85.125,27.5,78,False,False,False
-DOCU,DocuSign Inc.,76.7825,85,89.75,56.75,False,False,False
-MMS,Maximus Inc.,64.65,84.875,18.875,99.75,False,False,True
-DVA,DaVita Inc.,170.06,84.75,22.75,97.75,False,False,False
-ALGN,Align Technology Inc.,162.07,84.625,11.75,75.875,False,False,False
-REZI,Resideo Technologies Inc.,21.835,84.5,25.625,82.625,False,False,False
-CVS,CVS Health Corporation,82.62,84.375,83.5,96.875,False,False,False
-ACN,Accenture plc,233.1,84.25,76.25,84.875,False,False,False
-KEX,Kirby Corporation,127.01,84.0625,55.5,79,False,False,False
-CMI,Cummins Inc.,430.95,84.0625,22.375,77.5,False,False,False
-DG,Dollar General Corporation,133.45,83.875,97,74,False,True,False
-CAT,Caterpillar Inc.,555.9,83.75,32.375,57.875,False,False,False
-WDAY,Workday Inc.,179.46,83.625,52.125,65.875,False,False,False
-MGM,MGM Resorts International,33.51,83.5,6,83.625,False,False,False
-THC,Tenet Healthcare Corporation,278.72,83.375,95.75,97.875,False,True,True
-WDC,Western Digital Corporation,284.905,83.25,79.75,67.25,False,False,False
-CALY,Callaway Golf Company,16.9,83.125,86.625,54.5,False,False,False
-TGT,Target Corporation,168.875,83,98,70.875,False,True,False
-LVS,Las Vegas Sands Corp.,38.725,82.8125,1.375,77.875,False,False,False
-HUM,Humana Inc.,416.68,82.8125,93.25,61.375,False,True,False
-MD,Pediatrix Medical Group Inc.,31.035,82.625,85,96,False,False,True
-SPSC,SPS Commerce Inc.,79.84,82.5,90.375,63.5,False,True,False
-LMT,Lockheed Martin Corporation,576.855,82.375,70.625,69.25,False,False,False
-SKYW,SkyWest Inc.,81.115,82.25,23.125,90,False,False,False
-CRGY,Crescent Energy Company,11.075,82.125,77.125,76.25,False,False,False
-ELV,Elevance Health Inc.,415.33,82,95.5,90.75,False,True,False
-RDDT,Reddit Inc.,95.295,81.875,21.625,48.375,False,False,False
-ALRM,Alarm.com Holdings Inc.,66.45,81.75,73.375,54.625,False,False,False
-AR,Antero Resources Corporation,37.15,81.625,44.375,72.75,False,False,False
-LEA,Lear Corporation,106.9,81.375,40.25,99.625,False,False,True
-HALO,Halozyme Therapeutics Inc.,97.2,81.375,71,71.625,False,False,False
-TEL,TE Connectivity plc,213.655,81.375,68.375,73.625,False,False,False
-HGV,Hilton Grand Vacations Inc.,46.61,81.125,44.75,94.375,False,False,True
-MUR,Murphy Oil Corporation,34.125,81,87.125,74.875,False,False,False
-CAH,Cardinal Health Inc.,277.88,80.875,92.875,66.25,False,True,False
-ALB,Albemarle Corporation,87.2564,80.6875,25.5,74.375,False,False,False
-WWW,Wolverine World Wide Inc.,24.835,80.6875,94.25,72.375,False,True,False
-JBL,Jabil Inc.,246.795,80.5,74.25,81.875,False,False,False
-COP,ConocoPhillips,137.035,80.375,95,60.5,False,True,False
-PATH,UiPath Inc.,12.045,80.25,34.25,65.625,False,False,False
-NTAP,NetApp Inc.,172.74,80.125,94.875,59.25,False,True,False
-NVST,Envista Holdings Corporation,23.655,79.9375,55.875,83.25,False,False,False
-ZBRA,Zebra Technologies Corporation,315.67,79.9375,90.75,75.75,False,False,False
-NTCT,NetScout Systems Inc.,32.57,79.75,62,88.75,False,False,False
-SWK,Stanley Black & Decker Inc.,110.28,79.625,99.125,86.875,False,True,False
-CENTA,Central Garden & Pet Company,40.38,79.5,94.625,81.75,False,True,False
-OXY,Occidental Petroleum Corporation,54.69,79.375,96.5,64,False,True,False
-DKS,Dick's Sporting Goods Inc,145.12,79.25,6.375,72.125,False,False,False
-ECG,Everus Construction Group Inc.,85.08,79.125,51.625,76.625,False,False,False
-UPS,United Parcel Service Inc.,110.88,79,79.625,90.25,False,False,False
-AVA,Avista Corporation,39.58,78.875,50.625,82.125,False,False,False
-MO,Altria Group Inc.,76.745,78.75,83.25,74.5,False,False,False
-GEN,Gen Digital Inc.,30.21,78.625,44.875,89.125,False,False,False
-STLD,Steel Dynamics Inc.,224.01,78.5,81.875,73,False,False,False
-DV,DoubleVerify Holdings Inc.,13.565,78.375,68.625,56.375,False,False,False
-OSK,Oshkosh Corporation (Holding Company)Common Stock,138.16,78.25,46.125,95.5,False,False,True
-CMCSA,Comcast Corporation,25.1593,78.125,55.75,99.875,False,False,True
-PAYO,Payoneer Global Inc.,7.175,78,86.5,64.375,False,False,False
-WK,Workiva Inc.,66.11,77.875,25.125,44,False,False,False
-AGX,Argan Inc.,297.755,77.6875,17.875,50.875,False,False,False
-LEVI,Levi Strauss & Co,24.18,77.6875,71.75,61.625,False,False,False
-TTC,Toro Company (The),104.29,77.5,79,55.75,False,False,False
-CTSH,Cognizant Technology Solutions Corporation,58.81,77.375,61.5,98.625,False,False,True
-STX,Seagate Technology Holdings PLC,502.25,77.25,78.5,46.125,False,False,False
-UHS,Universal Health Services Inc.,190.395,77.125,22,99.5,False,False,True
-HCA,HCA Healthcare Inc.,489.81,77,51.5,89,False,False,False
-SSD,Simpson Manufacturing Company Inc.,195.82,76.875,75.375,48.5,False,False,False
-RL,Ralph Lauren Corporation,379.96,76.75,75.875,44.375,False,False,False
-PODD,Insulet Corporation,144.5,76.625,34.875,53.125,False,False,False
-SHOO,Steven Madden Ltd.,41.395,76.4375,57.75,59.125,False,False,False
-RMD,ResMed Inc.,241.36,76.4375,40.125,61.875,False,False,False
-PR,Permian Resources Corporation,21.735,76.25,97.875,61,False,True,False
-FIZZ,National Beverage Corp.,37.19,76.0625,27,60.125,False,False,False
-YUMC,Yum China Holdings Inc.,50.63,76.0625,59.125,69.375,False,False,False
-MIDD,Middleby Corporation (The),135.37,75.875,70.75,88.125,False,False,True
-OTEX,Open Text Corporation,23.64,75.625,62.75,99,False,False,True
-MWA,MUELLER WATER PRODUCTS,23.92,75.625,14.375,67.75,False,False,False
-HCC,Warrior Met Coal Inc.,78.12,75.625,9.5,51.75,False,False,False
-SCCO,Southern Copper Corporation,144.595,75.375,73.875,42.625,False,False,False
-CCK,Crown Holdings Inc.,119.98,75.25,85.75,77.625,False,False,False
-CBT,Cabot Corporation,72.26,75.125,34.5,87,False,False,False
-COLM,Columbia Sportswear Company,76.69,75,90.875,70.625,False,True,False
-BAH,Booz Allen Hamilton Holding Corporation,84.58,74.875,88.75,93,False,False,True
-PTON,Peloton Interactive Inc.,5.285,74.75,64.5,63.375,False,False,False
-BWA,BorgWarner Inc.,49.51,74.625,63,83.75,False,False,False
-REGN,Regeneron Pharmaceuticals Inc.,957.85,74.5,96.75,69.875,False,True,False
-RNG,RingCentral Inc.,72.16,74.375,89.5,80.25,False,False,False
-CMC,Commercial Metals Company,59.025,74.25,15.5,92.625,False,False,True
-UNH,UnitedHealth Group Incorporated,366.29,74.125,88.625,85,False,False,False
-RSI,Rush Street Interactive Inc.,11.57,74,1.75,40.25,False,False,False
-ALNY,Alnylam Pharmaceuticals Inc.,153.415,73.875,38.75,58.125,False,False,False
-POOL,Pool Corporation,208.07,73.75,11.5,80.5,False,False,False
-PACS,PACS Group Inc.,47.565,73.625,87,59,False,False,False
-ADSK,Autodesk Inc.,253.35,73.5,20.25,41.75,False,False,False
-DXCM,DexCom Inc.,82.075,73.3125,52.75,40.625,False,False,False
-OTIS,Otis Worldwide Corporation,76.635,73.3125,27.25,71.875,False,False,False
-SANM,Sanmina Corporation,155.095,73.125,38.125,79.25,False,False,False
-SFD,Smithfield Foods Inc.,18.99,73,11.125,98.875,False,False,True
-PEP,PepsiCo Inc.,141.88,72.875,19.875,62.75,False,False,False
-UBER,Uber Technologies Inc.,68.6463,72.75,14.625,63.625,False,False,False
-MCK,McKesson Corporation,1081.96,72.625,92.5,74.25,False,True,False
-LCII,LCI Industries,99.675,72.5,15,87.75,False,False,True
-ADT,ADT Inc.,9.88,72.375,59.625,94,False,False,True
-WMS,Advanced Drainage Systems Inc.,118.96,72.25,17.625,69.5,False,False,False
-ZM,Zoom Communications Inc.,91.65,72.125,51.75,82.375,False,False,False
-POWL,Powell Industries Inc.,155.89,72,10.625,45.25,False,False,False
-FCN,FTI Consulting Inc.,206.85,71.875,63.125,72,False,False,False
-FOXA,Fox Corporation,66.77,71.75,51.125,69.125,False,False,False
-MAT,Mattel Inc.,14.77,71.625,47.375,93.125,False,False,True
-EHC,Encompass Health Corporation,135.905,71.5,71.125,61.125,False,False,False
-VSXY,Victorias Secret & Co.,99.95,71.375,89.375,45,False,False,False
-CNM,Core & Main Inc.,42.655,71.25,19.625,89.625,False,False,True
-ARW,Arrow Electronics Inc.,186.29,71.125,88.875,94.5,False,False,True
-HON,Honeywell International Inc.,218.95,71,30.125,65.375,False,False,False
-G,Genpact Limited,42.46,70.875,54.875,84.625,False,False,True
-BMY,Bristol-Myers Squibb Company,60.05,70.75,60.625,91.125,False,False,True
-JBHT,J.B. Hunt Transport Services Inc.,226.115,70.625,19.75,42.75,False,False,False
-ZTS,Zoetis Inc.,83.78,70.5,27.75,89.25,False,False,True
-EXPD,Expeditors International of Washington Inc.,193.26,70.375,97.25,53.375,False,True,False
-LDOS,Leidos Holdings Inc.,126.36,70.25,36.5,96.75,False,False,True
-YOU,Clear Secure Inc.,55.095,70.125,43.5,35.125,False,False,False
-TOST,Toast Inc.,33.87,70,49,39.125,False,False,False
-LSTR,Landstar System Inc.,152.82,69.875,9.75,44.125,False,False,False
-FFIV,F5 Inc.,312.13,69.75,66.75,55.625,False,False,False
-HPE,Hewlett Packard Enterprise Company,45.94,69.625,98.75,71.75,False,True,False
-VNT,Vontier Corporation,43.8,69.5,63.75,90.5,False,False,True
-BJ,BJ's Wholesale Club Holdings Inc.,110.99,69.375,71.25,49.625,False,False,False
-TENB,Tenable Holdings Inc.,43.135,69.25,94.5,42,False,True,False
-BCC,Boise Cascade L.L.C.,65.385,69.125,34.75,80.375,False,False,True
-ABG,Asbury Automotive Group Inc,196.66,68.9375,14.5,98.25,False,False,True
-AN,AutoNation Inc.,177.63,68.9375,13,92,False,False,True
-LHX,L3Harris Technologies Inc.,255.47,68.75,38.25,62.625,False,False,False
-HAS,Hasbro Inc.,118.76,68.5625,94.75,43.5,False,True,False
-JKHY,Jack Henry & Associates Inc.,174.475,68.5625,49.25,57.5,False,False,False
-CNC,Centene Corporation,68.82,68.375,95.875,76.5,False,True,False
-TAP,Molson Coors Beverage Company,40.815,68.25,19.5,98,False,False,True
-QTWO,Q2 Holdings Inc.,69.9,68.0625,36.75,38.5,False,False,False
-AIT,Applied Industrial Technologies Inc.,290.34,68.0625,77.75,38.25,False,False,False
-PPG,PPG Industries Inc.,121.685,67.875,82.375,69,False,False,False
-PAYC,Paycom Software Inc.,245.69,67.75,96.875,71.25,False,True,False
-ALV,Autoliv Inc.,120.35,67.625,43.75,79.875,False,False,False
-HSY,The Hershey Company,174.72,67.5,25.375,48.875,False,False,False
-EXTR,Extreme Networks Inc.,26.855,67.375,76.5,37.75,False,False,False
-VMI,Valmont Industries Inc.,410.52,67.25,53.625,74.625,False,False,False
-CVLT,Commvault Systems Inc.,146.79,67.125,81,33.875,False,False,False
-KMB,Kimberly-Clark Corporation,107.397,67,28,68.375,False,False,False
-GFF,Griffon Corporation,105.75,66.8125,72.625,76,False,False,False
-ZWS,Zurn Elkay Water Solutions Corporation,45.34,66.8125,34.625,40.75,False,False,False
-HSIC,Henry Schein Inc.,83.485,66.625,47.75,86.75,False,False,True
-UTHR,United Therapeutics Corporation,573.07,66.5,25.25,62.875,False,False,False
-QLYS,Qualys Inc.,190.22,66.375,64.125,37.25,False,False,False
-KBR,KBR Inc.,33.96,66.25,45.375,95.625,False,False,True
-ARCB,ArcBest Corporation,134.6,66.125,76.875,51.125,False,False,False
-SAIC,Science Applications International Corporation,145.6,66,99,93.75,False,True,True
-ACAD,ACADIA Pharmaceuticals Inc.,18.04,65.875,55,56.5,False,False,False
-INGR,Ingredion Incorporated,90.32,65.75,16.875,90.375,False,False,True
-ST,Sensata Technologies Holding plc,37.875,65.625,53.375,88.625,False,False,True
-BR,Broadridge Financial Solutions Inc.,185.31,65.5,60.375,71.125,False,False,False
-CRM,Salesforce Inc.,188.795,65.375,81.5,84.5,False,False,True
-AZZ,AZZ Inc.,129.19,65.25,75,59.375,False,False,False
-ADMA,ADMA Biologics Inc,13.955,65.125,40.375,75.5,False,False,False
-CHE,Chemed Corp,547.535,65,58.625,51.375,False,False,False
-FTDR,Frontdoor Inc.,94.35,64.875,86.75,43.375,False,False,False
-FIVE,Five Below Inc.,235.82,64.75,84.125,33,False,False,False
-BOX,Box Inc.,43.45,64.625,37.625,39.5,False,False,False
-OPCH,Option Care Health Inc.,31.6098,64.5,74.625,84.375,False,False,True
-ABM,ABM Industries Incorporated,54.33,64.375,87.875,92.875,False,False,True
-ALLE,Allegion plc,185.82,64.25,73.5,47.5,False,False,False
-DT,Dynatrace Inc.,44.81,64.125,48.25,35.875,False,False,False
-MZTI,The Marzetti Company,108.45,64,4,77.25,False,False,False
-NXPI,NXP Semiconductors N.V.,251.67,63.875,41.5,64.625,False,False,False
-UFPI,UFP Industries Inc.,78.38,63.6875,13.25,76.875,False,False,False
-MTDR,Matador Resources Company,49.71,63.6875,59.75,83.125,False,False,True
-LKQ,LKQ Corporation,18.93,63.5,4.625,89.75,False,False,True
-NVDA,NVIDIA Corporation,152.66,63.375,44.125,51.625,False,False,False
-SNA,Snap-On Incorporated,363.665,63.25,24.25,67.125,False,False,False
-MHK,Mohawk Industries Inc.,146.62,63.125,56.375,73.75,False,False,False
-MGRC,McGrath RentCorp,125.5,63,70.875,61.75,False,False,False
-ADUS,Addus HomeCare Corporation,121.36,62.8125,39.875,70,False,False,False
-BOOT,Boot Barn Holdings Inc.,140.14,62.8125,10.375,47.25,False,False,False
-AMKR,Amkor Technology Inc.,34.74,62.625,8.875,65.75,False,False,False
-GGG,Graco Inc.,71.24,62.5,24,51.875,False,False,False
-ATRO,Astronics Corporation,57.29,62.375,44.625,52.125,False,False,False
-LECO,Lincoln Electric Holdings Inc.,271.865,62.125,78.375,39,False,False,False
-ETSY,Etsy Inc.,85.33,62.125,96.25,75,False,True,False
-NKE,Nike Inc.,36.14,62.125,18.25,78.25,False,False,False
-ULTA,Ulta Beauty Inc.,648.57,61.875,75.125,35.75,False,False,False
-TEAM,Atlassian Corporation,137.38,61.75,76.75,29.125,False,False,False
-WSO,Watsco Inc.,300,61.625,12.125,59.625,False,False,False
-TREX,Trex Company Inc.,50.51,61.5,93.125,38.625,False,False,False
-FDS,FactSet Research Systems Inc.,313.765,61.375,45.75,63,False,False,False
-IPAR,Interparfums Inc.,132.99,61.25,61.375,42.25,False,False,False
-MEDP,Medpace Holdings Inc.,648.58,61.125,65.25,28.125,False,False,False
-KR,Kroger Company (The),70.13,61,32.125,68.75,False,False,False
-DOCS,Doximity Inc.,30.4,60.875,37.125,43.125,False,False,False
-EXLS,ExlService Holdings Inc.,42.67,60.75,76,60.625,False,False,False
-T,AT&T Inc.,21.975,60.625,76.375,91,False,False,True
-VRSN,VeriSign Inc.,305.37,60.5,23.375,30.875,False,False,False
-TOL,Toll Brothers Inc.,144.31,60.375,36.625,88,False,False,True
-PAYX,Paychex Inc.,113.37,60.25,33.125,56,False,False,False
-MYRG,MYR Group Inc.,271.31,60.125,40.875,48,False,False,False
-CTVA,Corteva Inc.,8.465,60,29.125,88.375,False,False,True
-SYY,Sysco Corporation,77.53,59.875,57.25,68.625,False,False,False
-OLLI,Ollie's Bargain Outlet Holdings Inc.,97.27,59.75,42,46.625,False,False,False
-OLED,Universal Display Corporation,83.365,59.625,17.25,73.5,False,False,False
-ACI,Albertsons Companies Inc.,13.035,59.5,2.375,73.25,False,False,False
-DHI,D.R. Horton Inc.,144.23,59.375,30.25,84,False,False,True
-NSIT,Insight Enterprises Inc.,159.69,59.25,99.25,84.125,False,True,True
-ITRI,Itron Inc.,95.3,59.125,62.25,87.625,False,False,True
-FSS,Federal Signal Corporation,117.045,59,35.125,42.375,False,False,False
-TDS,Telephone and Data Systems Inc.,29.87,58.875,58.5,72.875,False,False,False
-BURL,Burlington Stores Inc.,247.95,58.75,6.25,33.625,False,False,False
-PAY,Paymentus Holdings Inc.,31.99,58.5625,38.875,24.5,False,False,False
-TER,Teradyne Inc.,233.095,58.5625,46.5,32,False,False,False
-VZ,Verizon Communications Inc.,45.715,58.375,79.25,88.5,False,False,True
-WOR,Worthington Enterprises Inc.,57.675,58.25,71.875,64.25,False,False,False
-RPM,RPM International Inc.,103.698,58.125,49.625,58.875,False,False,False
-NVR,NVR Inc.,5632.41,58,6.625,75.375,False,False,False
-CON,Concentra Group Holdings Parent Inc.,42.39,57.875,95.125,51.5,False,True,False
-FTI,TechnipFMC plc Ordinary Share,62.47,57.75,69.5,32.25,False,False,False
-HESM,Hess Midstream LP Class A Representing Limited Partner Interests,30.52,57.625,2.5,60.375,False,False,False
-SSNC,SS&C Technologies Holdings Inc.,76.645,57.5,64.875,86,False,False,True
-MHO,M/I Homes Inc.,122,57.375,13.125,86.25,False,False,True
-STZ,Constellation Brands Inc.,143.39,57.25,42.25,82.25,False,False,True
-DY,Dycom Industries Inc.,224.99,57.125,26.875,70.125,False,False,False
-MSM,MSC Industrial Direct Company Inc.,115.05,57,80.25,36.5,False,False,False
-NYT,New York Times Company (The),71.36,56.875,22.125,27.125,False,False,False
-EQT,EQT Corporation,50.73,56.75,11.875,45.875,False,False,False
-RMBS,Rambus Inc.,78.55,56.625,13.5,30.125,False,False,False
-XYZ,Block Inc.,78.53,56.4375,63.625,52.375,False,False,False
-OII,Oceaneering International Inc.,34.055,56.4375,48.5,55.375,False,False,False
-NOC,Northrop Grumman Corporation,537.395,56.25,51,61.25,False,False,False
-KNX,Knight-Swift Transportation Holdings Inc.,62.69,56.125,37.875,42.875,False,False,False
-LRCX,Lam Research Corporation,209.75,56,29.5,30.25,False,False,False
-NTNX,Nutanix Inc.,56.78,55.875,81.375,50.75,False,False,False
-APPF,AppFolio Inc.,208.96,55.75,12.375,21.875,False,False,False
-NFLX,Netflix Inc.,59.685,55.625,9.375,49.875,False,False,False
-GATX,GATX Corporation,187.74,55.5,52,44.875,False,False,False
-CPRT,Copart Inc. (DE),31.16,55.375,5.25,55.5,False,False,False
-PM,Philip Morris International Inc,192.16,55.25,54.625,31.25,False,False,False
-SNDR,Schneider National Inc.,28.925,55.125,17.125,46,False,False,False
-LNTH,Lantheus Holdings Inc.,101.79,54.9375,79.125,57.125,False,False,False
-VRSK,Verisk Analytics Inc.,200.73,54.9375,41,36.625,False,False,False
-OMC,Omnicom Group Inc.,88.86,54.75,53.125,79.375,False,False,False
-CLS,Celestica Inc.,243.96,54.625,27.125,53.875,False,False,False
-NESR,National Energy Services Reunited Corp,19.95,54.5,5.375,50.375,False,False,False
-HURN,Huron Consulting Group Inc.,170.66,54.3125,78.125,70.25,False,False,False
-CDW,CDW Corporation,167.105,54.3125,85.875,82,False,False,True
-FLYW,Flywire Corporation Voting,21.394,54.125,67.5,37,False,False,False
-DVN,Devon Energy Corporation,43.06,54,67.125,63.125,False,False,False
-INCY,Incyte Corp.,119.11,53.875,24.875,27.25,False,False,False
-PLUS,ePlus inc.,96.535,53.75,85.25,66.75,False,False,False
-EMN,Eastman Chemical Company,61.51,53.625,26.625,85.125,False,False,True
-KLIC,Kulicke and Soffa Industries Inc.,65.81,53.5,68.875,41.5,False,False,False
-PHIN,PHINIA Inc.,75,53.375,42.75,76.125,False,False,False
-WFRD,Weatherford International Corp,81.78,53.25,31.5,59.5,False,False,False
-MAN,ManpowerGroup,45.53,53.125,58.875,79.125,False,False,False
-CSL,Carlisle Companies Incorporated,391.94,53,47.125,66.875,False,False,False
-ENSG,The Ensign Group Inc.,183.89,52.875,35.875,54.125,False,False,False
-NXT,Nextpower Inc.,79.85,52.75,8.625,62.125,False,False,False
-PHM,PulteGroup Inc.,124.685,52.625,28.25,78.5,False,False,False
-PTC,PTC Inc.,195.91,52.5,77.625,54.75,False,False,False
-HQY,HealthEquity Inc.,99.635,52.375,20.875,50.25,False,False,False
-GEV,GE Vernova Inc.,788.015,52.25,62.375,37.625,False,False,False
-MSGE,Madison Square Garden Entertainment Corp.,81.49,52.125,91.375,24.625,False,False,False
-INGM,Ingram Micro Holding Corporation,27.51,52,66.5,81,False,False,True
-AKAM,Akamai Technologies Inc.,88.24,51.875,1.875,62.5,False,False,False
-PCAR,PACCAR Inc.,103.46,51.75,33.25,71,False,False,False
-MKC,McCormick & Company Incorporated,46.04,51.5625,26.5,80,False,False,True
-ZBH,Zimmer Biomet Holdings Inc.,101.93,51.5625,39.125,78.75,False,False,False
-TKR,Timken Company (The),105.32,51.375,65.125,68.125,False,False,False
-DUOL,Duolingo Inc.,160.712,51.25,26.25,20.75,False,False,False
-CRS,Carpenter Technology Corporation,267.395,51.125,36.25,38.375,False,False,False
-GRND,Grindr Inc.,14.75,51,5.625,26.875,False,False,False
-CL,Colgate-Palmolive Company,98.76,50.875,59.5,21.5,False,False,False
-PTRN,Pattern Group Inc. Series A,20.32,50.75,59,20.5,False,False,False
-ROST,Ross Stores Inc.,227.56,50.625,80.5,17.5,False,False,False
-SITE,SiteOne Landscape Supply Inc.,111.695,50.5,12.5,54.875,False,False,False
-ALH,Alliance Laundry Holdings Inc.,24.105,50.375,28.375,41,False,False,False
-EXPO,Exponent Inc.,88.73,50.25,66.25,16.625,False,False,False
-ROK,Rockwell Automation Inc.,396.39,50.125,37.5,28.75,False,False,False
-NWSA,News Corporation,26.26,50,77,68.5,False,False,False
-AVPT,AvePoint Inc.,16.26,49.875,84.5,19.875,False,False,False
-LOW,Lowe's Companies Inc.,217.93,49.6875,20.125,49,False,False,False
-ATR,AptarGroup Inc.,141.18,49.6875,22.25,51.25,False,False,False
-CSCO,Cisco Systems Inc.,95.87,49.5,39.375,46.375,False,False,False
-KBH,KB Home,45.75,49.375,3.75,80.125,False,False,True
-HAL,Halliburton Company,31.77,49.25,24.125,65.5,False,False,False
-SOLS,Solstice Advanced Materials Inc.,64.6,49.125,49.5,45.75,False,False,False
-CORT,Corcept Therapeutics Incorporated,68.11,49,71.5,20.875,False,False,False
-WSM,Williams-Sonoma Inc.,258.64,48.875,82.75,25,False,False,False
-GTES,Gates Industrial Corporation Ltd.,24.84,48.75,60.75,76.375,False,False,False
-DIS,Walt Disney Company (The),119.54,48.625,74.75,60.25,False,False,False
-PCTY,Paylocity Holding Corporation,176.2,48.5,89,46.875,False,False,False
-VSH,Vishay Intertechnology Inc.,25.27,48.375,53.75,52.25,False,False,False
-HII,Huntington Ingalls Industries Inc.,289.64,48.25,39.25,63.875,False,False,False
-WTRG,Essential Utilities Inc.,45.18,48.125,92.375,56.25,False,True,False
-IMAX,Imax Corporation,47.01,48,85.625,28.375,False,False,False
-MDT,Medtronic plc.,99.85,47.875,42.375,48.75,False,False,False
-GRDN,Guardian Pharmacy Services Inc.,50.445,47.6875,87.25,22.5,False,False,False
-DE,Deere & Company,647.01,47.6875,66.125,23.75,False,False,False
-TJX,TJX Companies Inc. (The),143.21,47.5,26.75,24.125,False,False,False
-LNG,Cheniere Energy Inc.,298.775,47.375,82.25,47.75,False,False,False
-TTEK,Tetra Tech Inc.,37.915,47.1875,64.625,62,False,False,False
-HAYW,Hayward Holdings Inc.,16.19,47.1875,42.875,62.25,False,False,False
-COO,The Cooper Companies Inc.,60.14,46.9375,7.5,75.25,False,False,False
-CRH,CRH PLC,91.845,46.9375,16.5,54.25,False,False,False
-CGNX,Cognex Corporation,49.04,46.75,23.25,28.625,False,False,False
-WLY,John Wiley & Sons Inc.,50.88,46.625,91.75,73.875,False,True,False
-CCL,Carnival Corporation Ltd.,28.685,46.5,77.25,57,False,False,False
-VRT,Vertiv Holdings LLC,193.945,46.375,48.125,14.875,False,False,False
-CVCO,Cavco Industries Inc.,640.62,46.25,80,30.625,False,False,False
-BC,Brunswick Corporation,75.15,46.125,66.375,53.5,False,False,False
-AM,Antero Midstream Corporation,20.37,46,20,50.625,False,False,False
-APP,Applovin Corporation,395.705,45.875,17,17,False,False,False
-FIX,Comfort Systems USA Inc.,1149.8,45.6875,45.5,32.125,False,False,False
-HNGE,Hinge Health Inc.,115.93,45.6875,79.875,11.625,False,False,False
-FND,Floor & Decor Holdings Inc.,46.86,45.4375,2.25,40.5,False,False,False
-EXP,Eagle Materials Inc,176.44,45.4375,9,65.25,False,False,False
-CELH,Celsius Holdings Inc.,32.31,45.25,9.125,26.5,False,False,False
-AWI,Armstrong World Industries Inc,172.1,45.125,24.625,45.375,False,False,False
-AGCO,AGCO Corporation,105.89,45,15.25,75.625,False,False,False
-CMG,Chipotle Mexican Grill Inc.,36.655,44.875,11.625,15.875,False,False,False
-USFD,US Foods Holding Corp.,107.51,44.75,69.625,52.625,False,False,False
-PLNT,Planet Fitness Inc.,62.655,44.625,42.125,49.25,False,False,False
-VEEV,Veeva Systems Inc.,285.57,44.5,65.375,15.5,False,False,False
-PNR,Pentair plc. Ordinary Share,67.775,44.375,18.625,67.375,False,False,False
-XYL,Xylem Inc.,93.375,44.25,7.625,69.625,False,False,False
-GEHC,GE HealthCare Technologies Inc.,82.26,44.125,63.875,73.375,False,False,False
-TT,Trane Technologies plc,408.68,44,32.625,33.375,False,False,False
-ILMN,Illumina Inc.,207.69,43.875,70.375,22,False,False,False
-RS,Reliance Inc.,423.325,43.75,93.875,49.75,False,True,False
-LEN,Lennar Corporation,82.91,43.625,18.5,74.125,False,False,False
-DGX,Quest Diagnostics Incorporated,258.03,43.5,74,58.625,False,False,False
-QCOM,QUALCOMM Incorporated,162.4,43.375,21.125,69.75,False,False,False
-WDFC,WD-40 Company,221.15,43.25,32.25,14.75,False,False,False
-KD,Kyndryl Holdings Inc.,15.955,43.125,34,72.25,False,False,False
-DOV,Dover Corporation,202.16,43,38.375,52.75,False,False,False
-WHD,Cactus Inc.,59.6707,42.875,57.125,26.125,False,False,False
-ABBV,AbbVie Inc.,288.38,42.75,49.125,32.75,False,False,False
-BSX,Boston Scientific Corporation,43.04,42.625,8,58.5,False,False,False
-AVY,Avery Dennison Corporation,185.88,42.5,64.375,54.375,False,False,False
-ABNB,Airbnb Inc.,181.07,42.375,88.375,11.75,False,False,False
-CPAY,Corpay Inc.,451.59,42.25,86.375,64.125,False,False,False
-BYD,Boyd Gaming Corporation,76.62,42.125,15.625,73.125,False,False,False
-BHE,Benchmark Electronics Inc.,62.15,42,37.75,55,False,False,False
-IDXX,IDEXX Laboratories Inc.,695.11,41.875,18.75,9.625,False,False,False
-NEU,NewMarket Corp,709.98,41.75,60.25,58.25,False,False,False
-GRBK,Green Brick Partners Inc.,58.21,41.5625,28.875,71.5,False,False,False
-SYK,Stryker Corporation,316.205,41.5625,3,38.75,False,False,False
-DRS,Leonardo DRS Inc.,33.55,41.3125,48.875,34.625,False,False,False
-ONC,BeOne Medicines Ltd.,403.62,41.3125,68,8.625,False,False,False
-COR,Cencora Inc.,347.06,41.125,36.875,66,False,False,False
-ITW,Illinois Tool Works Inc.,282.67,41,46.25,35,False,False,False
-RHI,Robert Half Inc.,41.76,40.875,77.875,46.75,False,False,False
-FSLR,First Solar Inc.,153.27,40.75,7.25,66.125,False,False,False
-PPC,Pilgrim's Pride Corporation,28.19,40.625,15.125,70.5,False,False,False
-FELE,Franklin Electric Co. Inc.,97.425,40.5,82.125,57.25,False,False,False
-ALSN,Allison Transmission Holdings Inc.,125.241,40.3125,82.5,56.875,False,False,False
-SKY,Champion Homes Inc.,90.985,40.3125,41.375,36.875,False,False,False
-FTNT,Fortinet Inc.,130.17,40.125,85.375,12.125,False,False,False
-PRVA,Privia Health Group Inc.,25.43,40,5.125,22.25,False,False,False
-AAPL,Apple Inc.,352.57,39.8125,32.75,14,False,False,False
-PATK,Patrick Industries Inc.,82.19,39.8125,3.25,63.75,False,False,False
-CXT,Crane NXT Co.,55.09,39.625,59.25,62.375,False,False,False
-OPLN,OPENLANE Inc.,34.705,39.5,83.875,42.125,False,False,False
-ORCL,Oracle Corporation,114.27,39.375,14,47,False,False,False
-WTS,Watts Water Technologies Inc.,364.84,39.25,87.75,19.625,False,False,False
-DIOD,Diodes Incorporated,84.08,39.125,61,49.375,False,False,False
-FLEX,Flex Ltd.,74.93,39,50,63.25,False,False,False
-STE,STERIS plc (Ireland),256.36,38.875,52.5,44.75,False,False,False
-PSMT,PriceSmart Inc.,168.3,38.6875,33.5,29.25,False,False,False
-FIGS,FIGS Inc.,21.41,38.6875,91.25,5.75,False,False,False
-COCO,The Vita Coco Company Inc.,67.58,38.4375,38.625,13.5,False,False,False
-IBM,International Business Machines Corporation,230.47,38.4375,26.125,60.75,False,False,False
-MANH,Manhattan Associates Inc.,252.7,38.25,67.875,9.125,False,False,False
-ATEN,A10 Networks Inc.,30.57,38.125,39.75,22.75,False,False,False
-CW,Curtiss-Wright Corporation,455.36,38,10.125,26,False,False,False
-OSIS,OSI Systems Inc.,191.85,37.875,7.875,66.5,False,False,False
-DASH,DoorDash Inc.,165.39,37.75,37,7.125,False,False,False
-TXN,Texas Instruments Incorporated,292.33,37.625,76.125,18.125,False,False,False
-UNP,Union Pacific Corporation,301.18,37.5,52.625,31.5,False,False,False
-KNSA,Kiniksa Pharmaceuticals International plc,95.65,37.375,90,4.75,False,False,False
-LIVN,LivaNova PLC,92.685,37.25,69.125,31.75,False,False,False
-USLM,United States Lime & Minerals Inc.,106.03,37.125,23.75,23,False,False,False
-NVT,nVent Electric plc,109.87,37,50.375,39.375,False,False,False
-PVH,PVH Corp.,95.6,36.875,53.875,57.75,False,False,False
-ISRG,Intuitive Surgical Inc.,425.14,36.75,27.875,10.875,False,False,False
-SEB,Seaboard Corporation,3699,36.625,6.5,65.125,False,False,False
-META,Meta Platforms Inc.,612.745,36.5,31.625,22.125,False,False,False
-ARQT,Arcutis Biotherapeutics Inc.,27.39,36.375,16.125,4.875,False,False,False
-VIAV,Viavi Solutions Inc.,29.555,36.25,69.25,30,False,False,False
-DCI,Donaldson Company Inc.,84.62,36.125,36.375,53.625,False,False,False
-PSN,Parsons Corporation,51.38,35.9375,12.75,68,False,False,False
-CHRW,C.H. Robinson Worldwide Inc.,137.97,35.9375,16.25,58,False,False,False
-ODFL,Old Dominion Freight Line Inc.,175.62,35.75,48.625,16.375,False,False,False
-FORM,FormFactor Inc. FormFactor Inc.,82.55,35.625,66.625,17.875,False,False,False
-MOD,Modexus Solutions Inc.,129.03,35.5,7.375,31.125,False,False,False
-BCPC,Balchem Corporation,168.977,35.375,62.5,21,False,False,False
-ANET,Arista Networks Inc.,187,35.25,74.375,3.875,False,False,False
-WCC,WESCO International Inc.,318.51,35.125,90.25,60.875,False,True,False
-ACIW,ACI Worldwide Inc.,54.475,35,29.25,60,False,False,False
-ADM,Archer-Daniels-Midland Company,67.84,34.875,81.125,68.25,False,False,False
-COST,Costco Wholesale Corporation,1103.41,34.75,43.25,8.375,False,False,False
-TRMB,Trimble Inc.,53.44,34.625,19,56.125,False,False,False
-GWW,W.W. Grainger Inc.,1460.77,34.5,81.625,18.375,False,False,False
-AMGN,Amgen Inc.,447.22,34.375,87.625,44.5,False,False,False
-AIR,AAR Corp.,105.18,34.25,63.5,52.875,False,False,False
-CLH,Clean Harbors Inc.,284.615,34.125,78,26.375,False,False,False
-TXRH,Texas Roadhouse Inc.,189.28,34,7,18.25,False,False,False
-NFG,National Fuel Gas Company,75.39,33.875,13.375,50.125,False,False,False
-ULS,UL Solutions Inc.,78.5,33.75,5.5,9.75,False,False,False
-MKSI,MKS Inc.,208.75,33.625,38.5,54,False,False,False
-BDX,Becton Dickinson and Company,215.33,33.5,72.75,53,False,False,False
-VFC,V.F. Corporation,20.865,33.375,92.25,51,False,True,False
-VICR,Vicor Corporation,144.93,33.25,42.625,24.375,False,False,False
-PTGX,Protagonist Therapeutics Inc.,124.75,33.125,60.125,12,False,False,False
-MSFT,Microsoft Corporation,503.51,33,61.625,25.375,False,False,False
-LH,Labcorp Holdings Inc.,368.34,32.8125,58,55.25,False,False,False
-MGY,Magnolia Oil & Gas Corporation,23.295,32.8125,8.5,53.25,False,False,False
-SAIA,Saia Inc.,336.94,32.625,10.75,17.25,False,False,False
-DRI,Darden Restaurants Inc.,235.67,32.5,65.625,38.125,False,False,False
-AWR,American States Water Company,87.505,32.375,70,37.5,False,False,False
-PLTR,Palantir Technologies Inc.,155.04,32.25,61.75,0.625,False,False,False
-MTD,Mettler-Toledo International Inc.,1729.11,32.125,72.875,19.25,False,False,False
-MDLZ,Mondelez International Inc.,66.49,32,66,50,False,False,False
-YUM,Yum! Brands Inc.,161.325,31.875,34.125,41.125,False,False,False
-ORLY,O'Reilly Automotive Inc.,92.305,31.75,30.875,18.875,False,False,False
-EPD,Enterprise Products Partners L.P.,36.46,31.625,47.25,47.875,False,False,False
-KEYS,Keysight Technologies Inc.,286.505,31.5,74.5,20.25,False,False,False
-TPL,Texas Pacific Land Corporation,292.15,31.375,2,21.125,False,False,False
-KLAC,KLA Corporation,143.84,31.25,45.25,21.375,False,False,False
-CTAS,Cintas Corporation,221.865,31.125,57,4.625,False,False,False
-FCX,Freeport-McMoRan Inc.,51.14,31,88.125,43.625,False,False,False
-AVNT,Avient Corporation,44.04,30.875,91.125,59.875,False,True,False
-URI,United Rentals Inc.,1075.76,30.75,90.125,37.375,False,False,False
-IDCC,InterDigital Inc.,276.83,30.625,30.625,40.125,False,False,False
-FN,Fabrinet,309.925,30.5,40.75,47.125,False,False,False
-CHEF,The Chefs' Warehouse Inc.,105.58,30.375,77.5,17.375,False,False,False
-ROG,Rogers Corporation,123.96,30.25,85.125,32.875,False,False,False
-KRYS,Krystal Biotech Inc.,307.59,30.125,9.25,8.125,False,False,False
-AZO,AutoZone Inc.,3287.24,30,16.375,34.875,False,False,False
-DGII,Digi International Inc.,54.53,29.875,47.5,40.875,False,False,False
-AROC,Archrock Inc.,26.845,29.75,6.125,44.625,False,False,False
-ON,ON Semiconductor Corporation,67.4,29.625,23,52.5,False,False,False
-KAI,Kadant Inc,289.13,29.5,21.875,33.5,False,False,False
-SHOP,Shopify Inc. Class A Subordinate Voting Shares,140.62,29.375,44.25,2,False,False,False
-ICLR,ICON plc,195.06,29.1875,52.25,58.375,False,False,False
-ROP,Roper Technologies Inc.,468.71,29.1875,56.625,57.625,False,False,False
-GWRE,Guidewire Software Inc.,141.525,29,35.625,16.75,False,False,False
-EBAY,eBay Inc.,120.35,28.8125,85.5,29.5,False,False,False
-ACM,AECOM,81.7023,28.8125,11,61.5,False,False,False
-VCEL,Vericel Corporation,58.75,28.625,53.5,2.25,False,False,False
-ATRC,AtriCure Inc.,55.64,28.5,84.75,3.75,False,False,False
-GOLF,Acushnet Holdings Corp.,84.345,28.3125,5.875,39.625,False,False,False
-AXTA,Axalta Coating Systems Ltd.,36.18,28.3125,49.375,48.625,False,False,False
-FRPT,Freshpet Inc.,67.75,28.125,80.125,11.5,False,False,False
-GRMN,Garmin Ltd.,279.765,28,90.625,29.625,False,False,False
-HRL,Hormel Foods Corporation,22.97,27.875,28.125,57.375,False,False,False
-FANG,Diamondback Energy Inc.,176.3,27.75,45.125,35.5,False,False,False
-WMT,Walmart Inc.,126.54,27.5625,20.5,10.25,False,False,False
-BELFB,Bel Fuse Inc.,225.44,27.5625,51.875,29.75,False,False,False
-SBUX,Starbucks Corporation,107.82,27.375,59.375,6.125,False,False,False
-UI,Ubiquiti Inc.,678.185,27.25,48.375,10.5,False,False,False
-LLY,Eli Lilly and Company,1390.99,27.125,48,7.375,False,False,False
-JCI,Johnson Controls International plc Ordinary Share,137.133,27,72.375,37.125,False,False,False
-MGNI,Magnite Inc.,28.1601,26.875,80.875,26.25,False,False,False
-LFUS,Littelfuse Inc.,384.78,26.75,55.375,27.75,False,False,False
-BRK-B,Berkshire Hathaway Inc.,577.86,26.625,72,30.75,False,False,False
-AEIS,Advanced Energy Industries Inc.,212.54,26.5,33.625,27.625,False,False,False
-PAG,Penske Automotive Group Inc.,212.27,26.375,52.375,59.75,False,False,False
-BSY,Bentley Systems Incorporated,43.37,26.25,18,20.375,False,False,False
-BTSG,BrightSpring Health Services Inc.,70.2431,26.125,73.625,34,False,False,False
-FAST,Fastenal Company,54.41,26,52.875,4.25,False,False,False
-XPO,XPO Inc.,188.035,25.875,72.125,12.25,False,False,False
-FTV,Fortive Corporation,66.36,25.75,50.25,49.5,False,False,False
-NDSN,Nordson Corporation,321.25,25.625,89.25,21.625,False,False,False
-JBTM,JBT Marel Corporation,123.662,25.5,12.625,48.125,False,False,False
-DORM,Dorman Products Inc.,133.575,25.375,41.25,44.25,False,False,False
-CAVA,CAVA Group Inc.,53.64,25.25,0.875,0.875,False,False,False
-EW,Edwards Lifesciences Corporation,105.29,25.125,28.625,9.25,False,False,False
-RUSHA,Rush Enterprises Inc.,46.56,24.9375,31.375,47.625,False,False,False
-PG,Procter & Gamble Company (The),170.61,24.9375,64,31.875,False,False,False
-GE,GE Aerospace,326.5,24.75,56,7.25,False,False,False
-ATMU,Atmus Filtration Technologies Inc.,54.065,24.5625,33.375,37.875,False,False,False
-MELI,MercadoLibre Inc.,1425.74,24.5625,16,23.125,False,False,False
-MMSI,Merit Medical Systems Inc.,85.195,24.375,54.75,38,False,False,False
-AAON,AAON Inc.,79.25,24.25,21.5,19.375,False,False,False
-REYN,Reynolds Consumer Products Inc.,25.145,24.125,35.375,55.875,False,False,False
-AVGO,Broadcom Inc.,351.889,24,5.75,12.75,False,False,False
-CACI,CACI International Inc.,609.366,23.6875,64.25,56.625,False,False,False
-AGYS,Agilysys Inc.,120.71,23.6875,48.75,3.125,False,False,False
-TTMI,TTM Technologies Inc.,67.9,23.6875,38,49.125,False,False,False
-MSA,MSA Safety Incorporated,177.77,23.6875,36.125,41.625,False,False,False
-POWI,Power Integrations Inc.,42.925,23.375,6.875,23.25,False,False,False
-IR,Ingersoll Rand Inc.,82.149,23.25,70.25,45.125,False,False,False
-SHW,Sherwin-Williams Company (The),343.64,23.125,30,16.5,False,False,False
-MSCI,MSCI Inc.,628.37,23,28.75,22.875,False,False,False
-SHAK,Shake Shack Inc.,74.4215,22.875,20.75,3.375,False,False,False
-ADP,Automatic Data Processing Inc.,306.52,22.75,78.25,45.5,False,False,False
-ARM,Arm Holdings plc,185.83,22.5625,13.75,0.25,False,False,False
-RGLD,Royal Gold Inc.,237.895,22.5625,44.5,26.75,False,False,False
-HAE,Haemonetics Corporation,122.24,22.375,65,30.5,False,False,False
-IEX,IDEX Corporation,232.53,22.25,81.75,25.875,False,False,False
-MCHP,Microchip Technology Incorporated,59.465,22.125,8.75,41.25,False,False,False
-AMRZ,Amrize Ltd,39.9,22,8.25,50.5,False,False,False
-TYL,Tyler Technologies Inc.,407.94,21.875,16.625,31.375,False,False,False
-TMDX,TransMedics Group Inc.,96.795,21.75,33,18,False,False,False
-LW,Lamb Weston Holdings Inc.,53.97,21.625,87.5,48.25,False,False,False
-ELF,e.l.f. Beauty Inc.,113.955,21.5,94,9.375,False,False,False
-OKE,ONEOK Inc.,88.55,21.375,46.625,46.5,False,False,False
-WMG,Warner Music Group Corp.,32.65,21.25,43.375,36.75,False,False,False
-THO,Thor Industries Inc.,77.29,21.125,5,52,False,False,False
-HWKN,Hawkins Inc.,151.74,20.875,1.625,10,False,False,False
-IRDM,Iridium Communications Inc,44.41,20.875,56.25,19,False,False,False
-CSX,CSX Corporation,51.34,20.875,78.625,25.75,False,False,False
-TSCO,Tractor Supply Company,38.79,20.625,23.875,39.875,False,False,False
-SARO,StandardAero Inc.,27.295,20.5,3.625,43.875,False,False,False
-NOW,ServiceNow Inc.,90.955,20.375,15.875,28,False,False,False
-BMI,Badger Meter Inc.,155.64,20.25,4.5,23.375,False,False,False
-DD,DuPont de Nemours Inc.,149.7,20.125,61.125,34.125,False,False,False
-VNOM,Viper Energy Inc.,40.39,20,29.375,22.625,False,False,False
-ZETA,Zeta Global Holdings Corp.,34.53,19.875,92.75,7,False,False,False
-LFST,LifeStance Health Group Inc.,13.97,19.75,50.875,12.625,False,False,False
-HNI,HNI Corporation,48.18,19.625,88,42.5,False,False,False
-TDY,Teledyne Technologies Incorporated,622.393,19.5,57.875,38.875,False,False,False
-BLLN,BillionToOne Inc.,89.53,19.3125,35.25,1.75,False,False,False
-ROL,Rollins Inc.,37.695,19.3125,0.625,11,False,False,False
-MCD,McDonald's Corporation,272.65,19.0625,15.375,26.625,False,False,False
-VLTO,Veralto Corp,117.86,19.0625,84.375,17.625,False,False,False
-IOT,Samsara Inc.,39.35,18.875,58.375,0.75,False,False,False
-MTZ,MasTec Inc.,173.6,18.75,2.125,40.375,False,False,False
-DDOG,Datadog Inc.,167.645,18.625,43.625,1.25,False,False,False
-PEN,Penumbra Inc.,319.62,18.5,1.25,2.375,False,False,False
-ALAB,Astera Labs Inc.,212.465,18.375,43.875,1.625,False,False,False
-CDNA,CareDx Inc.,73.225,18.25,83.625,14.5,False,False,False
-AMAT,Applied Materials Inc.,350.17,18.125,31.875,29.875,False,False,False
-CRDO,Credo Technology Group Holding Ltd,122.765,18,14.125,14.25,False,False,False
-V,Visa Inc.,414.64,17.875,57.375,16.875,False,False,False
-UFPT,UFP Technologies Inc.,301.27,17.75,47,28.25,False,False,False
-OKTA,Okta Inc.,184.045,17.625,68.125,6.25,False,False,False
-MTSI,MACOM Technology Solutions Holdings Inc.,223.37,17.5,39.5,8.25,False,False,False
-BKV,BKV Corporation,18.6,17.375,2.875,45.625,False,False,False
-EL,Estee Lauder Companies Inc. (The),103.605,17.1875,83,11.25,False,False,False
-WRBY,Warby Parker Inc.,26.165,17.1875,20.625,5,False,False,False
-GOOGL,Alphabet Inc.,281.691,16.9375,25.875,24.75,False,False,False
-HWM,Howmet Aerospace Inc.,218.56,16.9375,42.5,4,False,False,False
-TEVA,Teva Pharmaceutical Industries Limited,42.465,16.75,75.25,28.875,False,False,False
-KO,Coca-Cola Company (The),97.775,16.625,83.375,13.625,False,False,False
-SXI,Standex International Corporation,233.01,16.5,45,33.25,False,False,False
-NOV,NOV Inc.,16.905,16.375,10.875,47.375,False,False,False
-WWD,Woodward Inc.,312.1,16.25,24.5,14.375,False,False,False
-APH,Amphenol Corporation,76.71,16.125,83.75,29,False,False,False
-HD,Home Depot Inc. (The),335.3,16,34.375,31.625,False,False,False
-ALGM,Allegro MicroSystems Inc.,28.42,15.875,3.875,8,False,False,False
-GME,GameStop Corporation,25.75,15.75,93.75,40,False,True,False
-NHC,National HealthCare Corporation,205.77,15.625,64.75,46.25,False,False,False
-OSW,OneSpaWorld Holdings Limited,31.8401,15.5,58.125,9,False,False,False
-J,Jacobs Solutions Inc.,157.5,15.375,50.75,36.125,False,False,False
-WAY,Waystar Holding Corp.,27.63,15.25,51.375,43.75,False,False,False
-MA,Mastercard Incorporated,640.578,15.125,63.25,14.125,False,False,False
-TKO,TKO Group Holdings Inc.,190.7,15,20.375,11.125,False,False,False
-P,Everpure Inc. Class A common stock,101.53,14.875,91.5,4.125,False,False,False
-GLW,Corning Incorporated,107.225,14.75,22.5,13,False,False,False
-ORA,Ormat Technologies Inc.,90.63,14.625,11.375,15.125,False,False,False
-MMM,3M Company,179.015,14.5,81.25,39.75,False,False,False
-BA,Boeing Company (The),161.935,14.375,12,36.25,False,False,False
-GNRC,Generac Holdlings Inc.,197.37,14.25,39,27,False,False,False
-CIEN,Ciena Corporation,261.935,14.0625,33.75,11.375,False,False,False
-MNST,Monster Beverage Corporation,45.03,14.0625,23.625,3.625,False,False,False
-OTTR,Otter Tail Corporation,77.39,13.875,9.625,43,False,False,False
-RBA,RB Global Inc.,93.18,13.75,6.75,20.625,False,False,False
-AXTI,AXT Inc,35.54,13.5625,31.125,12.875,False,False,False
-LITE,Lumentum Holdings Inc.,547.24,13.5625,59.875,6.375,False,False,False
-CEG,Constellation Energy Corporation,265.62,13.3125,43.125,35.25,False,False,False
-SLB,SLB Limited,48.85,13.3125,19.125,34.75,False,False,False
-EMR,Emerson Electric Company,160.94,13.125,67.375,24.875,False,False,False
-HXL,Hexcel Corporation,76.53,13,37.375,33.125,False,False,False
-VECO,Veeco Instruments Inc.,37.05,12.875,1.5,32.625,False,False,False
-ABT,Abbott Laboratories,103.97,12.75,13.625,41.375,False,False,False
-PTCT,PTC Therapeutics Inc.,60.23,12.625,0.75,18.625,False,False,False
-RTX,RTX Corporation,195.67,12.5,84,23.875,False,False,False
-BB,BlackBerry Limited,8.28,12.375,84.25,5.625,False,False,False
-MPWR,Monolithic Power Systems Inc.,1305.64,12.25,32.5,4.375,False,False,False
-ESE,ESCO Technologies Inc.,229.67,12.125,32,32.375,False,False,False
-LIF,Life360 Inc.,44.79,12,14.75,15.75,False,False,False
-ATI,ATI Inc.,177.125,11.875,69.375,5.125,False,False,False
-PWR,Quanta Services Inc.,608.095,11.75,74.125,8.5,False,False,False
-MSI,Motorola Solutions Inc.,524.105,11.625,40.5,20.125,False,False,False
-LIN,Linde plc,509.93,11.5,46.75,10.625,False,False,False
-AVTR,Avantor Inc.,15.24,11.3125,67.625,43.25,False,False,False
-WST,West Pharmaceutical Services Inc.,412.855,11.3125,90.5,10.75,False,False,False
-CAKE,Cheesecake Factory Incorporated (The),117.155,11.125,80.625,21.75,False,False,False
-PLXS,Plexus Corp.,212.91,11,54.5,41.875,False,False,False
-RCL,Royal Caribbean Cruises Ltd.,315.44,10.875,62.625,27.5,False,False,False
-BE,Bloom Energy Corporation,171.66,10.75,46.875,0.375,False,False,False
-ADI,Analog Devices Inc.,381.39,10.625,50.125,16.125,False,False,False
-WAB,Westinghouse Air Brake Technologies Corporation,291.32,10.5,62.125,20,False,False,False
-ACLS,Axcelis Technologies Inc.,98.945,10.375,63.375,35.625,False,False,False
-MAR,Marriott International,425.62,10.25,80.375,9.875,False,False,False
-TWLO,Twilio Inc.,193.99,10.125,68.5,29.375,False,False,False
-HUBB,Hubbell Inc,425.61,10,16.75,33.75,False,False,False
-PKG,Packaging Corporation of America,245.545,9.875,75.75,24,False,False,False
-ASH,Ashland Inc.,76.08,9.75,56.5,36,False,False,False
-CSW,CSW Industrials Inc.,279.145,9.625,26,31,False,False,False
-SN,SharkNinja Inc.,226.3,9.5,76.625,3.25,False,False,False
-SPXC,SPX Technologies Inc.,143.31,9.375,8.125,34.25,False,False,False
-KWR,Quaker Houghton,152.72,9.25,65.875,35.375,False,False,False
-BROS,Dutch Bros Inc.,34.9,9.125,0.375,2.75,False,False,False
-IBP,Installed Building Products Inc.,232.25,9,2.75,28.5,False,False,False
-ENPH,Enphase Energy Inc.,22.95,8.875,0.5,34.375,False,False,False
-PRIM,Primoris Services Corporation,66.555,8.75,10.5,39.25,False,False,False
-HEI,Heico Corporation,337.18,8.625,56.875,1.375,False,False,False
-UNF,Unifirst Corporation,229.6,8.5,40,14.625,False,False,False
-JNJ,Johnson & Johnson,275.36,8.375,26.375,19.5,False,False,False
-CHD,Church & Dwight Company Inc.,111.99,8.25,55.125,18.75,False,False,False
-EE,Excelerate Energy Inc.,37.91,8.125,8.375,5.875,False,False,False
-A,Agilent Technologies Inc.,174.27,8,68.25,22.375,False,False,False
-TDW,Tidewater Inc.,72.59,7.875,4.75,34.5,False,False,False
-WM,Waste Management Inc.,241.215,7.75,35,19.125,False,False,False
-BKR,Baker Hughes Company,47.405,7.625,12.25,36.375,False,False,False
-LTH,Life Time Group Holdings Inc.,47.7025,7.5,70.125,7.875,False,False,False
-CR,Crane Company,211.475,7.375,86,8.875,False,False,False
-IPGP,IPG Photonics Corporation,64.42,7.25,4.875,13.875,False,False,False
-AMD,Advanced Micro Devices Inc.,507.69,7.125,86.25,1.875,False,False,False
-SGI,Somnigroup International Inc.,60.4,7,4.125,27.875,False,False,False
-Q,Qnity Electronics Inc.,114.615,6.875,60.875,25.5,False,False,False
-KNF,Knife Riv Holding Co.,52.75,6.75,0.25,30.375,False,False,False
-KGS,Kodiak Gas Services Inc.,42.775,6.625,1.125,25.25,False,False,False
-ATO,Atmos Energy Corporation,171.77,6.5,57.5,32.5,False,False,False
-BWXT,BWX Technologies Inc.,117.81,6.375,3.125,21.25,False,False,False
-CAI,Caris Life Sciences Inc.,19.53,6.25,18.375,6.5,False,False,False
-ESI,Element Solutions Inc.,32.28,6.125,46.375,25.125,False,False,False
-TGTX,TG Therapeutics Inc.,63.77,6,21.25,3.5,False,False,False
-MTRN,Materion Corporation,199.917,5.8125,89.625,11.875,False,False,False
-NPO,Enpro Inc.,270.545,5.8125,47.875,6.625,False,False,False
-RBC,RBC Bearings Incorporated,477.41,5.625,43,2.5,False,False,False
-NSC,Norfolk Southern Corporation,323.45,5.5,65.75,18.5,False,False,False
-MOH,Molina Healthcare Inc,208.91,5.375,55.25,23.625,False,False,False
-VRTX,Vertex Pharmaceuticals Incorporated,533.35,5.25,14.875,15.375,False,False,False
-ONTO,Onto Innovation Inc.,202.79,5.125,17.5,16,False,False,False
-CVNA,Carvana Co.,72.02,5,22.625,3,False,False,False
-TRGP,Targa Resources Inc.,291.28,4.875,60,6.75,False,False,False
-WTTR,Select Water Solutions Inc. Class A common stock,16.23,4.75,30.375,12.5,False,False,False
-CDNS,Cadence Design Systems Inc.,311.502,4.625,10,5.375,False,False,False
-FLS,Flowserve Corporation,80.36,4.5,37.25,27.375,False,False,False
-DOCN,DigitalOcean Holdings Inc.,79.555,4.375,29,2.625,False,False,False
-VVV,Valvoline Inc.,33.375,4.25,17.75,13.375,False,False,False
-DTM,DT Midstream Inc.,118.83,4.125,1,12.375,False,False,False
-TMO,Thermo Fisher Scientific Inc,688.65,4,69.75,25.625,False,False,False
-AMZN,Amazon.com Inc.,262.785,3.875,47.625,7.75,False,False,False
-SXT,Sensient Technologies Corporation,117.28,3.75,73.75,13.75,False,False,False
-RVTY,Revvity Inc.,151.57,3.625,77.375,17.75,False,False,False
-SWKS,Skyworks Solutions Inc.,84.575,3.5,58.25,23.5,False,False,False
-PH,Parker-Hannifin Corporation,919.11,3.375,58.75,17.125,False,False,False
-VAL,Valaris Limited,78.66,3.25,4.375,19.75,False,False,False
-HLT,Hilton Worldwide Holdings Inc.,372.8,3.125,70.5,6,False,False,False
-TSLA,Tesla Inc.,380.17,3,7.125,0.125,False,False,False
-DHR,Danaher Corporation,226.475,2.875,57.625,24.25,False,False,False
-VMC,Vulcan Materials Company (Holding Company),274.75,2.75,17.375,16.25,False,False,False
-RSG,Republic Services Inc.,250.425,2.625,30.75,13.25,False,False,False
-PANW,Palo Alto Networks Inc.,328.36,2.5,56.75,1.125,False,False,False
-ITT,ITT Inc.,209.65,2.375,54.375,15.625,False,False,False
-JHX,James Hardie Industries plc.,26.725,2.25,62.875,15.25,False,False,False
-ETN,Eaton Corporation PLC,337.472,2.125,31.75,15,False,False,False
-TECH,Bio-Techne Corp,72.73,2,29.875,7.625,False,False,False
-WCN,Waste Connections Inc.,182.32,1.875,54.125,9.5,False,False,False
-SITM,SiTime Corporation,415.42,1.75,29.75,1.5,False,False,False
-RGEN,Repligen Corporation,171.38,1.625,35.75,0.5,False,False,False
-SEI,Solaris Energy Infrastructure Inc.,63.63,1.5,30.5,4.5,False,False,False
-INTC,Intel Corporation,53.94,1.375,9.875,2.875,False,False,False
-MRCY,Mercury Systems Inc,79.23,1.25,29.625,1,False,False,False
-CALM,Cal-Maine Foods Inc.,69.73,1.0625,0.125,13.125,False,False,False
-ENTG,Entegris Inc.,143.174,1.0625,75.625,10.375,False,False,False
-MRVL,Marvell Technology Inc.,144.877,0.875,53,8.75,False,False,False
-AME,AMETEK Inc.,236.73,0.75,71.375,10.125,False,False,False
-GSAT,Globalstar Inc.,86.39,0.625,46,2.125,False,False,False
-ECL,Ecolab Inc.,300.475,0.5,53.25,5.5,False,False,False
-LPX,Louisiana-Pacific Corporation,74.06,0.375,25,5.25,False,False,False
-DCO,Ducommun Incorporated,138.75,0.25,45.625,7.5,False,False,False
-VSEC,VSE Corporation,182.76,0.125,19.375,6.875,False,False,False
+MPC,Marathon Petroleum Corporation,377.97,100,99.75,96,True,True,False
+PARR,Par Pacific Holdings Inc.,64.525,99.875,92.625,96.375,True,True,False
+SM,SM Energy Company,29.3,99.75,97.25,97.375,True,True,False
+ADBE,Adobe Inc.,228.23,99.625,31.875,95.625,True,False,False
+SSRM,SSR Mining Inc.,23.89,99.5,50.75,91.625,True,False,False
+CHRD,Chord Energy Corporation,139.43,99.375,97.125,96.625,True,True,False
+DINO,HF Sinclair Corporation,91.925,99.25,100,98.875,True,True,False
+VLO,Valero Energy Corporation,345.198,99.125,99.875,94.25,True,True,False
+APA,APA Corporation,46.01,99,97.625,88.375,True,True,False
+TDC,Teradata Corporation,36.07,98.875,83.125,89.75,True,False,False
+EXPE,Expedia Group Inc.,249.26,98.75,95.75,87.875,True,True,False
+CF,CF Industries Holdings Inc.,116.28,98.625,78.5,92.875,True,False,False
+CSTM,Constellium SE,21.16,98.5,72.75,98.5,True,False,False
+KFY,Korn Ferry,74.85,98.375,79.125,94,True,False,False
+DECK,Deckers Outdoor Corporation,82.81,98.25,50.875,92.25,True,False,False
+SNDK,Sandisk Corporation,767.29,98.125,87.5,97.625,True,False,False
+NEM,Newmont Corporation,103.58,98,88.375,83.5,True,False,False
+SBLK,Star Bulk Carriers Corp.,26.95,97.875,98.5,95.875,True,True,False
+DK,Delek US Holdings Inc.,61.33,97.75,97.875,93.5,True,True,False
+AEO,American Eagle Outfitters Inc.,21.73,97.625,94.125,90,True,True,False
+SFM,Sprouts Farmers Market Inc.,48.63,97.5,4.125,98.25,True,False,False
+DLTR,Dollar Tree Inc.,140.2,97.375,93.5,83,True,True,False
+IT,Gartner Inc.,182.26,97.25,80.5,96.875,True,False,False
+CARG,CarGurus Inc.,34.35,97.125,69.125,80.5,True,False,False
+ENS,EnerSys,136.98,97,36.125,97.5,True,False,False
+TXT,Textron Inc.,82.23,96.875,53.25,93.75,True,False,False
+STRL,Sterling Infrastructure Inc.,276.67,96.6875,72.25,81.375,True,False,False
+PBF,PBF Energy Inc.,62.585,96.6875,98.125,92.625,True,True,False
+YETI,YETI Holdings Inc.,38.935,96.5,29.75,81.875,True,False,False
+DBX,Dropbox Inc.,35.025,96.375,82.375,94.75,True,False,False
+GAP,Gap Inc. (The),19.715,96.25,47.5,100,True,False,False
+ANF,Abercrombie & Fitch Company,145.85,96.125,98.25,91.5,True,True,False
+PGNY,Progyny Inc.,36.485,96,72.625,81,True,False,False
+EOG,EOG Resources Inc.,151.74,95.875,91.5,77.625,True,True,False
+LULU,lululemon athletica inc.,110.365,95.75,11.25,94.875,True,False,False
+GMED,Globus Medical Inc.,70.95,95.625,21.625,85.75,True,False,False
+PEGA,Pegasystems Inc.,30.37,95.5,10.375,83.25,True,False,False
+CVI,CVR Energy Inc.,35.03,95.375,94.5,83.125,True,True,False
+FICO,Fair Isaac Corporation,676.715,95.25,3.25,80,True,False,False
+MU,Micron Technology Inc.,698.96,95.125,92,79,True,True,False
+BKE,Buckle Inc. (The),42.42,95,24.75,92.375,True,False,False
+SIG,Signet Jewelers Limited,107.465,94.875,96.625,96.25,True,True,False
+IESC,IES Holdings Inc.,164.575,94.75,61.625,89,True,False,False
+EXE,Expand Energy Corporation,84.305,94.625,21.25,85.875,True,False,False
+EXEL,Exelixis Inc.,68.935,94.5,93.375,77.375,True,True,False
+BBY,Best Buy Co. Inc.,99.53,94.375,88.875,80.375,True,False,False
+GDDY,GoDaddy Inc.,105.08,94.25,56.25,95.5,True,False,False
+AYI,Acuity Inc.,328.965,94.125,53.625,81.125,True,False,False
+INTU,Intuit Inc.,314.42,94,19.375,86.5,True,False,False
+TTD,The Trade Desk Inc.,15.02,93.875,36.875,84.5,True,False,False
+RELY,Remitly Global Inc.,20.31,93.75,67.375,84.75,True,False,False
+SONO,Sonos Inc.,17.635,93.625,88.125,83.625,True,False,False
+HRB,H&R Block Inc.,48.26,93.4375,67.25,89.375,True,False,False
+BRC,Brady Corporation,76.8,93.4375,72.875,78.875,True,False,False
+MUSA,Murphy USA Inc.,520.15,93.25,74.625,74.625,True,False,False
+M,Macy's Inc,24.655,93.125,93.875,97.75,True,True,False
+MATX,Matson Inc.,207.005,92.9375,97.375,86.875,True,True,False
+BBWI,Bath & Body Works Inc.,18.665,92.9375,83.25,99.125,True,False,False
+GTX,Garrett Motion Inc.,20.9,92.75,33.875,92.5,True,False,False
+AES,The AES Corporation,15.015,92.625,70.625,83.875,True,False,False
+SUPN,Supernus Inc.,28.895,92.5,28.5,85.5,True,False,False
+OSCR,Oscar Health Inc.,28.46,92.375,93.75,71.5,True,True,False
+GNTX,Gentex Corporation,19.035,92.25,15.75,94.625,True,False,False
+GCT,GigaCloud Technology Inc,63.97,92.125,99.625,81.25,True,True,False
+AUPH,Aurinia Pharmaceuticals Inc,15.345,92,68,88,True,False,False
+CENX,Century Aluminum Company,31.84,91.875,7.625,91.75,True,False,False
+TPC,Tutor Perini Corporation,97.855,91.75,90.125,69.125,False,True,False
+GPOR,Gulfport Energy Corporation,162.98,91.625,14.25,77,True,False,False
+LOGI,Logitech International S.A.,100.78,91.5,71.5,77.875,True,False,False
+DXC,DXC Technology Company,14.4,91.375,51.5,99.25,True,False,False
+CROX,Crocs Inc.,162,91.25,99.375,88.25,True,True,False
+TNET,TriNet Group Inc.,64.58,91.125,98.75,95.125,True,True,False
+AOS,A.O. Smith Corporation,64.0275,91,23.375,95.375,True,False,False
+FRSH,Freshworks Inc.,12.815,90.875,91.125,71.375,True,True,False
+CRUS,Cirrus Logic Inc.,117.115,90.75,14,87.375,True,False,False
+MTCH,Match Group Inc.,40.1543,90.625,78.75,86.75,True,False,False
+HUBS,HubSpot Inc.,209.205,90.5,31.75,65.125,False,False,False
+EME,EMCOR Group Inc.,649.4,90.375,75.75,74.75,True,False,False
+COKE,Coca-Cola Consolidated Inc.,202.475,90.25,68.125,75.5,True,False,False
+URBN,Urban Outfitters Inc.,86.8,90.125,96.125,72.75,True,True,False
+DLB,Dolby Laboratories,57.655,90,38.125,78.625,True,False,False
+CNX,CNX Resources Corporation,36.6143,89.875,40.625,84.25,False,False,False
+INSW,International Seaways Inc.,98.36,89.75,98.375,86,False,True,False
+DAL,Delta Air Lines Inc.,85.015,89.625,61,82.5,False,False,False
+MAS,Masco Corporation,83.695,89.5,95.375,80.25,False,True,False
+GM,General Motors Company,83.875,89.375,67.75,96.5,False,False,False
+TPR,Tapestry Inc.,127,89.25,74.5,63.875,False,False,False
+EAT,Brinker International Inc.,203.095,89.125,95.125,67.25,False,True,False
+MLI,Mueller Industries Inc.,53.64,89,34.375,87.75,False,False,False
+LYB,LyondellBasell Industries NV,58.7,88.875,54.75,95,False,False,False
+MTH,Meritage Homes Corporation,61.76,88.75,12.75,91.875,False,False,False
+NUE,Nucor Corporation,253.63,88.625,99.5,77.25,False,True,False
+ASO,Academy Sports and Outdoors Inc.,72.77,88.5,84.75,91.375,False,False,False
+PINS,Pinterest Inc.,17.985,88.3125,26.25,68,False,False,False
+PYPL,PayPal Holdings Inc.,58.12,88.3125,92.75,97,False,False,False
+DAR,Darling Ingredients Inc.,51.415,88.125,81.875,87,False,False,False
+FDX,FedEx Corporation,319.605,88,87,85.625,False,False,False
+EPAM,EPAM Systems Inc.,155.05,87.8125,61.375,92.125,False,False,False
+LII,Lennox International Inc.,336.275,87.8125,3.5,86.125,False,False,False
+KTB,Kontoor Brands Inc.,83.58,87.625,85,68.625,False,False,False
+HPQ,HP Inc.,28.915,87.5,92.375,99.375,False,True,False
+NBIX,Neurocrine Biosciences Inc.,162.615,87.3125,41.25,64.25,False,False,False
+AA,Alcoa Corporation,35.92,87.3125,41.75,92,False,False,False
+BKNG,Booking Holdings Inc.,154.225,87.125,23.625,68.125,False,False,False
+LUV,Southwest Airlines Company,46.7425,87,42.75,71,False,False,False
+GD,General Dynamics Corporation,348.28,86.875,79.375,65.75,False,False,False
+CMI,Cummins Inc.,430.55,86.75,24,82.75,False,False,False
+DELL,Dell Technologies Inc.,316.29,86.625,98.625,82.125,False,True,False
+CDE,Coeur Mining Inc.,12.275,86.5,2.5,67.875,False,False,False
+BLKB,Blackbaud Inc.,51.13,86.375,69.875,93.125,False,False,False
+CI,The Cigna Group,285.8,86.25,44.625,97.25,False,False,False
+CHWY,Chewy Inc.,20.51,86.125,21.875,58.875,False,False,False
+APTV,Aptiv PLC,38.58,86,27.625,93.875,False,False,False
+CART,Maplebear Inc.,58.57,85.8125,66.25,55.5,False,False,False
+OVV,Ovintiv Inc. (DE),62.535,85.8125,95.875,78.5,False,True,False
+DOCU,DocuSign Inc.,76.79,85.625,89.75,57.375,False,False,False
+HL,Hecla Mining Company,11.695,85.5,25.875,53,False,False,False
+UAL,United Airlines Holdings Inc.,107.45,85.375,27.375,78.25,False,False,False
+RDDT,Reddit Inc.,95.65,85.25,22.875,53.125,False,False,False
+DVA,DaVita Inc.,167.385,85.125,22.5,97.875,False,False,False
+MMS,Maximus Inc.,64.55,85,19.125,99.75,False,False,True
+ACN,Accenture plc,233.905,84.875,76.75,85.375,False,False,False
+KEX,Kirby Corporation,127.02,84.75,55.625,79.625,False,False,False
+MGM,MGM Resorts International,33.6,84.625,6,84,False,False,False
+VST,Vistra Corp.,127.105,84.5,8.625,69.875,False,False,False
+REZI,Resideo Technologies Inc.,21.9,84.375,25.625,82.625,False,False,False
+CVS,CVS Health Corporation,82.765,84.25,83.375,96.75,False,False,False
+THC,Tenet Healthcare Corporation,275,84.125,95.625,98.125,False,True,True
+WDAY,Workday Inc.,179.47,84,52.75,65.5,False,False,False
+DG,Dollar General Corporation,133.355,83.875,96.875,73.5,False,True,False
+LVS,Las Vegas Sands Corp.,38.83,83.75,1.375,78.125,False,False,False
+ALGN,Align Technology Inc.,162.73,83.625,11.5,74.5,False,False,False
+WDC,Western Digital Corporation,286.18,83.4375,79.5,66.625,False,False,False
+SPSC,SPS Commerce Inc.,79.36,83.4375,90.625,64.125,False,True,False
+TGT,Target Corporation,168.32,83.1875,98,71.125,False,True,False
+MD,Pediatrix Medical Group Inc.,30.93,83.1875,85.125,96.125,False,False,False
+SKYW,SkyWest Inc.,81,83,23.25,90.125,False,False,False
+LMT,Lockheed Martin Corporation,576.545,82.8125,70.5,69.25,False,False,False
+HUM,Humana Inc.,413.73,82.8125,93.25,60.75,False,True,False
+XOM,ExxonMobil Holdings Corporation,162.64,82.625,91.75,63.25,False,True,False
+CRGY,Crescent Energy Company,10.985,82.5,74.875,76.625,False,False,False
+ELV,Elevance Health Inc.,414.33,82.375,95.5,90.875,False,True,False
+ALRM,Alarm.com Holdings Inc.,66.655,82.25,73.625,54.5,False,False,False
+HGV,Hilton Grand Vacations Inc.,46.66,82.125,44.5,94.5,False,False,True
+NTCT,NetScout Systems Inc.,32.62,81.9375,62.625,89.625,False,False,False
+LEA,Lear Corporation,107.228,81.9375,41.125,99.625,False,False,True
+TEL,TE Connectivity plc,214.255,81.75,68.625,74.25,False,False,False
+MUR,Murphy Oil Corporation,33.75,81.625,85.75,76,False,False,False
+AR,Antero Resources Corporation,36.948,81.5,42.375,73,False,False,False
+COP,ConocoPhillips,136.32,81.375,95.25,61,False,True,False
+HALO,Halozyme Therapeutics Inc.,97.3,81.25,71,71.75,False,False,False
+WWW,Wolverine World Wide Inc.,24.95,81.125,94.25,72,False,True,False
+SWK,Stanley Black & Decker Inc.,110.335,81,99.125,88.125,False,True,False
+ALB,Albemarle Corporation,87.152,80.875,25.75,74.125,False,False,False
+CALY,Callaway Golf Company,16.95,80.75,86.875,54.75,False,False,False
+JBL,Jabil Inc.,248.04,80.625,74,81.625,False,False,False
+CVX,Chevron Corporation,207.645,80.5,96.25,62.75,False,True,False
+ECG,Everus Construction Group Inc.,85.285,80.3125,51.875,77.5,False,False,False
+CAH,Cardinal Health Inc.,277.665,80.3125,93,65.25,False,True,False
+TMUS,T-Mobile US Inc.,162.29,80.125,35.375,81.75,False,False,False
+NTAP,NetApp Inc.,173.14,80,94.75,59,False,True,False
+PATH,UiPath Inc.,12.055,79.875,34,65.375,False,False,False
+CENTA,Central Garden & Pet Company,40.42,79.75,94.625,81.5,False,True,False
+ZBRA,Zebra Technologies Corporation,317.445,79.625,91,75.625,False,False,False
+NVST,Envista Holdings Corporation,23.64,79.5,55.5,82.875,False,False,False
+UPS,United Parcel Service Inc.,110.75,79.375,79.875,90.75,False,False,False
+OXY,Occidental Petroleum Corporation,54.465,79.25,96.375,64,False,True,False
+MO,Altria Group Inc.,76.642,79.125,83.5,75,False,False,False
+CMCSA,Comcast Corporation,25.105,79,55.75,99.875,False,False,True
+OSK,Oshkosh Corporation (Holding Company)Common Stock,139.12,78.875,46.5,95.25,False,False,True
+WK,Workiva Inc.,66.055,78.75,25.25,44.125,False,False,False
+AGX,Argan Inc.,296.95,78.5625,18.25,50.875,False,False,False
+GEN,Gen Digital Inc.,30.34,78.5625,44.875,89.125,False,False,False
+TTC,Toro Company (The),104.255,78.375,79.25,55.625,False,False,False
+HCA,HCA Healthcare Inc.,485.29,78.25,50.375,89.5,False,False,False
+PAYO,Payoneer Global Inc.,7.18,78.125,86.75,64.375,False,False,False
+DV,DoubleVerify Holdings Inc.,13.565,78,69.25,56,False,False,False
+CTSH,Cognizant Technology Solutions Corporation,58.9,77.875,61.875,98.625,False,False,True
+UHS,Universal Health Services Inc.,189.98,77.75,21.75,99.5,False,False,True
+YUMC,Yum China Holdings Inc.,50.59,77.625,59.75,70.625,False,False,False
+CCK,Crown Holdings Inc.,120.1,77.5,86,78.375,False,False,False
+STLD,Steel Dynamics Inc.,225.19,77.375,82.25,72.25,False,False,False
+SHOO,Steven Madden Ltd.,41.595,77.1875,58.625,58.375,False,False,False
+MIDD,Middleby Corporation (The),135.43,77.1875,70.875,88.875,False,False,True
+RL,Ralph Lauren Corporation,381.435,77,76.125,44,False,False,False
+PODD,Insulet Corporation,143.93,76.875,34.875,52.875,False,False,False
+STX,Seagate Technology Holdings PLC,503.38,76.75,77.5,44.875,False,False,False
+SSD,Simpson Manufacturing Company Inc.,196.02,76.625,74.75,47.5,False,False,False
+COLM,Columbia Sportswear Company,76.97,76.5,90.75,70.75,False,True,False
+PTON,Peloton Interactive Inc.,5.285,76.375,64,62.875,False,False,False
+FIZZ,National Beverage Corp.,37.3,76.0625,27.5,59.75,False,False,False
+OTEX,Open Text Corporation,23.74,76.0625,64.5,99,False,False,True
+BWA,BorgWarner Inc.,49.67,76.0625,62,83.75,False,False,False
+BAH,Booz Allen Hamilton Holding Corporation,84.605,76.0625,88.5,93.25,False,False,True
+CBT,Cabot Corporation,72.49,75.75,35,87.125,False,False,False
+MWA,MUELLER WATER PRODUCTS,23.93,75.625,14.75,67.75,False,False,False
+PR,Permian Resources Corporation,21.615,75.5,97.75,60.5,False,True,False
+PPG,PPG Industries Inc.,122.14,75.375,84.25,72.875,False,False,False
+RNG,RingCentral Inc.,72.33,75.25,89.5,80.875,False,False,False
+UNH,UnitedHealth Group Incorporated,366.1,75.125,88.75,85.25,False,False,False
+RMD,ResMed Inc.,241.42,75,41,61.125,False,False,False
+CMC,Commercial Metals Company,59.225,74.875,15.125,92.75,False,False,True
+OTIS,Otis Worldwide Corporation,76.6,74.75,28.25,73.25,False,False,False
+REGN,Regeneron Pharmaceuticals Inc.,956.26,74.625,96.75,70.125,False,True,False
+HCC,Warrior Met Coal Inc.,78.855,74.5,9.375,50.625,False,False,False
+VNT,Vontier Corporation,43.855,74.375,64.375,90.625,False,False,True
+SCCO,Southern Copper Corporation,145.06,74.25,73.5,41.5,False,False,False
+POOL,Pool Corporation,208.76,74.125,11.625,80.75,False,False,False
+RSI,Rush Street Interactive Inc.,11.53,74,1.75,39.625,False,False,False
+MCK,McKesson Corporation,1082.23,73.875,92.5,74.875,False,True,False
+SFD,Smithfield Foods Inc.,18.945,73.75,10.875,98.75,False,False,True
+SANM,Sanmina Corporation,156.89,73.625,39,79.125,False,False,False
+LCII,LCI Industries,100.32,73.4375,15.25,87.625,False,False,True
+ADSK,Autodesk Inc.,253.67,73.4375,20.125,41.375,False,False,False
+PEP,PepsiCo Inc.,141.88,73.25,20.5,62.375,False,False,False
+DXCM,DexCom Inc.,81.88,73.125,52.25,40.25,False,False,False
+WMS,Advanced Drainage Systems Inc.,119.06,72.9375,18.375,70.5,False,False,False
+ALNY,Alnylam Pharmaceuticals Inc.,153.575,72.9375,38,57.25,False,False,False
+FOXA,Fox Corporation,66.94,72.75,50.5,69.625,False,False,False
+PACS,PACS Group Inc.,47.12,72.625,86.5,58.625,False,False,False
+FCN,FTI Consulting Inc.,207.38,72.5,63.75,72.625,False,False,False
+ADT,ADT Inc.,9.885,72.375,59.25,94.125,False,False,True
+MAT,Mattel Inc.,14.83,72.25,48.75,93.375,False,False,True
+UBER,Uber Technologies Inc.,68.69,72.125,14.5,63.375,False,False,False
+CNM,Core & Main Inc.,42.71,72,20.25,90.375,False,False,True
+ZM,Zoom Communications Inc.,91.98,71.875,52,82.375,False,False,False
+LEVI,Levi Strauss & Co,24.26,71.75,71.625,60.625,False,False,False
+CAT,Caterpillar Inc.,555.81,71.625,31.375,54.25,False,False,False
+HAS,Hasbro Inc.,119.2,71.5,94.875,45.75,False,True,False
+G,Genpact Limited,42.39,71.375,54.125,85,False,False,True
+EXPD,Expeditors International of Washington Inc.,192.503,71.1875,97.5,53.875,False,True,False
+POWL,Powell Industries Inc.,156.4,71.1875,10.625,44.375,False,False,False
+ARW,Arrow Electronics Inc.,186.795,70.9375,88.625,94.375,False,False,True
+VSXY,Victorias Secret & Co.,100.89,70.9375,89.125,43.625,False,False,False
+EHC,Encompass Health Corporation,135.925,70.75,70.75,60.875,False,False,False
+BMY,Bristol-Myers Squibb Company,59.84,70.5625,60.5,91.125,False,False,True
+LDOS,Leidos Holdings Inc.,125.88,70.5625,37.25,97.125,False,False,True
+JBHT,J.B. Hunt Transport Services Inc.,226.58,70.375,19.75,42.5,False,False,False
+YOU,Clear Secure Inc.,55.055,70.25,43.375,35.5,False,False,False
+ZTS,Zoetis Inc.,83.795,70.125,28.375,89.25,False,False,True
+HON,Honeywell International Inc.,219.745,70,30.625,64.875,False,False,False
+TOST,Toast Inc.,33.875,69.8125,49.75,38.75,False,False,False
+LSTR,Landstar System Inc.,153.44,69.8125,9.5,43.75,False,False,False
+DKS,Dick's Sporting Goods Inc,145.665,69.625,5.5,68.875,False,False,False
+HPE,Hewlett Packard Enterprise Company,46.22,69.5,98.875,71.875,False,True,False
+PAYC,Paycom Software Inc.,244.05,69.375,97,72.375,False,True,False
+ABG,Asbury Automotive Group Inc,196.63,69.25,14.625,98.375,False,False,True
+TENB,Tenable Holdings Inc.,43.375,69.125,94.375,42,False,True,False
+FFIV,F5 Inc.,313.74,69,66.75,55.125,False,False,False
+AIT,Applied Industrial Technologies Inc.,290.05,68.875,77.625,38.5,False,False,False
+CNC,Centene Corporation,68.625,68.75,96,76.5,False,True,False
+VMI,Valmont Industries Inc.,411.615,68.625,54.625,75.375,False,False,False
+GFF,Griffon Corporation,105.82,68.4375,71.75,76.75,False,False,False
+TAP,Molson Coors Beverage Company,40.76,68.4375,19,98,False,False,True
+JKHY,Jack Henry & Associates Inc.,174.36,68.25,49.375,57.875,False,False,False
+BJ,BJ's Wholesale Club Holdings Inc.,111.571,68.125,71.125,48.875,False,False,False
+BCC,Boise Cascade L.L.C.,65.505,68,35.25,79.875,False,False,False
+ALV,Autoliv Inc.,120.87,67.875,44.75,79.75,False,False,False
+KMB,Kimberly-Clark Corporation,107.13,67.6875,28.75,68.75,False,False,False
+MGRC,McGrath RentCorp,126.27,67.6875,72.5,66.25,False,False,False
+QTWO,Q2 Holdings Inc.,69.96,67.5,37.125,38.125,False,False,False
+HSY,The Hershey Company,174.56,67.375,25.375,49,False,False,False
+EXTR,Extreme Networks Inc.,27,67.25,76.25,37.625,False,False,False
+HSIC,Henry Schein Inc.,83.59,67.125,49.125,87.5,False,False,True
+LHX,L3Harris Technologies Inc.,256.423,67,38.75,61.75,False,False,False
+CVLT,Commvault Systems Inc.,148.8,66.875,81,33.625,False,False,False
+KBR,KBR Inc.,33.82,66.75,45,95.75,False,False,True
+ZWS,Zurn Elkay Water Solutions Corporation,45.43,66.625,35.125,40,False,False,False
+SAIC,Science Applications International Corporation,145.89,66.5,99,93.625,False,True,True
+BR,Broadridge Financial Solutions Inc.,185.6,66.375,60.75,71.625,False,False,False
+CRM,Salesforce Inc.,188.79,66.25,81.625,85.125,False,False,True
+ADMA,ADMA Biologics Inc,13.875,66.125,41.625,76.125,False,False,False
+INGR,Ingredion Incorporated,90.48,66,16.75,90.25,False,False,True
+QLYS,Qualys Inc.,191.615,65.875,64.25,36.875,False,False,False
+ST,Sensata Technologies Holding plc,37.94,65.75,53,88.75,False,False,True
+ACAD,ACADIA Pharmaceuticals Inc.,17.91,65.625,54.875,56.5,False,False,False
+ARCB,ArcBest Corporation,135.38,65.5,76.875,50,False,False,False
+FTDR,Frontdoor Inc.,94.176,65.375,86.625,43.375,False,False,False
+NVDA,NVIDIA Corporation,152.5,65.25,44.25,51.875,False,False,False
+UTHR,United Therapeutics Corporation,573.76,65.125,25.125,62.25,False,False,False
+OPCH,Option Care Health Inc.,31.6,65,75,84.625,False,False,True
+ABM,ABM Industries Incorporated,54.525,64.875,87.75,93,False,False,True
+FIVE,Five Below Inc.,235.565,64.6875,84,32.875,False,False,False
+FCFS,FirstCash Holdings Inc.,172.55,64.6875,13.5,65.875,False,False,False
+CHE,Chemed Corp,546.25,64.5,59.875,51.5,False,False,False
+CCL,Carnival Corporation Ltd.,28.775,64.375,82.625,73.625,False,False,False
+MZTI,The Marzetti Company,108.122,64.25,3.75,77.75,False,False,False
+DT,Dynatrace Inc.,44.875,64.0625,48.625,35.875,False,False,False
+BOX,Box Inc.,43.55,64.0625,38.25,39.125,False,False,False
+LKQ,LKQ Corporation,19.13,63.875,4.75,89.875,False,False,True
+AZZ,AZZ Inc.,129.3,63.75,75.125,58.75,False,False,False
+UFPI,UFP Industries Inc.,78.39,63.625,12.875,76.875,False,False,False
+ETSY,Etsy Inc.,85.59,63.5,96.5,75.875,False,True,False
+NXPI,NXP Semiconductors N.V.,252.57,63.375,42.25,64.5,False,False,False
+ALLE,Allegion plc,186.4,63.25,74.125,47.25,False,False,False
+MTDR,Matador Resources Company,49.61,63.125,58.5,83.375,False,False,True
+MHK,Mohawk Industries Inc.,147.22,63,56.375,73.875,False,False,False
+SNA,Snap-On Incorporated,364.27,62.875,24.25,67,False,False,False
+GGG,Graco Inc.,71.338,62.75,24.5,52.125,False,False,False
+NKE,Nike Inc.,36.44,62.625,18.75,78,False,False,False
+AMKR,Amkor Technology Inc.,34.74,62.5,8.875,66.125,False,False,False
+TREX,Trex Company Inc.,50.235,62.375,93.125,39.25,False,False,False
+BOOT,Boot Barn Holdings Inc.,140.5,62.25,10,46.5,False,False,False
+TEAM,Atlassian Corporation,137.96,62.125,77.125,29.75,False,False,False
+EXLS,ExlService Holdings Inc.,42.55,62,76.625,61.875,False,False,False
+LECO,Lincoln Electric Holdings Inc.,272.28,61.875,78,38.625,False,False,False
+ULTA,Ulta Beauty Inc.,649.26,61.75,75.25,35.75,False,False,False
+ADUS,Addus HomeCare Corporation,121.501,61.625,40.5,69.375,False,False,False
+TOL,Toll Brothers Inc.,144.54,61.5,37.75,88.5,False,False,True
+T,AT&T Inc.,21.915,61.375,77.375,91.25,False,False,True
+ATRO,Astronics Corporation,57.59,61.25,44.375,51.25,False,False,False
+VRSN,VeriSign Inc.,305.78,61.125,23.5,31.5,False,False,False
+IPAR,Interparfums Inc.,133,61,61.125,41.625,False,False,False
+VZ,Verizon Communications Inc.,45.66,60.875,80.625,90.5,False,False,True
+KR,Kroger Company (The),69.85,60.75,32.5,68.5,False,False,False
+MYRG,MYR Group Inc.,271.3,60.625,41.5,48.125,False,False,False
+BSX,Boston Scientific Corporation,43.16,60.5,11.875,75.125,False,False,False
+FDS,FactSet Research Systems Inc.,314.47,60.3125,45.875,62.125,False,False,False
+CTVA,Corteva Inc.,8.475,60.3125,29.5,88.625,False,False,True
+ACI,Albertsons Companies Inc.,12.955,60.125,2.375,73.75,False,False,False
+DOCS,Doximity Inc.,30.655,60,40.75,42.875,False,False,False
+AN,AutoNation Inc.,177.607,59.875,12.5,91,False,False,True
+PAYX,Paychex Inc.,113.48,59.75,33.125,55.875,False,False,False
+OLED,Universal Display Corporation,83.38,59.625,17.75,74,False,False,False
+DHI,D.R. Horton Inc.,144.485,59.5,30.5,84.125,False,False,True
+MEDP,Medpace Holdings Inc.,649.82,59.375,65,27.25,False,False,False
+SYY,Sysco Corporation,77.425,59.25,57,68.375,False,False,False
+BURL,Burlington Stores Inc.,248.935,59.125,6.375,33.75,False,False,False
+NSIT,Insight Enterprises Inc.,160.13,59,99.25,84.375,False,True,True
+TDS,Telephone and Data Systems Inc.,30.385,58.875,59.625,73.375,False,False,False
+FSS,Federal Signal Corporation,116.21,58.75,34.75,42.25,False,False,False
+ITRI,Itron Inc.,96.08,58.625,62.125,87.25,False,False,True
+NVR,NVR Inc.,5642.81,58.5,6.5,75.75,False,False,False
+TER,Teradyne Inc.,232.765,58.375,47,32,False,False,False
+FLYW,Flywire Corporation Voting,21.51,58.25,69.5,42.125,False,False,False
+OLLI,Ollie's Bargain Outlet Holdings Inc.,97.915,58.125,42.625,45.375,False,False,False
+INGM,Ingram Micro Holding Corporation,27.6,58,68.5,86.375,False,False,True
+MHO,M/I Homes Inc.,122.467,57.875,13.25,86.625,False,False,True
+SSNC,SS&C Technologies Holdings Inc.,76.81,57.75,65.875,86.25,False,False,True
+FTI,TechnipFMC plc Ordinary Share,62.18,57.5625,69,32.25,False,False,False
+MSM,MSC Industrial Direct Company Inc.,114.713,57.5625,80.375,37.25,False,False,False
+OII,Oceaneering International Inc.,33.79,57.375,49.625,56.25,False,False,False
+PAY,Paymentus Holdings Inc.,32.03,57.25,39.5,23.625,False,False,False
+FND,Floor & Decor Holdings Inc.,47.1,57.125,3.375,50.75,False,False,False
+STZ,Constellation Brands Inc.,143,57,43.25,82.25,False,False,True
+RPM,RPM International Inc.,103.47,56.875,48.25,58.5,False,False,False
+DUOL,Duolingo Inc.,161.82,56.75,29.125,25.875,False,False,False
+WOR,Worthington Enterprises Inc.,57.92,56.625,72.125,63.125,False,False,False
+DY,Dycom Industries Inc.,226.11,56.5,27,70.25,False,False,False
+HESM,Hess Midstream LP Class A Representing Limited Partner Interests,30.555,56.375,2.25,59.625,False,False,False
+CON,Concentra Group Holdings Parent Inc.,42.235,56.25,95,50.5,False,True,False
+CPRT,Copart Inc. (DE),31.225,56.125,5.125,56.125,False,False,False
+KNX,Knight-Swift Transportation Holdings Inc.,62.6602,56,37.875,42.75,False,False,False
+RMBS,Rambus Inc.,78.87,55.875,13.375,29.625,False,False,False
+HURN,Huron Consulting Group Inc.,170.34,55.75,79,70.875,False,False,False
+OMC,Omnicom Group Inc.,88.745,55.625,53.125,79.5,False,False,False
+VRSK,Verisk Analytics Inc.,200.85,55.5,41.875,37,False,False,False
+PM,Philip Morris International Inc,192.055,55.375,54.5,31.25,False,False,False
+LRCX,Lam Research Corporation,210.31,55.25,30,29.875,False,False,False
+EQT,EQT Corporation,50.63,55.125,11.125,45.25,False,False,False
+WSO,Watsco Inc.,299.88,55,11.375,58.25,False,False,False
+NOC,Northrop Grumman Corporation,537.58,54.8125,51.125,60.25,False,False,False
+DVN,Devon Energy Corporation,42.69,54.8125,65.125,63.5,False,False,False
+CLS,Celestica Inc.,245.77,54.625,27.125,53.375,False,False,False
+PHIN,PHINIA Inc.,75.05,54.5,43.75,76.375,False,False,False
+LNTH,Lantheus Holdings Inc.,101.78,54.3125,78.875,56.75,False,False,False
+WFRD,Weatherford International Corp,81.44,54.3125,30.75,59.5,False,False,False
+CDW,CDW Corporation,167.47,54.125,86.125,82,False,False,True
+XYZ,Block Inc.,78.67,54,63.5,51.375,False,False,False
+NTNX,Nutanix Inc.,57.12,53.875,81.125,49.75,False,False,False
+MAN,ManpowerGroup,45.61,53.6875,59.125,79.375,False,False,False
+APPF,AppFolio Inc.,209.51,53.6875,12.375,20.875,False,False,False
+NYT,New York Times Company (The),70.855,53.5,20.375,25.125,False,False,False
+CSL,Carlisle Companies Incorporated,391.87,53.375,47.625,66.875,False,False,False
+SNDR,Schneider National Inc.,28.935,53.1875,17.25,44.625,False,False,False
+GRDN,Guardian Pharmacy Services Inc.,50.255,53.1875,89,29.125,False,False,False
+PLUS,ePlus inc.,96.495,53,84.625,66.375,False,False,False
+NFLX,Netflix Inc.,59.67,52.875,8.375,48.25,False,False,False
+EMN,Eastman Chemical Company,61.655,52.75,26.375,84.875,False,False,True
+INCY,Incyte Corp.,119.52,52.625,25,26.5,False,False,False
+NESR,National Energy Services Reunited Corp,19.949,52.5,4.875,49.375,False,False,False
+ENSG,The Ensign Group Inc.,183.73,52.375,36.5,53.75,False,False,False
+ZBH,Zimmer Biomet Holdings Inc.,101.787,52.25,39.625,79.25,False,False,False
+PTC,PTC Inc.,195.81,52.125,77.875,55,False,False,False
+KLIC,Kulicke and Soffa Industries Inc.,66.15,52,68.375,40.75,False,False,False
+PCAR,PACCAR Inc.,103.735,51.875,33.625,71.25,False,False,False
+GRND,Grindr Inc.,14.66,51.75,5.375,27.625,False,False,False
+PHM,PulteGroup Inc.,124.973,51.625,29.25,78.75,False,False,False
+MKC,McCormick & Company Incorporated,46.04,51.5,26.875,80.125,False,False,True
+HQY,HealthEquity Inc.,99.395,51.375,21,49.875,False,False,False
+GEV,GE Vernova Inc.,787.4,51.25,63.25,37.75,False,False,False
+TKR,Timken Company (The),105.505,51.125,64.125,67.5,False,False,False
+ROK,Rockwell Automation Inc.,397.185,51,38.875,29.375,False,False,False
+AKAM,Akamai Technologies Inc.,88.78,50.875,1.875,61.5,False,False,False
+NXT,Nextpower Inc.,80.38,50.75,8.25,60.375,False,False,False
+SITE,SiteOne Landscape Supply Inc.,111.42,50.625,12.25,55.375,False,False,False
+KBH,KB Home,45.85,50.5,3.625,80.625,False,False,True
+CRS,Carpenter Technology Corporation,268.43,50.375,36.25,37.5,False,False,False
+PCTY,Paylocity Holding Corporation,175.54,50.25,89.375,48.625,False,False,False
+EXPO,Exponent Inc.,88.575,50.125,66.625,16.875,False,False,False
+PTRN,Pattern Group Inc. Series A,20.3,50,58.875,19.625,False,False,False
+ROST,Ross Stores Inc.,227.595,49.875,80.25,17.25,False,False,False
+CL,Colgate-Palmolive Company,98.5021,49.75,59,20.625,False,False,False
+NWSA,News Corporation,26.28,49.625,78.25,67.125,False,False,False
+ATR,AptarGroup Inc.,141.29,49.5,22.375,51.125,False,False,False
+LOW,Lowe's Companies Inc.,217.88,49.375,20,48.5,False,False,False
+ALH,Alliance Laundry Holdings Inc.,24.04,49.25,28,40.625,False,False,False
+GTES,Gates Industrial Corporation Ltd.,24.895,49.125,61.75,77.125,False,False,False
+DIS,Walt Disney Company (The),120,49,75.5,60.125,False,False,False
+MSGE,Madison Square Garden Entertainment Corp.,81.495,48.875,91.25,21.75,False,False,False
+SOLS,Solstice Advanced Materials Inc.,64.59,48.75,51.375,45.625,False,False,False
+CSCO,Cisco Systems Inc.,95.9,48.625,40,46.25,False,False,False
+AVPT,AvePoint Inc.,16.4,48.5,84.375,18.75,False,False,False
+WSM,Williams-Sonoma Inc.,259.02,48.375,82.125,24.125,False,False,False
+DE,Deere & Company,646.52,48.25,65.75,23.375,False,False,False
+HAL,Halliburton Company,31.63,48.125,23,65,False,False,False
+VSH,Vishay Intertechnology Inc.,25.44,48,53.875,51.75,False,False,False
+COO,The Cooper Companies Inc.,60.39,47.875,7.5,75.25,False,False,False
+TTEK,Tetra Tech Inc.,37.89,47.75,66.125,61.625,False,False,False
+TJX,TJX Companies Inc. (The),142.76,47.625,26.75,24,False,False,False
+HAYW,Hayward Holdings Inc.,16.195,47.5,43.625,62.5,False,False,False
+CGNX,Cognex Corporation,49.27,47.375,23.75,28.625,False,False,False
+MDT,Medtronic plc.,100.25,47.1875,43,47.625,False,False,False
+HII,Huntington Ingalls Industries Inc.,290.65,47.1875,38.625,62.625,False,False,False
+IMAX,Imax Corporation,47.235,46.9375,85.625,27.375,False,False,False
+WLY,John Wiley & Sons Inc.,51.02,46.9375,91.875,73.125,False,True,False
+BC,Brunswick Corporation,75.26,46.75,66.375,53.625,False,False,False
+CVCO,Cavco Industries Inc.,640.62,46.5625,79.625,31,False,False,False
+CORT,Corcept Therapeutics Incorporated,68.5,46.5625,70.375,18.5,False,False,False
+AGCO,AGCO Corporation,105.96,46.375,16.375,76.25,False,False,False
+VRT,Vertiv Holdings LLC,194.8,46.25,48.375,14.75,False,False,False
+AWI,Armstrong World Industries Inc,171.885,46.125,24.125,45.125,False,False,False
+CRH,CRH PLC,92.195,46,16.875,53.5,False,False,False
+HNGE,Hinge Health Inc.,116.718,45.875,79.75,11.625,False,False,False
+AM,Antero Midstream Corporation,20.315,45.75,19.25,50.375,False,False,False
+AVA,Avista Corporation,39.43,45.625,26,66.75,False,False,False
+CMG,Chipotle Mexican Grill Inc.,36.6,45.5,10.75,16,False,False,False
+CELH,Celsius Holdings Inc.,32.49,45.375,9,26,False,False,False
+FIX,Comfort Systems USA Inc.,1152.7,45.1875,45.625,32.125,False,False,False
+LNG,Cheniere Energy Inc.,298.205,45.1875,82.5,46.375,False,False,False
+PLNT,Planet Fitness Inc.,62.77,45,43.125,49.125,False,False,False
+XYL,Xylem Inc.,93.79,44.875,7,69.5,False,False,False
+APP,Applovin Corporation,395.64,44.6875,17.125,15.25,False,False,False
+QCOM,QUALCOMM Incorporated,163.345,44.6875,21.375,70,False,False,False
+EXP,Eagle Materials Inc,177.515,44.5,8.75,63.75,False,False,False
+VEEV,Veeva Systems Inc.,285.34,44.375,65.375,15.125,False,False,False
+BYD,Boyd Gaming Corporation,76.785,44.25,15.875,74.375,False,False,False
+PNR,Pentair plc. Ordinary Share,67.86,44.125,18.625,66.5,False,False,False
+USFD,US Foods Holding Corp.,107.545,43.9375,69.375,51.625,False,False,False
+KD,Kyndryl Holdings Inc.,15.96,43.9375,34.25,72.125,False,False,False
+GEHC,GE HealthCare Technologies Inc.,82.41,43.6875,62.875,72.5,False,False,False
+DOV,Dover Corporation,202.49,43.6875,39.25,52.75,False,False,False
+AVY,Avery Dennison Corporation,185.97,43.5,64.625,54.375,False,False,False
+DGX,Quest Diagnostics Incorporated,258.39,43.375,74.375,57.75,False,False,False
+WDFC,WD-40 Company,222.395,43.25,33.25,14.625,False,False,False
+FRPT,Freshpet Inc.,68.18,43.125,85.5,25.25,False,False,False
+RS,Reliance Inc.,425.26,43,93.625,48.75,False,True,False
+TT,Trane Technologies plc,407.695,42.875,32.625,33.5,False,False,False
+ABNB,Airbnb Inc.,180.68,42.75,88.25,11.875,False,False,False
+SYK,Stryker Corporation,315.255,42.625,2.875,40.375,False,False,False
+ABBV,AbbVie Inc.,288.706,42.5,50,32.75,False,False,False
+ILMN,Illumina Inc.,207.79,42.375,69.625,21,False,False,False
+AMRZ,Amrize Ltd,40,42.25,13.125,69,False,False,False
+WHD,Cactus Inc.,59.66,42.125,55.875,25.375,False,False,False
+CPAY,Corpay Inc.,454.46,41.9375,86.375,63.625,False,False,False
+BHE,Benchmark Electronics Inc.,62.19,41.9375,39.125,54.875,False,False,False
+ITW,Illinois Tool Works Inc.,282.44,41.75,47.125,35.25,False,False,False
+IDXX,IDEXX Laboratories Inc.,694.55,41.625,19.625,9.5,False,False,False
+RHI,Robert Half Inc.,41.83,41.5,78.125,46.875,False,False,False
+ONC,BeOne Medicines Ltd.,404.06,41.375,68.25,8.75,False,False,False
+ALSN,Allison Transmission Holdings Inc.,125.24,41.25,82,56.625,False,False,False
+OPLN,OPENLANE Inc.,34.6299,41,83.75,41.875,False,False,False
+FELE,Franklin Electric Co. Inc.,97.37,41,81.75,57.125,False,False,False
+PPC,Pilgrim's Pride Corporation,28.035,41,15,70.375,False,False,False
+FTNT,Fortinet Inc.,130.76,40.75,84.875,11.75,False,False,False
+SKY,Champion Homes Inc.,91.1625,40.5625,42.125,36.625,False,False,False
+FSLR,First Solar Inc.,153.91,40.5625,7.125,65.625,False,False,False
+AAPL,Apple Inc.,353.2,40.375,33.5,13.875,False,False,False
+DRS,Leonardo DRS Inc.,33.715,40.1875,49.25,34.125,False,False,False
+NEU,NewMarket Corp,710.28,40.1875,59.375,57.625,False,False,False
+COR,Cencora Inc.,347.06,40,37,64.75,False,False,False
+PATK,Patrick Industries Inc.,82.85,39.875,3.125,63,False,False,False
+ORCL,Oracle Corporation,115.12,39.75,13.875,46.125,False,False,False
+FIGS,FIGS Inc.,21.49,39.625,91.375,5.875,False,False,False
+WTS,Watts Water Technologies Inc.,365.495,39.5,87.375,18.875,False,False,False
+PRVA,Privia Health Group Inc.,25.28,39.375,4.625,21.25,False,False,False
+MANH,Manhattan Associates Inc.,252.47,39.25,67.625,9.125,False,False,False
+CXT,Crane NXT Co.,55.21,39.125,60.25,61.375,False,False,False
+DASH,DoorDash Inc.,164.9,39,37.5,7.125,False,False,False
+OSIS,OSI Systems Inc.,192.26,38.875,7.75,66,False,False,False
+COCO,The Vita Coco Company Inc.,67.845,38.75,38.5,13.125,False,False,False
+PSMT,PriceSmart Inc.,167.83,38.625,34.5,29,False,False,False
+IBM,International Business Machines Corporation,231.535,38.5,26.625,60,False,False,False
+TXN,Texas Instruments Incorporated,293.258,38.3125,76.375,17.625,False,False,False
+DIOD,Diodes Incorporated,84.48,38.3125,60.375,48.375,False,False,False
+KNSA,Kiniksa Pharmaceuticals International plc,96.26,38.125,89.875,4.75,False,False,False
+PVH,PVH Corp.,96.02,38,55,57.5,False,False,False
+CW,Curtiss-Wright Corporation,457.21,37.875,10.25,25.75,False,False,False
+FLEX,Flex Ltd.,75.16,37.75,50.125,62,False,False,False
+NVT,nVent Electric plc,110.02,37.625,51,39,False,False,False
+ISRG,Intuitive Surgical Inc.,426.36,37.5,27.875,10.875,False,False,False
+ATEN,A10 Networks Inc.,30.705,37.375,40.375,21.5,False,False,False
+STE,STERIS plc (Ireland),257.17,37.25,52.625,43.5,False,False,False
+GRBK,Green Brick Partners Inc.,58.24,37.125,28.125,69.75,False,False,False
+SEB,Seaboard Corporation,3693,37,6.25,64.625,False,False,False
+UNP,Union Pacific Corporation,300.655,36.875,52.375,31.125,False,False,False
+CHRW,C.H. Robinson Worldwide Inc.,138.09,36.6875,16,58.125,False,False,False
+LIVN,LivaNova PLC,92.99,36.6875,68.75,31.375,False,False,False
+PTGX,Protagonist Therapeutics Inc.,124.66,36.5,60.625,13.75,False,False,False
+ARQT,Arcutis Biotherapeutics Inc.,27.4,36.375,16.5,5.125,False,False,False
+ODFL,Old Dominion Freight Line Inc.,175.815,36.25,49,15.875,False,False,False
+VIAV,Viavi Solutions Inc.,29.6,36.125,70,30.125,False,False,False
+DCI,Donaldson Company Inc.,84.76,36,37.375,53.25,False,False,False
+PSN,Parsons Corporation,51.53,35.875,12.625,67.625,False,False,False
+USLM,United States Lime & Minerals Inc.,106.63,35.75,23.875,21.625,False,False,False
+FORM,FormFactor Inc. FormFactor Inc.,82.68,35.625,66.5,17.75,False,False,False
+META,Meta Platforms Inc.,613.145,35.5,33,19.875,False,False,False
+ADM,Archer-Daniels-Midland Company,67.69,35.375,80.75,68.25,False,False,False
+COST,Costco Wholesale Corporation,1102.17,35.25,44,8.25,False,False,False
+ANET,Arista Networks Inc.,187.96,35.125,74.25,3.5,False,False,False
+TRMB,Trimble Inc.,53.6769,35,19.5,55.75,False,False,False
+TXRH,Texas Roadhouse Inc.,189.32,34.875,6.75,18.125,False,False,False
+FERG,Ferguson Enterprises Inc.,252.09,34.75,46.375,50.25,False,False,False
+MOD,Modexus Solutions Inc.,130.1,34.5,7.375,30.625,False,False,False
+ACIW,ACI Worldwide Inc.,54.58,34.5,29.625,59.375,False,False,False
+WCC,WESCO International Inc.,319.605,34.5,89.625,59.875,False,False,False
+BCPC,Balchem Corporation,169.53,34.25,62.25,20,False,False,False
+ULS,UL Solutions Inc.,78.64,34.125,5.25,9.625,False,False,False
+GWW,W.W. Grainger Inc.,1456.48,34,81.375,17.375,False,False,False
+AIR,AAR Corp.,105.91,33.875,63.375,52.25,False,False,False
+AMGN,Amgen Inc.,447.645,33.75,87.25,43.875,False,False,False
+MKSI,MKS Inc.,209.2,33.625,38.375,54,False,False,False
+CLH,Clean Harbors Inc.,284.5,33.5,77.75,26.375,False,False,False
+VFC,V.F. Corporation,20.8,33.375,92.125,51,False,True,False
+BDX,Becton Dickinson and Company,215.18,33.25,73.125,52.5,False,False,False
+LEN,Lennar Corporation,82.97,33.125,16.125,67.375,False,False,False
+DRI,Darden Restaurants Inc.,236.04,33,65.25,38.25,False,False,False
+NFG,National Fuel Gas Company,75.27,32.875,13,49.625,False,False,False
+SAIA,Saia Inc.,337.855,32.75,10.5,17,False,False,False
+LH,Labcorp Holdings Inc.,368.592,32.625,58,54.625,False,False,False
+PLTR,Palantir Technologies Inc.,155.4,32.5,62.5,0.625,False,False,False
+VICR,Vicor Corporation,145.17,32.375,42.5,23.25,False,False,False
+LFST,LifeStance Health Group Inc.,13.95,32.25,57.875,25,False,False,False
+MGY,Magnolia Oil & Gas Corporation,23.205,32.125,7.875,52.375,False,False,False
+YUM,Yum! Brands Inc.,161.09,32,34.625,41.25,False,False,False
+ORLY,O'Reilly Automotive Inc.,92.31,31.875,31.5,19,False,False,False
+MSFT,Microsoft Corporation,505.771,31.75,61.5,23.875,False,False,False
+BRK-B,Berkshire Hathaway Inc.,577.01,31.625,73.25,35.375,False,False,False
+CTAS,Cintas Corporation,222.24,31.5,57.625,4.625,False,False,False
+WMG,Warner Music Group Corp.,32.78,31.375,45.5,36,False,False,False
+MDLZ,Mondelez International Inc.,66.41,31.25,65.625,49.5,False,False,False
+BTSG,BrightSpring Health Services Inc.,70.16,31.125,75.625,38.875,False,False,False
+EPD,Enterprise Products Partners L.P.,36.35,30.875,46.625,47.125,False,False,False
+MTD,Mettler-Toledo International Inc.,1735.49,30.875,73,18.625,False,False,False
+SHOP,Shopify Inc. Class A Subordinate Voting Shares,140.29,30.875,45.375,4.375,False,False,False
+BMI,Badger Meter Inc.,157.375,30.625,7.25,33,False,False,False
+URI,United Rentals Inc.,1078.87,30.5,90.25,37.375,False,False,False
+AVNT,Avient Corporation,44.18,30.375,90.875,59.25,False,True,False
+KEYS,Keysight Technologies Inc.,287.18,30.25,73.75,19.25,False,False,False
+KLAC,KLA Corporation,144.02,30.125,45.125,20.75,False,False,False
+FCX,Freeport-McMoRan Inc.,51.285,30,87.875,42.375,False,False,False
+IDCC,InterDigital Inc.,277.73,29.875,31.625,39.75,False,False,False
+EBAY,eBay Inc.,120.28,29.75,85.375,30.25,False,False,False
+TPL,Texas Pacific Land Corporation,292.055,29.625,2,19.75,False,False,False
+AZO,AutoZone Inc.,3279.89,29.5,16.25,34.75,False,False,False
+ROG,Rogers Corporation,123.91,29.375,85.25,32.5,False,False,False
+KRYS,Krystal Biotech Inc.,308.77,29.25,9.25,8,False,False,False
+FN,Fabrinet,312,29.125,40.875,46,False,False,False
+VCEL,Vericel Corporation,58.63,29,54,3,False,False,False
+SARO,StandardAero Inc.,27.39,28.875,6.125,52.625,False,False,False
+KAI,Kadant Inc,290.563,28.75,22,33.375,False,False,False
+ROP,Roper Technologies Inc.,468.795,28.5,56.75,58,False,False,False
+AROC,Archrock Inc.,26.66,28.5,5.875,44.5,False,False,False
+WMT,Walmart Inc.,126.58,28.5,21.125,10.25,False,False,False
+MELI,MercadoLibre Inc.,1430.21,28.25,15.375,22,False,False,False
+CHEF,The Chefs' Warehouse Inc.,105.7,28.125,77.25,16.375,False,False,False
+ON,ON Semiconductor Corporation,67.68,27.9375,23.125,52,False,False,False
+GWRE,Guidewire Software Inc.,141.59,27.9375,35.875,16.75,False,False,False
+VLTO,Veralto Corp,117.69,27.75,87.625,26.125,False,False,False
+DGII,Digi International Inc.,54.42,27.625,47.75,40.125,False,False,False
+ACM,AECOM,81.96,27.5,11,61.25,False,False,False
+RBA,RB Global Inc.,93.19,27.375,9.625,35.125,False,False,False
+ATRC,AtriCure Inc.,55.505,27.25,84.5,3.375,False,False,False
+SBUX,Starbucks Corporation,108.02,27.125,60.125,6.375,False,False,False
+BELFB,Bel Fuse Inc.,226.2,27,51.75,30,False,False,False
+LLY,Eli Lilly and Company,1388.05,26.8125,48.5,7.375,False,False,False
+GOLF,Acushnet Holdings Corp.,84.74,26.8125,5.625,38.375,False,False,False
+GRMN,Garmin Ltd.,281.06,26.625,90.375,28.75,False,False,False
+HRL,Hormel Foods Corporation,22.85,26.5,27.75,56.875,False,False,False
+ICLR,ICON plc,195.65,26.375,52.125,57,False,False,False
+AXTA,Axalta Coating Systems Ltd.,36.165,26.25,49.875,47.875,False,False,False
+FANG,Diamondback Energy Inc.,175.795,26.125,45.75,35.625,False,False,False
+AEIS,Advanced Energy Industries Inc.,213.4,26,33.75,27.125,False,False,False
+FAST,Fastenal Company,54.36,25.875,53.375,4.25,False,False,False
+JCI,Johnson Controls International plc Ordinary Share,137.38,25.75,72.375,36.5,False,False,False
+BSY,Bentley Systems Incorporated,43.515,25.625,18,20.375,False,False,False
+PAG,Penske Automotive Group Inc.,212.21,25.5,52.5,59.125,False,False,False
+MGNI,Magnite Inc.,28.07,25.3125,80.875,24.5,False,False,False
+LFUS,Littelfuse Inc.,386.56,25.3125,55.125,27,False,False,False
+XPO,XPO Inc.,188.615,25.125,72,12.25,False,False,False
+CAVA,CAVA Group Inc.,53.105,25,0.875,0.875,False,False,False
+FTV,Fortive Corporation,66.47,24.875,50.625,49.25,False,False,False
+VNOM,Viper Energy Inc.,40.22,24.75,28.625,21.375,False,False,False
+ATMU,Atmus Filtration Technologies Inc.,54.155,24.625,33.375,37.875,False,False,False
+GE,GE Aerospace,327.37,24.5,56.125,7,False,False,False
+RUSHA,Rush Enterprises Inc.,46.69,24.3125,32,46.75,False,False,False
+DORM,Dorman Products Inc.,134.31,24.3125,41.375,43.25,False,False,False
+RGLD,Royal Gold Inc.,238.71,24.125,46,27.75,False,False,False
+JBTM,JBT Marel Corporation,123.7,24,12.125,47,False,False,False
+REYN,Reynolds Consumer Products Inc.,25.2,23.875,35.625,55.25,False,False,False
+CACI,CACI International Inc.,611.435,23.75,64.875,56.375,False,False,False
+EW,Edwards Lifesciences Corporation,105.565,23.625,29,8.5,False,False,False
+AGYS,Agilysys Inc.,120.71,23.5,49.5,2.875,False,False,False
+NDSN,Nordson Corporation,322.21,23.375,89.25,20.5,False,False,False
+PG,Procter & Gamble Company (The),170.11,23.1875,64.75,31.875,False,False,False
+UI,Ubiquiti Inc.,678.73,23.1875,48.875,10.625,False,False,False
+SHAK,Shake Shack Inc.,74.15,23,20.625,3.125,False,False,False
+MMSI,Merit Medical Systems Inc.,85.69,22.8125,56,37.125,False,False,False
+MSA,MSA Safety Incorporated,177.71,22.8125,36.625,41.125,False,False,False
+ARM,Arm Holdings plc,187.38,22.625,13.75,0.25,False,False,False
+LITE,Lumentum Holdings Inc.,548.405,22.5,59.5,6.5,False,False,False
+AVGO,Broadcom Inc.,353.62,22.375,5.75,12.375,False,False,False
+SHW,Sherwin-Williams Company (The),342.98,22.25,29.875,16.25,False,False,False
+IR,Ingersoll Rand Inc.,82.27,22.125,70.25,44.25,False,False,False
+HAE,Haemonetics Corporation,122.77,22,65.5,30.375,False,False,False
+AAON,AAON Inc.,79.53,21.875,20.875,17.875,False,False,False
+TYL,Tyler Technologies Inc.,407.37,21.6875,17,31.75,False,False,False
+POWI,Power Integrations Inc.,42.695,21.6875,6.625,22.5,False,False,False
+ADP,Automatic Data Processing Inc.,306.375,21.4375,78.375,45,False,False,False
+TTMI,TTM Technologies Inc.,68.4,21.4375,37.625,47.75,False,False,False
+MCD,McDonald's Corporation,272.9,21.25,15.5,26.25,False,False,False
+MSCI,MSCI Inc.,631.37,21.125,29.375,21.875,False,False,False
+WTRG,Essential Utilities Inc.,45.21,21,58.75,45.875,False,False,False
+IEX,IDEX Corporation,233.475,20.875,81.5,24.875,False,False,False
+ELF,e.l.f. Beauty Inc.,113.62,20.75,94,9.375,False,False,False
+MCHP,Microchip Technology Incorporated,59.755,20.625,8.5,40.5,False,False,False
+KN,Knowles Corporation,33.62,20.4375,56.625,28.125,False,False,False
+BLLN,BillionToOne Inc.,90.01,20.4375,35.75,1.625,False,False,False
+TMDX,TransMedics Group Inc.,96.925,20.125,32.875,17.125,False,False,False
+HWKN,Hawkins Inc.,152.5,20.125,1.625,9.875,False,False,False
+TSCO,Tractor Supply Company,38.895,20.125,24.625,39.375,False,False,False
+DD,DuPont de Nemours Inc.,150.21,19.8125,61.25,34.25,False,False,False
+OKE,ONEOK Inc.,88.265,19.8125,46.125,45.5,False,False,False
+PRIM,Primoris Services Corporation,66.09,19.625,14.125,54.125,False,False,False
+ZETA,Zeta Global Holdings Corp.,34.9,19.5,92.875,7.25,False,False,False
+NOW,ServiceNow Inc.,91.02,19.375,15.625,28,False,False,False
+ROL,Rollins Inc.,37.57,19.25,0.625,11.375,False,False,False
+LW,Lamb Weston Holdings Inc.,53.88,19.125,87.125,46.625,False,False,False
+BKV,BKV Corporation,18.46,19,2.75,48,False,False,False
+HNI,HNI Corporation,48.215,18.875,88,41.75,False,False,False
+THO,Thor Industries Inc.,77.93,18.75,4.5,50.125,False,False,False
+IOT,Samsara Inc.,39.505,18.625,58.375,0.75,False,False,False
+DDOG,Datadog Inc.,168.44,18.5,43.875,1.375,False,False,False
+ALAB,Astera Labs Inc.,211.73,18.375,44.125,1.75,False,False,False
+CSX,CSX Corporation,51.475,18.25,78.625,24.375,False,False,False
+PEN,Penumbra Inc.,319.7,18.125,1.25,2.125,False,False,False
+TDY,Teledyne Technologies Incorporated,624.325,18,56.875,38,False,False,False
+MTZ,MasTec Inc.,173.505,17.875,2.125,39.875,False,False,False
+AMAT,Applied Materials Inc.,350.19,17.75,32.125,29.5,False,False,False
+HWM,Howmet Aerospace Inc.,219.89,17.625,42.875,3.75,False,False,False
+UFPT,UFP Technologies Inc.,302.17,17.5,47.875,28.25,False,False,False
+CRDO,Credo Technology Group Holding Ltd,123.25,17.375,14.375,14.25,False,False,False
+SN,SharkNinja Inc.,226.16,17.25,76.5,4.125,False,False,False
+V,Visa Inc.,414.845,17.125,57.125,16.625,False,False,False
+OKTA,Okta Inc.,186.01,17,67.5,6.25,False,False,False
+LIF,Life360 Inc.,44.81,16.875,17.375,22.25,False,False,False
+HD,Home Depot Inc. (The),335.61,16.75,35.5,31.625,False,False,False
+TEVA,Teva Pharmaceutical Industries Limited,42.32,16.625,75.375,28.875,False,False,False
+WRBY,Warby Parker Inc.,26.135,16.5,20.75,5,False,False,False
+MTSI,MACOM Technology Solutions Holdings Inc.,224.47,16.375,40.125,7.875,False,False,False
+NOV,NOV Inc.,16.785,16.25,9.75,47.375,False,False,False
+SXI,Standex International Corporation,233.67,16.125,45.25,33.125,False,False,False
+J,Jacobs Solutions Inc.,157.27,16,51.625,36.75,False,False,False
+APH,Amphenol Corporation,77.09,15.875,84.125,28.5,False,False,False
+WWD,Woodward Inc.,313.405,15.75,24.875,14.125,False,False,False
+OSW,OneSpaWorld Holdings Limited,31.86,15.625,58.25,8.875,False,False,False
+EL,Estee Lauder Companies Inc. (The),103.62,15.5,83,10.75,False,False,False
+TKO,TKO Group Holdings Inc.,191.325,15.375,22.25,11.5,False,False,False
+CDNA,CareDx Inc.,73.66,15.25,82.875,12.625,False,False,False
+KO,Coca-Cola Company (The),97.955,15.125,82.75,12.75,False,False,False
+ALGM,Allegro MicroSystems Inc.,28.6,15,4,8.125,False,False,False
+GOOGL,Alphabet Inc.,282.075,14.875,26.125,22.125,False,False,False
+WAY,Waystar Holding Corp.,27.47,14.75,50.25,43,False,False,False
+MA,Mastercard Incorporated,640.71,14.625,63.625,14,False,False,False
+NHC,National HealthCare Corporation,205.77,14.5,63.875,44.75,False,False,False
+MMM,3M Company,179.08,14.375,81.25,39.5,False,False,False
+P,Everpure Inc. Class A common stock,101.63,14.25,91.625,3.875,False,False,False
+GNRC,Generac Holdlings Inc.,197.5,14.125,39.75,26.875,False,False,False
+BA,Boeing Company (The),162.88,14,11.75,36.125,False,False,False
+GLW,Corning Incorporated,108.075,13.875,22.75,12.5,False,False,False
+MNST,Monster Beverage Corporation,45.036,13.75,24.375,3.625,False,False,False
+AXTI,AXT Inc,35.59,13.625,31.25,13,False,False,False
+CIEN,Ciena Corporation,263.335,13.4375,34.125,11,False,False,False
+HXL,Hexcel Corporation,77,13.4375,39.375,33.25,False,False,False
+SLB,SLB Limited,48.62,13.1875,17.875,34.375,False,False,False
+VECO,Veeco Instruments Inc.,37.32,13.1875,1.5,32.625,False,False,False
+WM,Waste Management Inc.,240.49,13,39.875,27.5,False,False,False
+ABT,Abbott Laboratories,104.32,12.875,13.625,40.875,False,False,False
+EMR,Emerson Electric Company,161.11,12.75,67,23.75,False,False,False
+PTCT,PTC Therapeutics Inc.,60.17,12.625,0.75,18,False,False,False
+RTX,RTX Corporation,195.75,12.5,83.625,22.75,False,False,False
+BB,BlackBerry Limited,8.295,12.375,83.875,5.625,False,False,False
+PWR,Quanta Services Inc.,605.215,12.25,73.375,9,False,False,False
+OTTR,Otter Tail Corporation,77.3,12.125,9.125,43.125,False,False,False
+ESE,ESCO Technologies Inc.,229.785,12,32.375,32.375,False,False,False
+MPWR,Monolithic Power Systems Inc.,1317.3,11.875,32.75,4,False,False,False
+WST,West Pharmaceutical Services Inc.,411.14,11.75,90.5,11.25,False,False,False
+ATI,ATI Inc.,178.06,11.625,69.75,4.875,False,False,False
+BE,Bloom Energy Corporation,172.355,11.5,47.25,0.375,False,False,False
+MSI,Motorola Solutions Inc.,525.17,11.375,42,19.375,False,False,False
+MAR,Marriott International,425.92,11.25,80.125,10,False,False,False
+AVTR,Avantor Inc.,15.245,11.125,66.875,42.625,False,False,False
+PLXS,Plexus Corp.,213.4,11,53.75,41,False,False,False
+HUBB,Hubbell Inc,425.902,10.875,16.625,33.875,False,False,False
+TWLO,Twilio Inc.,195.645,10.6875,68.875,29.25,False,False,False
+RCL,Royal Caribbean Cruises Ltd.,317.45,10.6875,62.75,26.75,False,False,False
+ADI,Analog Devices Inc.,383.475,10.5,51.25,15.375,False,False,False
+CAKE,Cheesecake Factory Incorporated (The),117.82,10.375,80,20.125,False,False,False
+ASH,Ashland Inc.,75.325,10.1875,56.5,36.375,False,False,False
+ACLS,Axcelis Technologies Inc.,100.237,10.1875,63.125,34.875,False,False,False
+WAB,Westinghouse Air Brake Technologies Corporation,291.135,10,62.375,19.125,False,False,False
+PKG,Packaging Corporation of America,245.5,9.875,76,23.5,False,False,False
+SPXC,SPX Technologies Inc.,143.71,9.75,8,34.5,False,False,False
+IBP,Installed Building Products Inc.,233.98,9.625,2.625,28.375,False,False,False
+CSW,CSW Industrials Inc.,281.59,9.5,27.25,30.5,False,False,False
+KWR,Quaker Houghton,154.675,9.375,67.125,35,False,False,False
+BROS,Dutch Bros Inc.,34.975,9.25,0.375,2.625,False,False,False
+LIN,Linde plc,510.895,9.125,47.375,10.5,False,False,False
+ENPH,Enphase Energy Inc.,22.855,9,0.5,34.625,False,False,False
+HEI,Heico Corporation,338.98,8.875,57.375,1.25,False,False,False
+UNF,Unifirst Corporation,229.5,8.75,40.25,14.375,False,False,False
+EE,Excelerate Energy Inc.,37.7,8.625,8.125,5.75,False,False,False
+CHD,Church & Dwight Company Inc.,111.8,8.5,54.375,18.25,False,False,False
+LTH,Life Time Group Holdings Inc.,47.7309,8.375,71.375,9.25,False,False,False
+JNJ,Johnson & Johnson,275.23,8.25,26.5,18.375,False,False,False
+TDW,Tidewater Inc.,72.16,8.125,4.375,34,False,False,False
+A,Agilent Technologies Inc.,174.345,8,67.875,21.125,False,False,False
+BKR,Baker Hughes Company,47.17,7.875,12,36.25,False,False,False
+CR,Crane Company,212.6,7.75,85.875,8.375,False,False,False
+IPGP,IPG Photonics Corporation,65.275,7.625,5,13.5,False,False,False
+SGI,Somnigroup International Inc.,60.575,7.5,4.25,27.875,False,False,False
+AMD,Advanced Micro Devices Inc.,510.295,7.375,86.25,1.875,False,False,False
+KNF,Knife Riv Holding Co.,52.78,7.25,0.25,30.75,False,False,False
+Q,Qnity Electronics Inc.,114.67,7.125,60.875,25.625,False,False,False
+KGS,Kodiak Gas Services Inc.,42.18,7,1.125,24.75,False,False,False
+BWXT,BWX Technologies Inc.,117.89,6.875,3,20.25,False,False,False
+NPO,Enpro Inc.,270.46,6.75,48,6.625,False,False,False
+CAI,Caris Life Sciences Inc.,19.49,6.625,18.5,6.125,False,False,False
+TGTX,TG Therapeutics Inc.,64.09,6.5,21.5,3.25,False,False,False
+ESI,Element Solutions Inc.,32.355,6.375,46.25,24.625,False,False,False
+AWR,American States Water Company,87.505,6.25,36,23.125,False,False,False
+RBC,RBC Bearings Incorporated,477.395,6.125,43.5,2.25,False,False,False
+GME,GameStop Corporation,25.87,6,92.25,30.875,False,False,False
+CVNA,Carvana Co.,71.975,5.875,22.625,2.75,False,False,False
+MTRN,Materion Corporation,201.46,5.75,90,11.125,False,False,False
+VRTX,Vertex Pharmaceuticals Incorporated,534.39,5.625,14.875,15,False,False,False
+MOH,Molina Healthcare Inc,207.59,5.5,55.25,22.875,False,False,False
+NSC,Norfolk Southern Corporation,322.94,5.375,66,17.5,False,False,False
+ONTO,Onto Innovation Inc.,202.72,5.25,17.625,15.625,False,False,False
+TRGP,Targa Resources Inc.,290.18,5.125,60,6.875,False,False,False
+CDNS,Cadence Design Systems Inc.,312.19,5,9.875,5.375,False,False,False
+WTTR,Select Water Solutions Inc. Class A common stock,16.16,4.875,30.875,12,False,False,False
+DOCN,DigitalOcean Holdings Inc.,79.575,4.75,28.875,2.375,False,False,False
+AMZN,Amazon.com Inc.,263.65,4.625,48.125,7.75,False,False,False
+FLS,Flowserve Corporation,80.465,4.5,36.75,26.625,False,False,False
+VVV,Valvoline Inc.,33.395,4.375,18.125,13.625,False,False,False
+DTM,DT Midstream Inc.,118.57,4.25,1,12.125,False,False,False
+TMO,Thermo Fisher Scientific Inc,687.15,4.0625,70.125,24.25,False,False,False
+ATO,Atmos Energy Corporation,171.655,4.0625,22.125,25.5,False,False,False
+SXT,Sensient Technologies Corporation,117.746,3.8125,73.875,13.375,False,False,False
+CEG,Constellation Energy Corporation,265.625,3.8125,17.5,22.375,False,False,False
+SWKS,Skyworks Solutions Inc.,84.955,3.625,57.75,23,False,False,False
+TSLA,Tesla Inc.,381.24,3.5,6.875,0.125,False,False,False
+VAL,Valaris Limited,78.135,3.375,3.875,19.5,False,False,False
+PH,Parker-Hannifin Corporation,920.17,3.1875,58.125,16.5,False,False,False
+HLT,Hilton Worldwide Holdings Inc.,373.77,3.1875,71.25,6,False,False,False
+ITT,ITT Inc.,209.965,3,54.25,15.5,False,False,False
+VMC,Vulcan Materials Company (Holding Company),277.03,2.875,18.875,15.75,False,False,False
+RSG,Republic Services Inc.,249.38,2.75,31.125,13.25,False,False,False
+DHR,Danaher Corporation,226.87,2.625,57.5,22.625,False,False,False
+PANW,Palo Alto Networks Inc.,330.535,2.5,57.25,1,False,False,False
+ETN,Eaton Corporation PLC,337.42,2.3125,32.25,14.875,False,False,False
+TECH,Bio-Techne Corp,72.735,2.3125,30.25,7.625,False,False,False
+JHX,James Hardie Industries plc.,26.91,2.125,63,14.5,False,False,False
+WCN,Waste Connections Inc.,181.88,2,55.375,9.75,False,False,False
+RVTY,Revvity Inc.,151.24,1.875,77,16.125,False,False,False
+SITM,SiTime Corporation,416.09,1.75,30.125,1.5,False,False,False
+RGEN,Repligen Corporation,172.5,1.625,36.375,0.5,False,False,False
+SEI,Solaris Energy Infrastructure Inc.,63.985,1.5,31,4.5,False,False,False
+MRCY,Mercury Systems Inc,80.07,1.375,30.375,1.125,False,False,False
+INTC,Intel Corporation,54.24,1.25,10.125,2.5,False,False,False
+CALM,Cal-Maine Foods Inc.,69.75,1.125,0.125,12.875,False,False,False
+ENTG,Entegris Inc.,143.255,1,75.875,10.125,False,False,False
+AME,AMETEK Inc.,236.557,0.875,71.875,10.375,False,False,False
+MRVL,Marvell Technology Inc.,145.41,0.75,53.5,8.625,False,False,False
+GSAT,Globalstar Inc.,86.44,0.625,46.75,2,False,False,False
+ECL,Ecolab Inc.,300.35,0.5,52.875,5.5,False,False,False
+LPX,Louisiana-Pacific Corporation,74.4,0.375,25.5,5.25,False,False,False
+DCO,Ducommun Incorporated,140.44,0.25,46.875,7.5,False,False,False
+VSEC,VSE Corporation,183.775,0.125,19.875,6.75,False,False,False
