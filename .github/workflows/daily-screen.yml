@@ -1,8 +1,8 @@
-name: Daily stock screen
+name: Weekly stock screen
 
 on:
   schedule:
-    - cron: "30 22 * * 1-5"   # 22:30 UTC Mon-Fri, after the US close (04:00 IST next morning)
+    - cron: "30 22 * * 5"     # 22:30 UTC Friday, after the US close (04:00 IST Saturday)
   workflow_dispatch:
     inputs:
       limit:
@@ -42,6 +42,6 @@ jobs:
           git config user.name "screener-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          git commit -m "Daily screen $(date -u +%F)" || { echo "No changes"; exit 0; }
+          git commit -m "Weekly screen $(date -u +%F)" || { echo "No changes"; exit 0; }
           git pull --rebase
           git push

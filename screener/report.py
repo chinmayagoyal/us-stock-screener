@@ -54,7 +54,7 @@ SCORES = {"lt_score", "st_score", "value_score", "quality_score", "momentum_scor
           "comp_alignment_score"}
 
 METHOD = [
-    ("What this is", "Daily screen of every US-listed stock. An initial filter keeps investable, profitable, "
+    ("What this is", "Weekly screen of every US-listed stock. An initial filter keeps investable, profitable, "
                      "solvent companies; survivors are scored for long-term undervaluation and short-term setups."),
     ("Initial filter", "Common stock only (no ETFs/funds/preferreds/warrants/SPACs); market cap >= $%.0fB; price >= "
                        "$%g; 60-day median dollar volume >= $%.0fM; >= 1 year of trading; excludes banks, lenders, "
@@ -108,7 +108,7 @@ METHOD = [
                            "High >= 3.75, Medium >= 3.0. Reviews are refreshed after %d days." % C.REVIEW_MAX_AGE_DAYS),
     ("Implied FCF growth", "Perpetual owner-FCF growth the current price implies at a %.0f%% cost of equity "
                            "(reverse DCF). Low or negative = market expects little." % (C.COST_OF_EQUITY * 100)),
-    ("Track record", "Forward returns of each day's flagged lists, entered at the next session's close, vs. the "
+    ("Track record", "Forward returns of each week's flagged lists, entered at the next session's close, vs. the "
                      "equal-weighted candidate set and SPY. Built only from snapshots this tool published."),
     ("Caveats", "Not investment advice. Fundamentals are rebuilt from XBRL and can mis-tag; Yahoo data is "
                 "unofficial and may be incomplete. Foreign filers reporting under IFRS are not covered. Verify any "

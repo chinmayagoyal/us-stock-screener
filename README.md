@@ -1,6 +1,6 @@
-# US stock screener: daily undervaluation tracker
+# US stock screener: weekly undervaluation tracker
 
-Every US trading day after the close, a GitHub Action:
+Every Friday after the US close, a GitHub Action:
 
 1. Loads every US-listed security (NYSE, Nasdaq, NYSE American: about 7,300).
 2. Applies the **initial filter** (investable, profitable, solvent).
@@ -9,11 +9,11 @@ Every US trading day after the close, a GitHub Action:
 5. Scores every candidate for **long-term undervaluation** (1–3 years) and **short-term setups** (1–6 months).
    A separate **compounders** screen runs on a wider universe ($500M+). It looks for fast, consistent growth with high returns on capital.
    Each stock's latest **qualitative review** (`data/qualitative/reviews.json`) is merged in as a conviction score.
-6. Commits the results to `data/latest/` and a daily snapshot to `data/history/`. The snapshots feed a live track record.
+6. Commits the results to `data/latest/` and a weekly snapshot to `data/history/`. The snapshots feed a live track record.
 
 ## Tracker page
 
-A Claude dashboard (https://claude.ai/artifact/HFxjifrsRpJuFUC4TzJ6zh) shows the lists, the filter funnel, a value-vs-quality map and the track record. A scheduled Claude task reloads it every Tuesday to Saturday at 06:55 IST from `data/dashboard/*.json`. The page source is in `dashboard/index.html` for reference.
+A Claude dashboard (https://claude.ai/artifact/HFxjifrsRpJuFUC4TzJ6zh) shows the lists, the filter funnel, a value-vs-quality map and the track record. A scheduled Claude task reloads it every Saturday at 06:55 IST from `data/dashboard/*.json`. The page source is in `dashboard/index.html` for reference.
 
 ## Outputs (`data/latest/`)
 
@@ -31,7 +31,7 @@ A Claude dashboard (https://claude.ai/artifact/HFxjifrsRpJuFUC4TzJ6zh) shows the
 
 ## Qualitative reviews
 
-A scheduled Claude task runs each weekday at 13:17 IST. It researches up to 10 names from `review_queue.csv` and appends reviews to `data/qualitative/reviews.json`, following `docs/REVIEW_GUIDE.md`. You can also add or override reviews yourself: append a newer review for the ticker, and the newest one per ticker wins.
+A scheduled Claude task runs every Friday at 13:17 IST, before that night's screen. It researches up to 20 names from `review_queue.csv` and appends reviews to `data/qualitative/reviews.json`, following `docs/REVIEW_GUIDE.md`. You can also add or override reviews yourself: append a newer review for the ticker, and the newest one per ticker wins.
 
 ## Method
 
@@ -39,7 +39,7 @@ See the **Read me** sheet in `screener.xlsx`. Every threshold and weight is in `
 
 ## Running by hand
 
-Actions → *Daily stock screen* → *Run workflow*. Set `limit` to e.g. `60` for a quick smoke test. A smoke test writes `data/latest/` but never enters the track record.
+Actions → *Weekly stock screen* → *Run workflow*. Set `limit` to e.g. `60` for a quick smoke test. A smoke test writes `data/latest/` but never enters the track record.
 
 ## Caveats
 
