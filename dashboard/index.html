@@ -216,12 +216,12 @@
 
   <section id="track">
     <h2>Track record</h2>
-    <p class="ss-sub">Average forward return of each day's flagged list vs. the equal-weighted candidate set, built only from lists this tracker actually published. Hit rate = share of daily lists that beat the candidate average.</p>
-    <p class="ss-empty ss-track-empty" hidden>Builds automatically: 1-month results appear about 21 trading days after the first run, 3-month after about 63.</p>
+    <p class="ss-sub">Average forward return of each week's flagged list vs. the equal-weighted candidate set, built only from lists this tracker actually published. Hit rate = share of weekly lists that beat the candidate average.</p>
+    <p class="ss-empty ss-track-empty" hidden>Builds automatically: 1-month results appear about a month after the first run, 3-month after about three months.</p>
     <div class="ss-tablewrap">
       <table data-source="track" data-row-key="horizon,group">
         <thead><tr>
-          <th class="ss-l" data-field="horizon">Horizon</th><th class="ss-l" data-field="group">List</th><th data-field="snapshots">Daily lists</th>
+          <th class="ss-l" data-field="horizon">Horizon</th><th class="ss-l" data-field="group">List</th><th data-field="snapshots">Weekly lists</th>
           <th data-field="avg_names">Avg names</th><th data-field="avg_group_return">List return</th><th data-field="avg_candidates_return">Candidates return</th>
           <th data-field="avg_spy_return">SPY return</th><th data-field="avg_excess">Excess vs candidates</th><th data-field="snapshot_hit_rate">Hit rate</th>
         </tr></thead>
@@ -256,7 +256,7 @@
       <dt>Implied FCF growth</dt>
       <dd>The perpetual free-cash-flow growth (after stock compensation) the current price implies at a 9% cost of equity, a reverse DCF. Low or negative means the market expects little.</dd>
       <dt>Track record</dt>
-      <dd>Each day's lists are entered at the next session's close and compared with the equal-weighted candidate set and SPY. Only lists this tracker actually published are used, so there is no hindsight.</dd>
+      <dd>Each week's lists are entered at the next session's close and compared with the equal-weighted candidate set and SPY. Only lists this tracker actually published are used, so there is no hindsight.</dd>
       <dt>Data</dt>
       <dd>Listings from Nasdaq; fundamentals rebuilt from SEC EDGAR XBRL filings; prices, estimates and short interest from Yahoo Finance (unofficial). XBRL tagging varies, so check any name against its filings before acting. Code and full workbook: github.com/chinmayagoyal/us-stock-screener.</dd>
     </dl>
