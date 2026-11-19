@@ -2,9 +2,9 @@ step,stage,rule,remaining,removed
 0,All US-listed securities,"NYSE, Nasdaq, NYSE American listings",7290,0
 1,Common stock only,"Drops ETFs, funds, preferreds, warrants, rights, units, notes, SPACs",5587,1703
 2,Market cap >= $2B,Nasdaq-reported market capitalisation,1959,3628
-3,"Price >= $5, liquid, 1y+ history",Price >= $5; 60-day median $ volume >= $10M; >= 250 trading days,1808,151
-4,"SEC filer, one share class per company",Ticker maps to an SEC CIK; keeps the most liquid class,1798,10
-5,"Excludes banks, insurers, asset managers and REITs","By SEC SIC code: these need book-value or FFO models. Exchanges, ratings/data firms stay in",1422,376
-6,Recent US-GAAP financials in USD,SEC XBRL TTM rebuilt; latest period within 200 days (IFRS/foreign-currency filers drop here),1187,235
-7,Profitable and cash-generative,TTM operating income > 0 and TTM operating cash flow > 0,980,207
-8,Solvent,Net debt / EBITDA <= 4x (or net cash) and EBIT / interest >= 3x,808,172
+3,"Price >= $5, liquid, 1y+ history",Price >= $5; 60-day median $ volume >= $10M; >= 250 trading days,1807,152
+4,"SEC filer, one share class per company",Ticker maps to an SEC CIK; keeps the most liquid class,1797,10
+5,"Excludes banks, insurers, asset managers and REITs","By SEC SIC code: these need book-value or FFO models. Exchanges, ratings/data firms stay in",1421,376
+6,Recent US-GAAP financials in USD,SEC XBRL TTM rebuilt; latest period within 200 days (IFRS/foreign-currency filers drop here),1186,235
+7,Profitable and cash-generative,TTM operating income > 0 and TTM operating cash flow > 0,979,207
+8,Solvent,Net debt / EBITDA <= 4x (or net cash) and EBIT / interest >= 3x,807,172

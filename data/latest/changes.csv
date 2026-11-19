@@ -1,1 +1,6 @@
 ticker,company,list,change,lt_score,st_score,price
+LULU,lululemon athletica inc.,Long-term value,Added,90.08674101610904,21.189591078066915,110.77999877929688
+SNDK,Sandisk Corporation,Long-term value,Dropped (left candidate list),,,
+CALY,Callaway Golf Company,Short-term setup,Added,80.42131350681537,90.83023543990086,17.260000228881836
+CVSA,Covista Inc.,Short-term setup,Dropped,95.41511771995044,89.83890954151177,119.80999755859375
+NTAP,NetApp Inc.,Short-term setup,Dropped,87.85625774473358,89.34324659231723,172.19000244140625
