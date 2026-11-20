@@ -780,5 +780,173 @@
       "https://frontofficesports.com/?p=207578",
       "https://www.sgieurope.com/strategies/cushioned-running-becomes-2027s-key-battleground/122363.article"
     ]
+  },
+  {
+    "ticker": "HRB",
+    "company": "H&R Block Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 3,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 4
+    },
+    "reasons": {
+      "moat": "A national brand and roughly 9,000 company and franchise offices serving about 15 million US households give real scale in assisted prep, but customers can switch to DIY software or local preparers each season.",
+      "disruption": "AI and cheaper DIY tools threaten paid preparation; so far AI has helped (AI Tax Assist doubled to 4.2M interactions and lifted DIY conversion), and the IRS Direct File pilot was ended in late 2025.",
+      "industry": "A rational two-player core with Intuit in DIY plus fragmented independent preparers in assisted; share is defended through pricing, retention and service, not price wars.",
+      "demand": "Tax filing is non-discretionary but return volumes grow under about 1% a year and management expects even slower growth; FY27 guides only about 3-4% revenue growth from pricing, mix and adjacencies.",
+      "management": "Steady capital return ($714M paid out in FY26 on $756M free cash flow, 10% dividend raise, shrinking share count) under a new CEO pushing a year-round consultative model; costs are growing faster than revenue near term.",
+      "tail_risk": "About $1.49B of long-term debt and a stockholders' deficit after buybacks, plus heavy seasonality and exposure to tax policy and consumer litigation; cash flows are, however, very stable.",
+      "catalyst": "Investor Day in New York on December 3, 2026 will lay out a multi-year plan, followed by the 2027 tax season results."
+    },
+    "bull_case": "A mandatory, recurring service with sticky clients and roughly $750M of annual free cash flow funds a growing dividend and buybacks; if AI tools keep lifting conversion and retention, the selloff on AI fears looks overdone.",
+    "bear_case": "Flat filing volumes leave growth reliant on price increases, while AI assistants and free filing options could gradually erode the paid assisted market; rising compensation and legal costs are already pressuring margins.",
+    "key_risk": "AI-driven or government free filing eroding willingness to pay for assisted tax preparation.",
+    "catalyst_note": "Investor Day with multi-year targets on December 3, 2026, then 2027 tax season results.",
+    "sources": [
+      "https://finviz.com/news/419441/hr-block-reports-fiscal-2027-first-quarter-results-and-reaffirms-fiscal-2027-outlook",
+      "https://www.zacks.com/stock/news/2973510/hr-block-q4-earnings-call-details-fy2027-growth-priorities",
+      "https://www.itiger.com/news/2625604479",
+      "https://www.franchising.com/news/20261103_hr_block_to_host_investor_day_on_december_3_2026.html"
+    ]
+  },
+  {
+    "ticker": "CARG",
+    "company": "CarGurus Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 3,
+      "management": 3,
+      "tail_risk": 4,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "The most-visited US car shopping site with about 34,700 paying dealers creates a two-sided network effect, visible in roughly 35% adjusted EBITDA margins and steady revenue per dealer gains.",
+      "disruption": "AI search and chat assistants could bypass listing sites and blur lead attribution; CarGurus is responding with its own AI tools and connectors to chat platforms, but the threat is real.",
+      "industry": "Competes with Cars.com, Autotrader, Facebook Marketplace and online dealers such as Carvana; leadership is clear but dealer budgets are contested.",
+      "demand": "Used-car retail grows roughly with the economy; dealer margin pressure and affordability are slowing growth, with Q4 guided to about 7-9% after 15% in Q1.",
+      "management": "Wound down the loss-making CarOffer wholesale unit acquired earlier and has cut diluted shares from about 99.7M to 90.1M; the CarOffer episode was costly and the tone on dealer health has turned more cautious.",
+      "tail_risk": "No borrowings, $165M of cash and strong free cash flow with a highly diversified dealer base; exposure is mainly to auto-retail cycles.",
+      "catalyst": "A new $250M buyback through 2027 and Q4 results in early 2027 are routine; monetization of new dealer products has no dated milestone."
+    },
+    "bull_case": "The largest audience and dealer network let CarGurus keep raising revenue per dealer while expanding into AI-driven dealer software, and debt-free cash generation funds steady share count reduction.",
+    "bear_case": "Revenue growth is decelerating as dealers face margin pressure, international dealers churn and AI search threatens to commoditize listing traffic, leaving earnings growth dependent on buybacks.",
+    "key_risk": "AI assistants disintermediating car-shopping traffic and dealer leads.",
+    "catalyst_note": "Q4 2026 results and 2027 outlook in early 2027, with ongoing buybacks under the new $250M program.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0001494259/000119312526449825/carg-ex99_1.htm",
+      "https://finviz.com/news/418093/cargurus-hits-the-whisper-and-lifts-profit-outlook-but-q4-guide-shows-revenue-growth-slowing-to-7-9",
+      "https://247wallst.com/investing/2026/03/11/cargurus-is-quietly-becoming-the-auto-marketplace-to-beat/"
+    ]
+  },
+  {
+    "ticker": "PARR",
+    "company": "Par Pacific Holdings Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 2,
+      "disruption": 2,
+      "industry": 3,
+      "demand": 2,
+      "management": 3,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Small refineries (about 220k bpd total) in isolated markets (Hawaii, Montana, Washington, Wyoming) plus retail and logistics give some local logistics advantage, but refined fuel is a commodity and imports cap Hawaii pricing.",
+      "disruption": "Road-fuel demand faces long-run pressure from EVs and decarbonization policy, especially in Hawaii; the new Hawaii renewable fuels unit only just turned its first profit.",
+      "industry": "Niche regional markets are less crowded than the Gulf Coast, but product imports and global crack spreads still set prices.",
+      "demand": "Earnings are at a cyclical high: the refining index ran near $33/bbl versus about $12 in 2025 due to Middle East and Russian supply disruptions that management itself calls temporary.",
+      "management": "Has turned net cash, sold the Laramie Energy stake and pursues small high-return projects, but its history is acquisitive and buybacks were modest during the volatility.",
+      "tail_risk": "Net cash on term debt and about $2.4B liquidity cushion the downturn, but Q3 earnings leaned on a one-off $222M small refinery exemption and margins can collapse fast when supply normalizes.",
+      "catalyst": "Laramie sale closing and excess RIN monetization expected by year-end 2026 are dated but modest; the bigger swing factor, normalization of crack spreads, has no timing."
+    },
+    "bull_case": "A tight global product market, EPA small refinery exemptions and a net cash balance sheet let Par bank windfall cash and redeploy it into buybacks and high-return projects across its niche markets.",
+    "bear_case": "Q3 earnings were inflated by war-driven cracks and a one-time SRE benefit; a ceasefire or restored Gulf exports could push margins back toward 2025 levels while long-term fuel demand in Hawaii declines.",
+    "key_risk": "Refining margins normalizing from war-driven highs, removing most of current earnings power.",
+    "catalyst_note": "Laramie Energy sale close and RIN monetization by year-end 2026; Q4 results in early 2027.",
+    "sources": [
+      "https://finviz.com/news/414834/par-pacific-holdings-reports-third-quarter-2026-results",
+      "https://www.parpacific.com/sites/par-pacific-holdings/files/2026-08/q2-2026-earnings-call-transcript.pdf",
+      "https://www.nasdaq.com/articles/3-refiners-benefiting-oil-volatility-and-tight-fuel-supply"
+    ]
+  },
+  {
+    "ticker": "CF",
+    "company": "CF Industries Holdings Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 4,
+      "industry": 3,
+      "demand": 3,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "The largest North American nitrogen producer, with low-cost US natural gas feedstock and a domestic distribution network, sits at the low end of the global cost curve; the product itself is a commodity.",
+      "disruption": "Nitrogen fertilizer has no substitute for crop yields, and demand for low-carbon ammonia (Blue Point, carbon capture with 45Q credits) could add a new market.",
+      "industry": "A global commodity priced by marginal European and imported supply; North America is consolidated, but prices swing with gas costs, Chinese export policy and geopolitics.",
+      "demand": "Crop nutrient demand grows slowly; 2026 pricing is lifted by Middle East urea exports running at about half normal levels, while European and Trinidad closures support a tighter long-run balance.",
+      "management": "Shrank diluted shares from about 161M to 152M in a year with buybacks, keeps ammonia plants near full utilization, and handed over smoothly to insider CEO Chris Bohn; Blue Point is a large new capex bet shared with JERA and Mitsui.",
+      "tail_risk": "Modest net debt ($3.2B debt vs $2.8B cash) and about $2B of trailing free cash flow, but earnings are near a war-boosted peak and the Yazoo City outage since November 2025 shows operational risk.",
+      "catalyst": "Yazoo City restart targeted for the first half of 2027 and the spring planting season are near-term, but a resolution of Middle East supply disruption would cut the other way."
+    },
+    "bull_case": "With global supply constrained and few new plants coming, a low-cost US producer can generate heavy free cash flow and keep retiring stock, while Blue Point positions CF for low-carbon ammonia demand.",
+    "bear_case": "Current prices reflect a war-driven supply shock; a normalization of Gulf exports, more Chinese urea exports or higher US gas prices would compress margins while Blue Point capex rises.",
+    "key_risk": "Nitrogen prices falling back as Middle East and Black Sea supply disruptions ease.",
+    "catalyst_note": "Yazoo City complex restart in the first half of 2027 and spring 2027 application season.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0001324404/000132440426000023/cf-11042026_ex991xearnings.htm",
+      "https://zacks.com/stock/news/3024516/cf-q3-earnings-miss-estimates-as-higher-costs-offset-sales-gains",
+      "https://www.agnavigator.com/Article/2026/11/05/nitrogen-market-update-cf-industries-reports-q3-2026-results/",
+      "https://www.fertilizerdaily.com/20261005-u-s-nitrogen-supply-heads-into-2027-with-below-average-inventories-as-yazoo-city-remains-offline/"
+    ]
+  },
+  {
+    "ticker": "FICO",
+    "company": "Fair Isaac Corporation",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 2,
+      "industry": 3,
+      "demand": 3,
+      "management": 3,
+      "tail_risk": 2,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "The FICO Score remains the default credit metric across US lending with very high margins and pricing power, but its exclusive position in GSE mortgages has been removed by regulators.",
+      "disruption": "The FHFA now allows and in September 2026 pushed Fannie and Freddie toward VantageScore, which advertises far lower per-pull prices; FICO responded by freezing 2027 wholesale mortgage pricing.",
+      "industry": "Effectively a duopoly with the bureau-owned VantageScore, but a hostile regulator is actively promoting price competition in the most profitable segment.",
+      "demand": "FY26 revenue of $2.54B grew strongly on price, but score growth is slowing (33% in Q4 vs 60% in Q2) amid weak mortgage originations; software platform ARR grew 72% to $453M.",
+      "management": "Long record of value creation through pricing and buybacks, but the aggressive price increases provoked the regulator, and FICO pulled FY27 guidance and will disclose less about mortgage pricing.",
+      "tail_risk": "Debt rose to $4.9B (about 3.3x net leverage) after $3B of FY26 buybacks, alongside a $65M antitrust settlement accrual and ongoing federal pressure on scoring fees.",
+      "catalyst": "FHA starts accepting both FICO 10T and VantageScore 4 on January 1, 2027, and guidance may return once 2027 mortgage pricing deals are set; direction is uncertain."
+    },
+    "bull_case": "Lenders, investors and securitization markets are built around FICO scores, so share loss may be slow, while the direct licensing program, Score 10T adoption and a fast-growing software platform keep earnings growing.",
+    "bear_case": "Regulators are deliberately engineering price competition in mortgage scores, which have driven most recent growth; with leverage up, buybacks paused and guidance withdrawn, pricing power may not come back.",
+    "key_risk": "FHFA-driven shift toward VantageScore forcing mortgage score price cuts.",
+    "catalyst_note": "FHA dual-score acceptance from January 1, 2027 and possible reinstatement of FY27 guidance once mortgage pricing agreements close.",
+    "sources": [
+      "https://finviz.com/news/416440/fico-tops-estimates-and-software-accelerates-but-withheld-guidance-and-a-frozen-mortgage-price-cloud-the-scores-engine",
+      "https://zacks.com/stock/news/3024569/fico-q4-26-earnings-call-highlights-pricing-uncertainty-for-fy27",
+      "https://www.fool.com/investing/2026/09/04/why-fair-isaac-stock-crashed-today/",
+      "https://www.scotsmanguide.com/news/pulte-erases-fico-from-fannie-mae-selling-guide/"
+    ]
   }
 ]
