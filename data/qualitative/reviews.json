@@ -948,5 +948,175 @@
       "https://www.fool.com/investing/2026/09/04/why-fair-isaac-stock-crashed-today/",
       "https://www.scotsmanguide.com/news/pulte-erases-fico-from-fannie-mae-selling-guide/"
     ]
+  },
+  {
+    "ticker": "KFY",
+    "company": "Korn Ferry",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 3,
+      "management": 3,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "The best-known global executive-search brand plus consulting IP, assessments and RPO contracts give cross-selling breadth, but search clients can switch firms easily and top rivals offer similar service.",
+      "disruption": "Senior-level search is relationship-driven and hard to automate, while recruiting outsourcing, digital assessments and professional search are more exposed to AI-driven hiring tools.",
+      "industry": "Executive search has a handful of global leaders, but RPO, staffing-like professional search and HR consulting are crowded and price-competitive.",
+      "demand": "Fee revenue rose 7% in fiscal Q1 2027 (sixth straight quarter of growth) with backlog up 14%, but hiring-linked demand is cyclical and management calls the US labor market challenging.",
+      "management": "Long-tenured CEO has diversified the firm away from pure search and raised the dividend, but the roughly $1.1B AMS deal, partly funded on the revolver and with new shares, adds integration risk.",
+      "tail_risk": "Diversified clients across industries, but revenue moves with corporate hiring cycles and the AMS purchase added about $581M of revolver borrowing plus share issuance.",
+      "catalyst": "Fiscal Q2 2027 results in early December will be the first quarter including AMS, against guidance that came in below consensus; a routine but informative event."
+    },
+    "bull_case": "AMS adds about $650M of run-rate fee revenue and a $1.5B+ contract backlog in recruitment outsourcing, making revenue more recurring, and management expects the deal to be EPS-accretive in its first full year.",
+    "bear_case": "A hiring slowdown or AI-enabled recruiting could squeeze search and RPO volumes just as the firm takes on debt and integration work for its largest acquisition.",
+    "key_risk": "A cyclical hiring downturn hitting search and RPO fees while leverage is elevated after the AMS deal.",
+    "catalyst_note": "Fiscal Q2 2027 results in early December 2026 with the first AMS contribution.",
+    "sources": [
+      "https://www.kornferry.com/about-us/press/korn-ferry-announces-first-quarter-fiscal-2027-results-of-operations",
+      "https://finviz.com/news/390232/korn-ferry-q1-earnings-beat-estimates-as-q2-eps-guidance-falls-below-consensus",
+      "https://huntscanlon.com/korn-ferry-to-acquire-ams-in-1-1-billion-talent-solutions-deal/",
+      "https://quartr.com/events/korn-ferry-kfy-2026-baird-global-consumer-technology-services-conference_3sdRuNI5"
+    ]
+  },
+  {
+    "ticker": "SFM",
+    "company": "Sprouts Farmers Market Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 4,
+      "industry": 2,
+      "demand": 3,
+      "management": 3,
+      "tail_risk": 4,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "A differentiated produce-led, health-focused format with private label at about 26% of sales and self-distribution of fresh items, but grocery shoppers face no switching costs.",
+      "disruption": "Fresh grocery is hard to substitute; online is handled through delivery partners (e-commerce up 12%, over 16% of sales) rather than threatening the stores.",
+      "industry": "US grocery is intensely competitive, with Walmart, Costco, Aldi, Trader Joe's and Whole Foods all chasing value- and health-minded shoppers.",
+      "demand": "Healthy-eating trends and 42 new stores a year support growth, but after a 2024-25 boom comps turned to -0.9% in Q3 with traffic down 3.3% and Q4 guided to -2% to -4%.",
+      "management": "Strong record of margin expansion and disciplined unit growth, but management admitted its affordability moves did not restore traffic and guidance was cut sharply.",
+      "tail_risk": "No revolver borrowings, about $229M cash and modest debt; risks are operating-lease commitments, food-safety events like the cyclospora issue and further margin give-back.",
+      "catalyst": "A national pricing reset in January and Q4 results with 2027 guidance in late February are dated, but whether they revive traffic is uncertain."
+    },
+    "bull_case": "Store growth continues at about 8-9% a year with new units performing well, buybacks shrink the share count, and a successful January price reset could stabilize traffic from a much lower valuation base.",
+    "bear_case": "The post-pandemic surge in comps is unwinding and price investment needed to win back shoppers from mass merchants and discounters could compress the margins that drove past earnings growth.",
+    "key_risk": "Negative traffic persisting even after price cuts, forcing deeper margin sacrifice.",
+    "catalyst_note": "January 2027 pricing reset and Q4 2026 results with 2027 guidance in late February 2027.",
+    "sources": [
+      "https://finviz.com/news/410553/sprouts-farmers-market-inc-reports-third-quarter-2026-results",
+      "https://www.zacks.com/stock/news/3018826/sfm-q3-earnings-miss-estimates-on-soft-comps-margin-pressure",
+      "https://www.tikr.com/blog/sprouts-farmers-market-sinks-23-on-q3-miss-and-guidance-cut-need-to-improve-our-performance",
+      "https://placer.ai/anchor/articles/sprouts-same-store-visits-slow-in-q1-2026-amid-tough-comparisons-and-softening-consumer-demand"
+    ]
+  },
+  {
+    "ticker": "IT",
+    "company": "Gartner Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 2,
+      "industry": 4,
+      "demand": 2,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Dominant brand in IT research and advisory, proprietary peer data and executive networks, with wallet retention of 98-99% showing sticky subscriptions.",
+      "disruption": "Generative AI lets clients do their own market and vendor analysis, a direct threat to the core research product; contract value growth has slowed to about 2.5%.",
+      "industry": "Gartner is far larger than any rival in syndicated IT research, so pricing is rational, though its usual 3% price increase is at the low end of its range.",
+      "demand": "Contract value grew only 2.5% (2.8% ex-federal) and 2026 revenue is guided to about 1% FX-neutral growth, with tech-vendor layoffs and long sales cycles weighing.",
+      "management": "Disciplined capital allocation, with $1.7B of buybacks in four quarters cutting the share count by about 15%, candid commentary and cost control; the Digital Markets sale went at a low price.",
+      "tail_risk": "Strong free cash flow (about $1.2B guided for 2026) and diversified clients, but a structural AI threat to the core subscription is a real long-term overhang.",
+      "catalyst": "Q4 results with 2027 guidance in early February will show whether contract value keeps reaccelerating; no other dated event."
+    },
+    "bull_case": "Clients struggling to get value from AI tools are turning to Gartner for business cases, contract value growth has accelerated for three quarters, and buybacks are rapidly shrinking the share count while adjusted EPS grows.",
+    "bear_case": "AI erodes the value of paid research seat by seat, keeping contract value growth in low single digits and turning a former compounder into a slow-growth, buyback-driven story.",
+    "key_risk": "Generative AI substituting for paid research subscriptions and capping contract value growth.",
+    "catalyst_note": "Q4 2026 results and 2027 outlook in early February 2027.",
+    "sources": [
+      "https://finviz.com/news/413975/gartner-reports-third-quarter-2026-financial-results",
+      "https://www.nasdaq.com/articles/gartner-it-q3-2026-earnings-call-transcript",
+      "https://www.webull.com/news/15861840703808512",
+      "https://www.nasdaq.com/articles/why-gartner-stock-swooned-first-half-2026"
+    ]
+  },
+  {
+    "ticker": "GAP",
+    "company": "Gap Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 2,
+      "disruption": 3,
+      "industry": 2,
+      "demand": 2,
+      "management": 3,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Well-known brands and Old Navy's scale in value family apparel help sourcing, but apparel has no switching costs and Athleta and Banana Republic show brand equity can fade.",
+      "disruption": "Physical apparel is not obsolete, but ultra-cheap online players, off-price chains and DTC brands steadily take share from mall-based specialty retail.",
+      "industry": "Fragmented, trend-driven and promotional apparel market with low barriers to entry.",
+      "demand": "Q3 comps were flat and fiscal 2026 sales are now guided roughly flat; Gap brand is up 9% but Athleta fell 15% and Banana Republic 3%.",
+      "management": "CEO Dickson has restored the Gap brand (12 straight positive quarters) and improved margins, but Old Navy assortment misses led to two sales guidance cuts in 2026.",
+      "tail_risk": "About $3.0B of cash against $1.49B of long-term debt gives net cash, but consumer cyclicality, tariffs and weather swings remain; 2026 profit is flattered by about $420M of one-time tariff recoveries.",
+      "catalyst": "Holiday-quarter results and 2027 guidance in early March 2027 are routine; Athleta's turnaround has no set timing."
+    },
+    "bull_case": "Net cash, steady free cash flow (about $815M year to date) and buybacks support the stock while the Gap brand's revival and a recovering Old Navy lift sales and margins.",
+    "bear_case": "Old Navy, close to 60% of sales, keeps missing on assortment, Athleta continues to shrink, and once tariff refunds fade underlying margins look flat in a no-growth apparel market.",
+    "key_risk": "Old Navy losing its value position as tariffs and weaker lower-income shoppers squeeze margins.",
+    "catalyst_note": "Q4 fiscal 2026 results and 2027 outlook in early March 2027.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0000039911/000162828026075088/q32026eprexhibit991.htm",
+      "https://qz.com/gap-sales-outlook-cut-old-navy-disappoints-052926",
+      "https://stocktwits.com/news-articles/markets/equity/gap-stock-eyes-return-to-the-green-this-year-as-viral-denim-campaign-delivers-sydney-sweeney-style-lift-for-q3/cLPMaHQREaM"
+    ]
+  },
+  {
+    "ticker": "GDDY",
+    "company": "GoDaddy Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 3,
+      "management": 3,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "The largest domain registrar with about 20.5M customers, sticky domain renewals, a leading aftermarket and marketing scale; ARPU rose 6.8% to $253.",
+      "disruption": "AI tools could change how small businesses build sites and find domains, and non-domain Core products (hosting, security) fell 3.9%, though the Airo AI product is gaining traction.",
+      "industry": "Registrars and website builders such as Wix, Squarespace and Namecheap compete hard on promotions, but GoDaddy's scale and cross-sell keep pricing reasonable.",
+      "demand": "Revenue grew 6% in Q3 with Applications & Commerce up 9% and Core up 4%; domain industry growth is mature and close to GDP-like.",
+      "management": "Strong margin expansion and aggressive buybacks (diluted shares down about 12% in a year), but the misjudged 2025 dotcom promotion hurt bookings and credibility.",
+      "tail_risk": "About $3.8B of debt against $1.1B cash, covered by roughly $1.8B of annual free cash flow; a law firm is probing the promotion disclosures but no major suit is confirmed.",
+      "catalyst": "Q4 results and 2027 guidance in February; Airo's run rate passing $100M is a building story, not a dated event."
+    },
+    "bull_case": "Recurring domain renewals fund heavy buybacks while Airo, whose bookings run rate doubled to over $100M in a quarter, drives higher-margin product attach and ARPU growth.",
+    "bear_case": "AI interfaces and cheaper rivals erode hosting and website-builder demand, domain growth plateaus and promotions to defend share cap pricing, leaving growth reliant on buybacks.",
+    "key_risk": "AI-driven changes in how small businesses get online eroding GoDaddy's core hosting and builder products.",
+    "catalyst_note": "Q4 2026 results and 2027 guidance in February 2027.",
+    "sources": [
+      "https://stockstory.org/us/stocks/nyse/gddy/news/earnings-call/gddy-q3-deep-dive-airo-adoption-margin-expansion-and-ai-driven-transformation",
+      "https://webhosting.today/2026/11/02/godaddy-q3-2026-domains-lifted-its-core-segment-the-rest-including-hosting-fell-7-4m/",
+      "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000120/gddy-20260930.htm",
+      "https://uk.investing.com/news/-4694485",
+      "https://kalkinemedia.com/ca/news/announcements/kaplan-fox-launches-securities-probe-into-godaddy-inc-after-q4-2025-earnings-reveal-impact-of-dotcom-domain-promotion"
+    ]
   }
 ]
