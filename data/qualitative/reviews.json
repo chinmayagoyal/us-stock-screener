@@ -612,5 +612,173 @@
       "https://www.aol.com/finance/77-old-jewelry-giant-close-184700718.html",
       "https://www.earningswhispers.com/epsdetails/SIG"
     ]
+  },
+  {
+    "ticker": "MCK",
+    "company": "McKesson Corporation",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 4,
+      "industry": 4,
+      "demand": 4,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 4
+    },
+    "reasons": {
+      "moat": "One of three national US drug wholesalers; scale buys low per-unit cost on very thin margins, and its specialty/oncology networks and prescription-technology platform add switching costs.",
+      "disruption": "Physical pharma distribution is hard to replace, and specialty, GLP-1 and prior-authorization software benefit from current trends; direct-to-patient and manufacturer pricing changes are slow-moving threats.",
+      "industry": "A consolidated three-player oligopoly with stable economics, offset by large customers (CVS extended through June 2032) with real bargaining power.",
+      "demand": "Aging population, specialty and GLP-1 drugs drive growth: FY26 revenue up 12% to $403B, fiscal Q2 2027 revenue up 7.6% with GLP-1 distribution revenue up 26%.",
+      "management": "Delivered 18% adjusted EPS growth in FY26, raised FY27 guidance twice, returns most free cash flow via buybacks and is spinning off lower-growth Med-Surg; bolt-on deals (Precision Medicine Group, Option Care stake) add integration risk.",
+      "tail_risk": "Customer concentration, long-dated opioid settlement obligations and drug-pricing policy (340B rebate model, branded price cuts) are ongoing exposures, though none looks equity-impairing today.",
+      "catalyst": "Option Care stake expected to close in the first half of 2027 and the Med-Surg (Wellverse) IPO targeted for the second half of 2027."
+    },
+    "bull_case": "Specialty, oncology and GLP-1 volumes plus software for drug access keep operating profit growing double digits, while heavy buybacks and the Med-Surg separation sharpen the mix toward higher-growth businesses.",
+    "bear_case": "Pharma profit growth well above the 5-8% long-term target may revert as GLP-1 volumes normalize, and drug-pricing reform, 340B changes or a major customer loss could squeeze a business that earns about 1.4% operating margins.",
+    "key_risk": "US drug-pricing policy and large-customer bargaining power compressing distribution economics.",
+    "catalyst_note": "Option Care stake closing in 1H 2027 and the Wellverse (Med-Surg) IPO targeted for 2H 2027.",
+    "sources": [
+      "https://www.mckesson.com/about-us/newsroom/press-releases/2026/mckesson-reports-fiscal-2026-fourth-quarter-and-full-year-results/",
+      "https://finviz.com/news/416353/mckesson-falls-just-short-of-a-lofty-whisper-but-raises-its-outlook-again-as-pharma-distribution-accelerates",
+      "https://stockstory.org/us/stocks/nyse/mck/news/earnings-call/mck-q3-cy2026-deep-dive-acquisitions-and-specialty-growth-drive-mixed-market-reaction",
+      "https://www.streetinsider.com/Business+Wire/Introducing+Wellverse%3A+Reducing+Complexity+So+Care+Comes+First/26879370.html"
+    ]
+  },
+  {
+    "ticker": "INOD",
+    "company": "Innodata Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 2,
+      "disruption": 2,
+      "industry": 2,
+      "demand": 4,
+      "management": 3,
+      "tail_risk": 2,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Supplies AI training, evaluation and pretraining data on project contracts that customers can end on 30-90 days' notice; offshore delivery scale and trust with big tech help, but little lock-in.",
+      "disruption": "Model makers increasingly automate labeling, use synthetic data or build in-house teams, and the company itself flags that new AI capabilities could make its services obsolete.",
+      "industry": "Crowded and fragmented: Scale AI, Surge, Mercor, Turing, TELUS Digital, Appen and IT services firms all compete, with customers pushing for discounts and fixed prices.",
+      "demand": "AI lab spending on data is surging: Q3 2026 revenue rose 53% to $95.6M and 2026 growth guidance was raised to at least 42%, but demand is lumpy and program-driven.",
+      "management": "Has delivered 13 straight quarters of growth and diversified into a second large customer, federal and physical-AI work; offset by falling adjusted EBITDA margin (18.5% vs 25.9%) and a heavily promotional pipeline narrative.",
+      "tail_risk": "One customer was 58% of 2025 revenue and a major program was cut in Q4 (about $12M hit); net cash of about $154M (ex prepayments) cushions, but a lost customer would hit hard.",
+      "catalyst": "Q4 results and first 2027 outlook around late February, plus signing of a verbally awarded federal contract; timing and size of replacement programs unclear."
+    },
+    "bull_case": "Demand for high-quality human data keeps growing as labs move into reasoning, agents and robotics, and Innodata now has two large anchor customers, a hyperscaler ramp worth over $20M in 2027 and a net-cash balance sheet.",
+    "bear_case": "A small vendor in a crowded, project-based market with extreme customer concentration; program cancellations, insourcing or automated data generation could stall growth while margins are already compressing.",
+    "key_risk": "Loss or scaling back of one of its two largest AI customers.",
+    "catalyst_note": "Q4 2026 results and 2027 guidance around late February 2027; federal contract signing expected by year-end.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/903651/000110465926020655/inod-20251231x10k.htm",
+      "https://business-news-today.com/innodata-nasdaq-inod-shares-fall-despite-53-revenue-growth-as-ai-margins-face-scrutiny/",
+      "https://www.zacks.com/stock/news/3026099/innodata-q3-earnings-call-highlights-growth-outlook-and-ai-expansion",
+      "https://www.careerflow.ai/human-data/blogs/top-annotation-providers-comparison"
+    ]
+  },
+  {
+    "ticker": "LOPE",
+    "company": "Grand Canyon Education Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 3,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Long-term services agreements, marketing scale and a hybrid nursing network of off-campus labs give real advantages, but the economics are set by contract with one dominant partner.",
+      "disruption": "Online degree programs face cheaper and AI-enabled alternatives over time, while clinical-heavy healthcare programs are harder to substitute.",
+      "industry": "Competes with large online universities and public institutions; Title IV rules limit new entrants but also cap pricing.",
+      "demand": "Partner enrollment up 5.2% to 145,270 with online up 7.1% and off-campus labs up 12.6%, but GCU ground enrollment fell 4.1% and Q3 revenue grew only 2.4%.",
+      "management": "Aggressive buybacks (share count about 25.5M, $355M added to authorization) and a won fight over GCU's nonprofit status; buybacks now exceed operating cash flow and cash fell to $162M from $300M.",
+      "tail_risk": "GCU is about 96% of partner enrollment and depends on federal student aid; the $37.7M fine was rescinded and the FTC case dropped, but policy could swing with a new administration.",
+      "catalyst": "Q4 results in early 2027 should show the $7.5M revenue shifted from Q3 and full-year 2027 guidance; no larger event visible."
+    },
+    "bull_case": "A capital-light services model with 25%+ operating margins, steady online and hybrid nursing growth, and a shrinking share count; the regulatory cloud over GCU has largely cleared.",
+    "bear_case": "Near-total dependence on one university, an amended contract that narrowed billable revenue, declining ground enrollment and buybacks funded beyond free cash flow leave little room for a regulatory or enrollment shock.",
+    "key_risk": "Concentration on GCU and its access to Title IV federal aid.",
+    "catalyst_note": "Q4 2026 results and 2027 guidance in February 2027.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0001434588/000110465926122660/lope-ex99d1.htm",
+      "https://247wallst.com/cards/grand-canyon-education-q3-2026-earnings-lope-01m6m8tgjpa0d3te89fs5qxshp",
+      "https://m.washingtontimes.com/news/2025/dec/15/education-department-upholds-grand-canyon-universitys-nonprofit/"
+    ]
+  },
+  {
+    "ticker": "NEM",
+    "company": "Newmont Corporation",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 4,
+      "industry": 3,
+      "demand": 2,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "The largest gold producer with long-life tier-one mines and a Nevada joint venture with Barrick, but it is a price-taker on a commodity.",
+      "disruption": "Gold has no technological substitute as a store of value, and copper by-products add exposure to electrification.",
+      "industry": "Fragmented global mining with no pricing power, though recent producer discipline and high entry costs limit new supply.",
+      "demand": "Q3 2026 realized gold of $4,317/oz marks a cyclical earnings peak; spot fell to about $3,880 on November 12 as Fed hike bets and a strong dollar weighed.",
+      "management": "Sold non-core mines after the Newcrest deal, cut the share count about 10% since February 2024 and lowered 2026 AISC guidance to $1,520/oz; Cadia seismic issues and Q4 cost creep temper the record.",
+      "tail_risk": "Net cash of $3.2B is solid (before a $1.95B payment to Barrick), but earnings swing with the gold price and operations in PNG, Ghana and Peru carry water, seismic and political risks.",
+      "catalyst": "Q4 results with 2027 guidance around February, Red Chris block cave investment decision in early 2027 and Tanami Expansion 2 production in 1H 2027; direction depends on gold."
+    },
+    "bull_case": "At gold well above its roughly $1,500/oz all-in sustaining cost, Newmont generates large free cash flow, holds net cash and keeps shrinking its share count while new projects come online.",
+    "bear_case": "Gold has already rolled over from record levels; if it keeps falling while Q4 unit costs rise toward $1,900/oz, margins and buybacks would compress quickly.",
+    "key_risk": "A sustained fall in the gold price from cyclical highs.",
+    "catalyst_note": "Q4 2026 results and 2027 guidance (around February 2027) plus Red Chris investment decision early 2027.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0001164727/000116472726000041/newmontq32026earningsrelea.htm",
+      "https://www.kitco.com/news/article/2026-10-22/newmont-beats-third-quarter-earnings-expectations-higher-gold-sales-boost",
+      "https://www.nationthailand.com/business/trading-investment/40073439"
+    ]
+  },
+  {
+    "ticker": "DECK",
+    "company": "Deckers Outdoor Corporation",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 3,
+      "management": 4,
+      "tail_risk": 4,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "UGG is a decades-old brand with strong full-price selling (60.5% gross margin) and HOKA built a premium running niche, but footwear brand power is contestable and trend-driven.",
+      "disruption": "Fashion and silhouette cycles are the main threat; analysts argue HOKA's reliance on max-cushion shoes leaves it exposed if the trend fades.",
+      "industry": "Athletic footwear has deep-pocketed rivals; Nike and On are targeting cushioned running and the US market is promotional.",
+      "demand": "Growth has slowed to low-mid single digits: Q2 FY27 sales up 3.5% with HOKA up 6.8% and UGG up 3.5%, and US DTC comparable sales down 6.4%.",
+      "management": "Debt-free with disciplined inventory and marketplace control and heavy buybacks ($637.5M so far this year); admitted some 2026 HOKA franchise updates missed and is fixing them for spring 2027.",
+      "tail_risk": "No borrowings and $1.2B cash; exposure to tariffs, Asian contract manufacturing and fashion risk, and part of FY27 EPS comes from one-off tariff refunds.",
+      "catalyst": "Holiday quarter results in late January and spring 2027 HOKA launches (Bondi 10, Mach Pro) will test whether the brand reaccelerates; outcome uncertain."
+    },
+    "bull_case": "Two global brands with premium pricing, strong international growth and a net-cash balance sheet that funds large buybacks; refreshed HOKA franchises could restart growth in 2027.",
+    "bear_case": "HOKA may be past its trend peak as Nike, On and others crowd cushioned running, while UGG relies on wholesale and a hesitant consumer; underlying margins are flattered by temporary tariff refunds.",
+    "key_risk": "HOKA losing share as competition in cushioned running intensifies.",
+    "catalyst_note": "Q3 FY27 (holiday) results in late January 2027 and spring 2027 HOKA product launches.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0000910521/000091052126000028/deckex991pressrelease-9302.htm",
+      "https://bullfincher.io/companies/deckers-outdoor-corporation/earnings-call/fy2027-q2",
+      "https://frontofficesports.com/?p=207578",
+      "https://www.sgieurope.com/strategies/cushioned-running-becomes-2027s-key-battleground/122363.article"
+    ]
   }
 ]
