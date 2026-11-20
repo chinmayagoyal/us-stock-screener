@@ -439,5 +439,178 @@
       "https://www.semafor.com/article/01/15/2026/why-macys-tony-spring-thinks-the-department-store-is-here-to-stay",
       "https://stocks.observer-reporter.com/observerreporter/article/marketminute-2026-3-25-the-great-luxury-bifurcation-macys-ascends-as-saks-global-falters-in-a-reshaped-retail-landscape"
     ]
+  },
+  {
+    "ticker": "MAS",
+    "company": "Masco Corporation",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 4,
+      "disruption": 4,
+      "industry": 3,
+      "demand": 3,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Strong brands (Delta, Hansgrohe, Behr, Kilz) with exclusive Home Depot placement for Behr and Kilz support mid-to-high teens operating margins across a weak cycle.",
+      "disruption": "Faucets, showers and paint are low-tech, brand- and channel-driven products; low-cost imports and private label are the main slow-moving threats.",
+      "industry": "Plumbing and architectural coatings are reasonably concentrated among a handful of brands, but a few big-box retailers hold strong bargaining power over suppliers.",
+      "demand": "Tied to repair and remodel spending; Q3 2026 organic sales rose about 4% but DIY paint fell and management still calls near-term demand challenged, while reported sales have shrunk over five years.",
+      "management": "CEO Jon Nudi's team is pruning the portfolio (Kichler, Bristan sold), cutting costs and buying back stock ($852M in nine months), and raised 2026 adjusted EPS guidance to $4.65-4.75; executive committee turnover adds some execution risk.",
+      "tail_risk": "About 38% of sales come from Home Depot, long-term debt rose to roughly $3.2B (gross debt/EBITDA about 2.1x) and tariffs and commodity costs hit margins, though liquidity of $1.6B is ample.",
+      "catalyst": "Q4 2026 results and the first 2027 outlook arrive in early 2027; a housing-turnover and remodel recovery would help but its timing is unclear."
+    },
+    "bull_case": "Pricing, cost savings and lower tariff costs are lifting Plumbing margins toward 20% even with flat volumes, so any recovery in repair and remodel demand should flow through strongly to EPS amplified by steady buybacks.",
+    "bear_case": "Volumes have been flat to down for years, DIY paint keeps softening and dependence on Home Depot limits pricing leverage; rising debt to fund buybacks leaves less room if housing stays weak.",
+    "key_risk": "Prolonged weakness in repair and remodel and DIY paint demand combined with Home Depot customer concentration.",
+    "catalyst_note": "Q4 2026 results and 2027 guidance in early 2027; any pickup in existing-home sales.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0000062996/000006299626000032/a930268-kex99.htm",
+      "https://www.zacks.com/stock/news/3017623/mascos-q3-earnings-beat-on-pricing-and-cost-savings-stock-rises",
+      "https://www.panabee.com/news/masco-earnings-2025-annual",
+      "https://www.financialcontent.com/article/bizwire-2026-4-21-masco-corporation-announces-leadership-changes"
+    ]
+  },
+  {
+    "ticker": "DELL",
+    "company": "Dell Technologies Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 4,
+      "management": 4,
+      "tail_risk": 2,
+      "catalyst": 4
+    },
+    "reasons": {
+      "moat": "Scale in supply chain, enterprise sales coverage and services across PCs, servers and storage is a real edge, but AI servers are largely Nvidia-based systems where Dell earns thin margins.",
+      "disruption": "Riding the AI infrastructure shift rather than being displaced by it, but ODM direct sales to hyperscalers and GPU vendors capturing more value are standing threats.",
+      "industry": "PCs are a mature oligopoly; AI servers are contested with HPE, Supermicro and ODMs, and gross margin rate has fallen as low-margin AI systems became a larger share of revenue.",
+      "demand": "AI server orders of $60.9B in Q2 FY27 and a $95B backlog drove revenue up 58% with FY27 guided to about $192B, but this pace reflects an AI capex boom that may be near a cyclical peak.",
+      "management": "Executed the AI pivot with record operating-expense efficiency, raised guidance sharply and returned $4.3B in one quarter; Michael Dell's control keeps the long-term view, though buybacks run alongside rising debt.",
+      "tail_risk": "Total debt of about $34.5B against negative shareholder equity, memory and component shortages gating backlog conversion, and dependence on a small set of large AI buyers including neoclouds.",
+      "catalyst": "Q3 FY27 results on November 24, 2026 will show backlog conversion against a $49B revenue guide and margin trends."
+    },
+    "bull_case": "A $95B AI backlog plus a strong refresh in traditional servers and storage gives multi-quarter revenue visibility, and gross profit dollars keep rising even as margin rate dilutes.",
+    "bear_case": "AI server margins are thin and component constrained, PC margins are guided down to about 6%, and a slowdown in AI capex or a stumble at a large neocloud customer would hit a levered balance sheet.",
+    "key_risk": "An AI infrastructure spending downturn or memory supply squeeze hitting a thin-margin, debt-funded business.",
+    "catalyst_note": "Q3 FY27 earnings on November 24, 2026 and any update to the FY27 AI server revenue target of about $74B.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0001571996/000157199626000039/exhibit991earnings8kq2fy27.htm",
+      "https://futurumgroup.com/insights/dell-technologies-q2-fy-2027-ai-orders-fuel-server-and-storage-growth/",
+      "https://fortune.com/2026/06/30/dells-ai-boom-real-but-so-is-profit-margin-hit/",
+      "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints",
+      "https://www.boerse-express.com/news/articles/dell-quartalszahlen-am-24-november-963689"
+    ]
+  },
+  {
+    "ticker": "AEO",
+    "company": "American Eagle Outfitters Inc.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 2,
+      "disruption": 2,
+      "industry": 2,
+      "demand": 3,
+      "management": 3,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Aerie (now above $2B trailing revenue) and OFFLINE have genuine brand heat, but the namesake AE jeans brand has little pricing power and needed markdowns to clear older fits.",
+      "disruption": "Youth apparel faces constant fashion-cycle risk plus share loss to fast-fashion and online-native brands; mall traffic is a long-term headwind.",
+      "industry": "Fragmented and promotional specialty apparel market with rivals such as Abercrombie and Urban Outfitters competing for the same young customer.",
+      "demand": "Q2 FY26 comparable sales rose 6% on a 19% Aerie comp, while the AE brand fell 1%; overall apparel demand is roughly GDP-like.",
+      "management": "Aerie execution and marketing have worked, but inventory ran ahead of unit growth for two quarters and Q3 profit guidance disappointed; selling tariff-refund claims carried a $45M interest cost.",
+      "tail_risk": "Debt is modest (about $203M) but rose while cash fell; exposure to tariffs, inventory markdowns and a volatile teen consumer is high.",
+      "catalyst": "Q3 FY26 results due around early December and holiday sales trends are routine checkpoints; the AE brand turnaround has no firm timeline."
+    },
+    "bull_case": "Aerie and OFFLINE keep compounding at double-digit rates, the stock trades below 10x earnings, and stabilizing the AE brand would lift group margins.",
+    "bear_case": "Underlying profit is weak once one-time tariff refunds ($161M net in Q2) are stripped out, AE brand fashion misses force more markdowns, and inventory overhang pressures margins into holiday.",
+    "key_risk": "Continued AE brand weakness and inventory markdowns eroding margins as tariff-refund benefits fade.",
+    "catalyst_note": "Q3 FY26 results around early December 2026 against operating income guidance of $110-115M, then holiday results.",
+    "sources": [
+      "https://fashionunited.com/news/business/tariff-refunds-boost-american-eagle-outfitters-q2-performance/2026091074535",
+      "https://s26.q4cdn.com/546305894/files/content_files/AEO-Inc-2Q26-Earnings-Release-w-Financials.pdf",
+      "https://www.fool.com/investing/2026/09/10/why-american-eagle-stock-dropped-today/",
+      "https://www.tradingview.com/news/zacks:bbe8f9e5b094b:0-american-eagle-stock-outlook-as-aerie-growth-offsets-ae-brand-risks/",
+      "https://finance.yahoo.com/markets/stocks/articles/american-eagle-aeo-stock-looks-141414631.html"
+    ]
+  },
+  {
+    "ticker": "SBLK",
+    "company": "Star Bulk Carriers Corp.",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 2,
+      "disruption": 3,
+      "industry": 2,
+      "demand": 2,
+      "management": 4,
+      "tail_risk": 3,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "A price-taker in a commodity freight market; the only edge is scale (about 138 owned vessels across sizes) and low operating cost.",
+      "disruption": "Seaborne bulk transport has no real substitute, but decarbonization rules and a gradual decline in coal trade are slow-moving threats to older tonnage.",
+      "industry": "Highly fragmented ownership; the orderbook has roughly doubled to about 15% of the fleet and 2026 contracting is the highest since 2013, so supply is set to outgrow cargo demand in 2027.",
+      "demand": "Rates are at multi-year highs (Q3 2026 TCE about $24,600/day versus $16,600 a year earlier), yet underlying cargo growth is only about 2% a year, signalling a cyclical peak.",
+      "management": "Disciplined full-payout dividend policy, steady buybacks and over $2.27B returned since 2021, a completed fleet renewal and low net debt; the Athens listing added equity.",
+      "tail_risk": "Net debt is only about $275M with $766M cash, but earnings swing sharply with freight rates and are exposed to trade-policy shocks such as port fees.",
+      "catalyst": "A $1.00 dividend is paid in December; further moves depend on spot freight rates, whose direction into 2027 is uncertain."
+    },
+    "bull_case": "An ageing fleet, longer trade routes and congestion keep the market tight into 2027, letting Star Bulk pay out most of its earnings with a strong balance sheet.",
+    "bear_case": "Deliveries of around 50M dwt in 2027 outpace roughly 2% trade growth, and normalizing port congestion releases capacity, pushing rates and dividends sharply lower from peak levels.",
+    "key_risk": "Fleet supply growth outpacing cargo demand from 2027, ending the current rate upcycle.",
+    "catalyst_note": "Q4 2026 results and dividend in early 2027; Capesize rate direction over the seasonally weak first quarter.",
+    "sources": [
+      "https://mfn.se/all/a/star-bulk-carriers/star-bulk-carriers-corp-reports-net-profit-of-141-9-million-for-the-third-quarter-of-2026-and-declares-quarterly-dividend-of-1-00-per-share-the-highest-since-the-third-quarter-of-2022-152eed0f",
+      "https://cyprusshippingnews.com/2026/09/30/msi-forecasts-firm-dry-bulk-market-into-2027-driving-further-newbuilding-orders/",
+      "https://safety4sea.com/dry-bulk-supply-to-rise-faster-than-demand-in-2027/",
+      "https://www.marinelink.com/news/star-bulk-posts-softer-q-expands-fleet-532660"
+    ]
+  },
+  {
+    "ticker": "SIG",
+    "company": "Signet Jewelers Limited",
+    "review_date": "2026-11-20",
+    "reviewer": "Claude",
+    "scores": {
+      "moat": 3,
+      "disruption": 3,
+      "industry": 3,
+      "demand": 2,
+      "management": 3,
+      "tail_risk": 4,
+      "catalyst": 3
+    },
+    "reasons": {
+      "moat": "Largest US jewelry retailer (about 8.5% share) with Kay, Zales and Jared, giving sourcing scale, bridal expertise and a credit partnership with Bread Financial extended to 2035; still a contestable retail position.",
+      "disruption": "Lab-grown diamonds (about 27% of merchandise sales) have deflated natural prices, and mall traffic is in long-term decline, though management sees lab-grown prices near a floor.",
+      "industry": "Jewelry retail is fragmented and promotional, but Signet's scale lets it take share from independents.",
+      "demand": "Growth is price-led: North America units fell about 7% in FY26 while average prices rose; FY27 same-store sales are guided flat to +2.5%.",
+      "management": "The Grow Brand Love plan is closing about 100 stores, folding James Allen and Rocksbox and raising buybacks, but past digital acquisitions (Blue Nile, James Allen) led to large impairments.",
+      "tail_risk": "Little or no funded debt and outsourced customer credit limit balance-sheet risk; exposure is to discretionary spending, gold costs and tariffs on India-sourced goods.",
+      "catalyst": "Q3 FY27 results due in early December and holiday trading are routine, with a $125M accelerated buyback supporting per-share results."
+    },
+    "bull_case": "Store pruning and focus on the three core banners are lifting margins (FY27 adjusted EPS guidance raised to $10.45-12.15), and a strong balance sheet funds continued buybacks.",
+    "bear_case": "Falling unit volumes are masked by higher gold and price points; mall exposure, lab-grown deflation and a weaker consumer could cap sales while more restructuring charges recur.",
+    "key_risk": "Sustained unit declines in a discretionary, mall-heavy category as diamond prices deflate.",
+    "catalyst_note": "Q3 FY27 results in early December 2026 and holiday-season sales against guided flat to +2.5% same-store sales.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/0000832988/000083298826000227/fy27ex99109x09x26pressrele.htm",
+      "https://www.panabee.com/news/signet-jewelers-earnings-2026-annual",
+      "https://www.jckonline.com/editorial-article/lab-natural-diamonds-signet/",
+      "https://www.aol.com/finance/77-old-jewelry-giant-close-184700718.html",
+      "https://www.earningswhispers.com/epsdetails/SIG"
+    ]
   }
 ]
